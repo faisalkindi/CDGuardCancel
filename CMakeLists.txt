@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(CDAnimCancel LANGUAGES CXX C)
+project(CDGuardCancel LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -13,12 +13,12 @@ FetchContent_Declare(safetyhook
 )
 FetchContent_MakeAvailable(safetyhook)
 
-add_library(CDAnimCancel SHARED src/dllmain.cpp)
-target_link_libraries(CDAnimCancel PRIVATE safetyhook xinput)
+add_library(CDGuardCancel SHARED src/dllmain.cpp)
+target_link_libraries(CDGuardCancel PRIVATE safetyhook xinput)
 
-set_target_properties(CDAnimCancel PROPERTIES
+set_target_properties(CDGuardCancel PROPERTIES
     PREFIX ""
     SUFFIX ".asi"
-    OUTPUT_NAME "CDAnimCancel"
+    OUTPUT_NAME "CDGuardCancel"
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )

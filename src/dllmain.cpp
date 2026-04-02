@@ -1,5 +1,5 @@
 /*
- * CDAnimCancel v16.3 — Guard Cancel During Attacks
+ * CDGuardCancel v16.3 — Guard Cancel During Attacks
  *
  * Combat detection approach:
  * - Track if ANY evaluator has activeFlag=1 recently → "in combat"
@@ -140,7 +140,7 @@ static void LoadINI() {
     char iniPath[MAX_PATH];
     GetModuleFileNameA(NULL, iniPath, MAX_PATH);
     char* sl = strrchr(iniPath, '\\');
-    if (sl) strcpy(sl + 1, "CDAnimCancel.ini");
+    if (sl) strcpy(sl + 1, "CDGuardCancel.ini");
     char buf[64];
     GetPrivateProfileStringA("General", "Enabled", "1", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_Enabled = (atoi(buf) != 0);
@@ -156,10 +156,10 @@ static DWORD WINAPI MainThread(LPVOID) {
     char logPath[MAX_PATH];
     GetModuleFileNameA(NULL, logPath, MAX_PATH);
     char* sl = strrchr(logPath, '\\');
-    if (sl) strcpy(sl + 1, "CDAnimCancel.log");
+    if (sl) strcpy(sl + 1, "CDGuardCancel.log");
     g_Log = fopen(logPath, "w");
 
-    Log("CDAnimCancel v1.0 — Guard Cancel (Attack Button Detect)");
+    Log("CDGuardCancel v1.0 — Guard Cancel (Attack Button Detect)");
     LoadINI();
     Log("Config: Enabled=%d CombatTimeout=%ums LogEnabled=%d", g_Enabled, g_CombatTimeoutMs, g_LogEnabled);
     Log("Waiting 15s...");
