@@ -1,0 +1,51 @@
+====================================================================================================
+RANKED EXACT-SIZE CONDITION PROBES
+====================================================================================================
+File: C:\Users\faisa\Ai\Mods Dev\CrimsonDesert-Mods\CDAnimCancel\extracted\actionchart\bin__\upperaction\1_pc\1_phm\sword_upper.paac
+Uniform blocks: 623
+
+Ranking heuristic:
+  1. Prefer key_cancel / key_guard_start probes in the live target=13001 family.
+  2. Within a family, prefer source_ids nearest to existing same-intent nodes.
+  3. Give a small bonus when the old label is already input-like.
+
+1. probe_cancel_541: block#541 key_crouch -> key_cancel src=1160 target=13001 params=(9, 0, 15) score=403
+   nearest same-intent src: 1202 (dist 42)
+   nearest related src: 1202 (dist 42)
+   family size: 68, old label input-like: True
+
+2. probe_cancel_212: block#212 LowerLeftArm_1 -> key_cancel src=1785 target=13001 params=(9, 0, 15) score=370
+   nearest same-intent src: 1425 (dist 360)
+   nearest related src: 1735 (dist 50)
+   family size: 68, old label input-like: False
+
+3. probe_guard_423: block#423 NeckAndLeftArm -> key_guard src=5161 target=0 params=(3, 0, 15) score=325
+   nearest same-intent src: 5136 (dist 25)
+   nearest related src: 5136 (dist 25)
+   family size: 87, old label input-like: False
+
+4. probe_cancel_206: block#206 LeftArmNoSplice -> key_cancel src=3751 target=13001 params=(9, 0, 15) score=300
+   nearest same-intent src: 1425 (dist 2326)
+   nearest related src: 1735 (dist 2016)
+   family size: 68, old label input-like: False
+
+5. probe_guardstart_400: block#400 CharacterMeshEffectWeapon -> key_guard_start src=3267 target=13001 params=(9, 0, 15) score=280
+   nearest same-intent src: 1735 (dist 1532)
+   nearest related src: 1735 (dist 1532)
+   family size: 68, old label input-like: False
+
+6. probe_guard_294: block#294 BothHands -> key_guard src=4121 target=0 params=(4, 0, 15) score=230
+   nearest same-intent src: 3972 (dist 149)
+   nearest related src: 3972 (dist 149)
+   family size: 131, old label input-like: False
+
+7. probe_guard_171: block#171 NeckAndLeftArm -> key_guard src=1330 target=0 params=(4, 0, 15) score=230
+   nearest same-intent src: 457 (dist 873)
+   nearest related src: 457 (dist 873)
+   family size: 131, old label input-like: False
+
+Recommended first-pass test order:
+  - probe_cancel_541 (key_crouch -> key_cancel, src 1160, nearest related dist 42)
+  - probe_cancel_212 (LowerLeftArm_1 -> key_cancel, src 1785, nearest related dist 50)
+  - probe_guard_423 (NeckAndLeftArm -> key_guard, src 5161, nearest related dist 25)
+  - probe_cancel_206 (LeftArmNoSplice -> key_cancel, src 3751, nearest related dist 2016)

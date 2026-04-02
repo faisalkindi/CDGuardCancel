@@ -1,0 +1,1989 @@
+================================================================================
+Crimson Desert Guard Suppression Analysis
+Dump: E:\SteamLibrary\steamapps\common\Crimson Desert\bin64\CrimsonDesert_dump.bin
+Date: 2026-03-25 11:49:45
+================================================================================
+
+[*] Map: 38 CODE sections (349.6 MB)
+[*] Map: 114 DATA sections (37.4 MB)
+
+[*] Loading memory dump...
+[*] Loaded 387.1 MB in 0.1s
+
+================================================================================
+PHASE 1: RTTI Vtable Discovery
+================================================================================
+
+[RTTI] Searching for StageChart_Function_InputBlock...
+  TypeDescriptor at VA 0x145A94100 (file 0x5A94100)
+  COL at VA 0x144F68830 (file 0x4F68830)
+  vtable at VA 0x144AFCC70 (file 0x4AFCC70)
+  11 vtable slots:
+    slot[0] = 0x141C92690 (CODE)
+    slot[1] = 0x141C88CA0 (CODE)
+    slot[2] = 0x1402AC370 (CODE)
+    slot[3] = 0x141C8F760 (CODE)
+    slot[4] = 0x141C96720 (CODE)
+    slot[5] = 0x1402AC370 (CODE)
+    slot[6] = 0x1402AC370 (CODE)
+    slot[7] = 0x1402AC470 (CODE)
+    slot[8] = 0x1402AC470 (CODE)
+    slot[9] = 0x1402AC470 (CODE)
+    slot[10] = 0x141C88CB0 (CODE)
+
+[RTTI] Searching for ClientAttackActorComponent...
+  TypeDescriptor at VA 0x1459B94B0 (file 0x59B94B0)
+  COL at VA 0x144E15E78 (file 0x4E15E78)
+  vtable at VA 0x144748100 (file 0x4748100)
+  32 vtable slots:
+    slot[0] = 0x140306450 (CODE)
+    slot[1] = 0x14074E150 (CODE)
+    slot[2] = 0x140FF1080 (CODE)
+    slot[3] = 0x141D1E100 (CODE)
+    slot[4] = 0x141D1E190 (CODE)
+    slot[5] = 0x1402AC370 (CODE)
+    slot[6] = 0x1402B0C90 (CODE)
+    slot[7] = 0x1402B0C90 (CODE)
+    slot[8] = 0x1402B0C90 (CODE)
+    slot[9] = 0x1402B0C90 (CODE)
+    slot[10] = 0x1402B0C90 (CODE)
+    slot[11] = 0x1402B2690 (CODE)
+    slot[12] = 0x1402B0C90 (CODE)
+    slot[13] = 0x1402B0C90 (CODE)
+    slot[14] = 0x1402B0C90 (CODE)
+    slot[15] = 0x1402AC470 (CODE)
+    slot[16] = 0x1402AC470 (CODE)
+    slot[17] = 0x1402B0C90 (CODE)
+    slot[18] = 0x1402B0C90 (CODE)
+    slot[19] = 0x1402B0C90 (CODE)
+    slot[20] = 0x1402B0C90 (CODE)
+    slot[21] = 0x1402B0C90 (CODE)
+    slot[22] = 0x1402B0C90 (CODE)
+    slot[23] = 0x1402B0C90 (CODE)
+    slot[24] = 0x1402AC370 (CODE)
+    slot[25] = 0x1402B0C90 (CODE)
+    slot[26] = 0x1402E1210 (CODE)
+    slot[27] = 0x1402B2680 (CODE)
+    slot[28] = 0x1402AC370 (CODE)
+    slot[29] = 0x1402AC370 (CODE)
+    slot[30] = 0x1402AC370 (CODE)
+    slot[31] = 0x1402AC370 (CODE)
+
+[RTTI] Searching for ClientInputActorComponent...
+  TypeDescriptor at VA 0x1459D5EE8 (file 0x59D5EE8)
+  COL at VA 0x144E46548 (file 0x4E46548)
+  vtable at VA 0x14478E108 (file 0x478E108)
+  32 vtable slots:
+    slot[0] = 0x14081E240 (CODE)
+    slot[1] = 0x14074E150 (CODE)
+    slot[2] = 0x140FF1080 (CODE)
+    slot[3] = 0x141D1E100 (CODE)
+    slot[4] = 0x14081E4D0 (CODE)
+    slot[5] = 0x1402AC370 (CODE)
+    slot[6] = 0x1402B0C90 (CODE)
+    slot[7] = 0x1402B0C90 (CODE)
+    slot[8] = 0x1402B0C90 (CODE)
+    slot[9] = 0x1402B0C90 (CODE)
+    slot[10] = 0x1402B0C90 (CODE)
+    slot[11] = 0x1402B2690 (CODE)
+    slot[12] = 0x1402B0C90 (CODE)
+    slot[13] = 0x1402B0C90 (CODE)
+    slot[14] = 0x1402B0C90 (CODE)
+    slot[15] = 0x1402AC470 (CODE)
+    slot[16] = 0x1402AC470 (CODE)
+    slot[17] = 0x1402B0C90 (CODE)
+    slot[18] = 0x1402B0C90 (CODE)
+    slot[19] = 0x1402B0C90 (CODE)
+    slot[20] = 0x1402B0C90 (CODE)
+    slot[21] = 0x1402B0C90 (CODE)
+    slot[22] = 0x1402B0C90 (CODE)
+    slot[23] = 0x1402B0C90 (CODE)
+    slot[24] = 0x1402AC370 (CODE)
+    slot[25] = 0x1402B0C90 (CODE)
+    slot[26] = 0x1402E1210 (CODE)
+    slot[27] = 0x1402B2680 (CODE)
+    slot[28] = 0x1402AC370 (CODE)
+    slot[29] = 0x1402AC370 (CODE)
+    slot[30] = 0x1402AC370 (CODE)
+    slot[31] = 0x14081F950 (CODE)
+
+[RTTI] Searching for ClientSequencerStage_StageChartProcessor...
+  TypeDescriptor at VA 0x1459C0D00 (file 0x59C0D00)
+  COL at VA 0x144E260D8 (file 0x4E260D8)
+  vtable at VA 0x144757920 (file 0x4757920)
+  32 vtable slots:
+    slot[0] = 0x140449C70 (CODE)
+    slot[1] = 0x14044A350 (CODE)
+    slot[2] = 0x1404524D0 (CODE)
+    slot[3] = 0x14044AB50 (CODE)
+    slot[4] = 0x14044F740 (CODE)
+    slot[5] = 0x140452F00 (CODE)
+    slot[6] = 0x1404685C0 (CODE)
+    slot[7] = 0x14046A410 (CODE)
+    slot[8] = 0x140450A70 (CODE)
+    slot[9] = 0x14045D6A0 (CODE)
+    slot[10] = 0x14045D760 (CODE)
+    slot[11] = 0x14045D7F0 (CODE)
+    slot[12] = 0x1402AC370 (CODE)
+    slot[13] = 0x14045DAB0 (CODE)
+    slot[14] = 0x14045D820 (CODE)
+    slot[15] = 0x14045D890 (CODE)
+    slot[16] = 0x14045D9E0 (CODE)
+    slot[17] = 0x1419E9140 (CODE)
+    slot[18] = 0x14045DBA0 (CODE)
+    slot[19] = 0x1402AC370 (CODE)
+    slot[20] = 0x14045DBC0 (CODE)
+    slot[21] = 0x14045E060 (CODE)
+    slot[22] = 0x14045E4E0 (CODE)
+    slot[23] = 0x14045E590 (CODE)
+    slot[24] = 0x14045EB70 (CODE)
+    slot[25] = 0x14045EC30 (CODE)
+    slot[26] = 0x14045F520 (CODE)
+    slot[27] = 0x1402AC370 (CODE)
+    slot[28] = 0x14045ECF0 (CODE)
+    slot[29] = 0x14045EDD0 (CODE)
+    slot[30] = 0x14045EDF0 (CODE)
+    slot[31] = 0x1402AC370 (CODE)
+
+================================================================================
+PHASE 2: StageChart_Function_InputBlock Analysis
+================================================================================
+
+--- InputBlock slot[0] at 0x141C92690 ---
+  Function size: 7 bytes, 2 instructions
+
+--- InputBlock slot[1] at 0x141C88CA0 ---
+  Function size: 7 bytes, 3 instructions
+
+  Interesting patterns (1):
+    [CMP_SMALL]   0x141C88CA0: 80 FA 03                                 cmp dl, 3
+
+--- InputBlock slot[2] at 0x1402AC370 ---
+  Function size: 3 bytes, 1 instructions
+
+--- InputBlock slot[3] at 0x141C8F760 ---
+  Function size: 696 bytes, 166 instructions
+  Found 5 potential switch/case comparisons:
+      0x141C8F862: 83 78 08 00                              cmp dword ptr [rax + 8], 0
+      0x141C8F866: 77 05                                    ja 0x141c8f86d
+      0x141C8F891: 83 78 08 01                              cmp dword ptr [rax + 8], 1
+      0x141C8F895: 76 07                                    jbe 0x141c8f89e
+      0x141C8F8D4: 39 78 08                                 cmp dword ptr [rax + 8], edi
+      0x141C8F8D7: 76 3B                                    jbe 0x141c8f914
+      0x141C8F907: 41 3B 5F 08                              cmp ebx, dword ptr [r15 + 8]
+      0x141C8F90B: 72 D3                                    jb 0x141c8f8e0
+      0x141C8F972: 66 83 F8 3D                              cmp ax, 0x3d
+      0x141C8F976: 73 10                                    jae 0x141c8f988
+
+  Interesting patterns (25):
+    [COND_JMP]   0x141C8F79F: 0F 86 51 02 00 00                        jbe 0x141c8f9f6
+    [COND_JMP]   0x141C8F7B4: 0F 86 3C 02 00 00                        jbe 0x141c8f9f6
+    [COND_JMP]   0x141C8F7BD: 0F 86 33 02 00 00                        jbe 0x141c8f9f6
+    [COND_JMP]   0x141C8F7F5: 74 03                                    je 0x141c8f7fa
+    [CALL]   0x141C8F850: E8 AB ED 36 FF                           call 0x140ffe600
+    [CALL]   0x141C8F856: E8 05 ED 36 FF                           call 0x140ffe560
+    [COND_JMP]   0x141C8F866: 77 05                                    ja 0x141c8f86d
+    [COND_JMP]   0x141C8F88A: 74 19                                    je 0x141c8f8a5
+    [CALL]   0x141C8F88C: E8 CF EC 36 FF                           call 0x140ffe560
+    [CMP_SMALL]   0x141C8F891: 83 78 08 01                              cmp dword ptr [rax + 8], 1
+    [COND_JMP]   0x141C8F895: 76 07                                    jbe 0x141c8f89e
+    [CALL]   0x141C8F8B2: E8 D9 14 7F FE                           call 0x140480d90
+    [CALL]   0x141C8F8C4: E8 67 F2 36 FF                           call 0x140ffeb30
+    [CALL]   0x141C8F8CA: E8 91 EC 36 FF                           call 0x140ffe560
+    [COND_JMP]   0x141C8F8D7: 76 3B                                    jbe 0x141c8f914
+    [COND_JMP]   0x141C8F8EC: 74 17                                    je 0x141c8f905
+    [COND_JMP]   0x141C8F8F3: 74 07                                    je 0x141c8f8fc
+    [CALL]   0x141C8F8F5: E8 12 CA F9 01                           call 0x143c2c30c
+    [CALL]   0x141C8F8FC: E8 0B C9 F9 01                           call 0x143c2c20c
+    [COND_JMP]   0x141C8F90B: 72 D3                                    jb 0x141c8f8e0
+    [CALL]   0x141C8F96F: FF 50 50                                 call qword ptr [rax + 0x50]
+    [CMP_SMALL]   0x141C8F972: 66 83 F8 3D                              cmp ax, 0x3d
+    [COND_JMP]   0x141C8F976: 73 10                                    jae 0x141c8f988
+    [CALL]   0x141C8F9DB: E8 20 27 01 00                           call 0x141ca2100
+    [CALL]   0x141C8F9E5: E8 06 F6 65 FE                           call 0x1402eeff0
+
+--- InputBlock slot[4] at 0x141C96720 ---
+  Function size: 20 bytes, 5 instructions
+
+--- InputBlock slot[5] at 0x1402AC370 ---
+  Function size: 3 bytes, 1 instructions
+
+--- InputBlock slot[6] at 0x1402AC370 ---
+  Function size: 3 bytes, 1 instructions
+
+--- InputBlock slot[7] at 0x1402AC470 ---
+  Function size: 3 bytes, 2 instructions
+
+--- InputBlock slot[8] at 0x1402AC470 ---
+  Function size: 3 bytes, 2 instructions
+
+--- InputBlock slot[9] at 0x1402AC470 ---
+  Function size: 3 bytes, 2 instructions
+
+--- InputBlock slot[10] at 0x141C88CB0 ---
+  Function size: 6 bytes, 2 instructions
+
+================================================================================
+PHASE 3: Guard-specific pattern search
+================================================================================
+
+[3a] Searching for guard-related strings in entire dump...
+  Found 'Guard' at file 0x4570E49 (VA 0x144570E49) [DATA]
+    Context: ...784465636f6d706f736974696f6e3a3a477561726447656e436f6e66696700900e5744010000009c0e5744010000000b0000000000000068e45344010000007ce453440100...
+  Found 'Guard' at file 0x4570E96 (VA 0x144570E96) [DATA]
+    Context: ...0000000000000000000073706865726547756172647300000000d80e574401000000e20e5744010000000b0000000000000068e45344010000007ce4534401000000000000...
+  Found 'Guard' at file 0x4570EDC (VA 0x144570EDC) [DATA]
+    Context: ...00000000000000000000000065646765477561726473000000000000200f574401000000340f5744010000000b0000000000000048794944010000004f7949440100000000...
+  Found 'Guard' at file 0x4571886 (VA 0x144571886) [DATA]
+    Context: ...00000000000000000000676c6f62616c4775617264735363616c6500000000000000d018574401000000ea185744010000000b00000000000000502a754401000000532a75...
+  Found 'Guard' at file 0x45718D9 (VA 0x1445718D9) [DATA]
+    Context: ...000000000000006d6178476c6f62616c4775617264734f63747265654465707468000000000000185149440100000024514944010000000000000000000000000000000000...
+  Found 'Guard' at file 0x4582C53 (VA 0x144582C53) [DATA]
+    Context: ...784465636f6d706f736974696f6e3a3a477561726447656e436f6e66696700000000000000c014574401000000ef14574401000000a02c584401000000d92c584401000000...
+  Found 'Guard' at file 0x478A948 (VA 0x14478A948) [DATA]
+    Context: ...6164446f776e00004b65795f4a75737447756172640000004b65795f4a75737445766164650000004b65795f4465616445796554617267657474696e67000000f04ee44401...
+  Found 'Guard' at file 0x48E0894 (VA 0x1448E0894) [DATA]
+    Context: ...7054797065496e666fec9d98205f6f6e477561726444616d616765526564756374696f6e50657263656e74eba5bc20ec9dbdec96b4eb93a4ec9db4eb8a94eb8db020ec8ba4...
+  Found 'Guard' at file 0x4946889 (VA 0x144946889) [DATA]
+    Context: ...697400000000004f6e426174746c655f4775617264427953746174000000004f6e426174746c655f41766f6964537563636573730000004f6e426174746c655f4775617264...
+  Found 'Guard' at file 0x49468B9 (VA 0x1449468B9) [DATA]
+    Context: ...636573730000004f6e426174746c655f4775617264537563636573730000004f6e426174746c655f477561726442726f6b656e000000004f6e5472616e736974696f6e4163...
+  Found 'guard' at file 0x4570E20 (VA 0x144570E20) [DATA]
+    Context: ...0000000000000000000000000000000067756172647347656e657261746f7200686b6770436f6e7665784465636f6d706f736974696f6e3a3a477561726447656e436f6e66...
+  Found 'guard' at file 0x47112A8 (VA 0x1447112A8) [DATA]
+    Context: ...636c757374657244697374616e6365006775617264436f756e740000000000000100000000000000282671440100000040437b450100000040bf9645010000000300000000...
+  Found 'guard' at file 0x4711310 (VA 0x144711310) [DATA]
+    Context: ...3097964501000000d80471440100000067756172644163637572616379000000726567696f6e73000100000000000000a92a71440100000040437b4501000000c0c2964501...
+  Found 'guard' at file 0x494E011 (VA 0x14494E011) [DATA]
+    Context: ...c62000ecc580bd00000000000000005f67756172644f6e4869740000000000f5aca9acf9b260d520004cb52000470075006100720064002000ecc580bd00005f7573654672...
+  Found 'guard' at file 0x4B39592 (VA 0x144B39592) [DATA]
+    Context: ...000000000000456c656374726f00556e677561726461626c6541747461636b00000000000000517569636b536c6f745f537562576561706f6e0000000000517569636b536c...
+  Found 'InputBlock' at file 0x4904CB4 (VA 0x144904CB4) [DATA]
+    Context: ...6543686172745f46756e6374696f6e5f496e707574426c6f636bec9d98204261736520436c617373537461676543686172745f46756e6374696f6eeba5bc20ec9dbdec96b4eb93a4ec9d...
+  Found 'InputBlock' at file 0x4904D24 (VA 0x144904D24) [DATA]
+    Context: ...6543686172745f46756e6374696f6e5f496e707574426c6f636bec9d98205f696e707574426c6f636b54797065eba5bc20ec9dbdec96b4eb93a4ec9db4eb8a94eb8db020ec8ba4ed8ca8...
+  Found 'InputBlock' at file 0x4904D84 (VA 0x144904D84) [DATA]
+    Context: ...6543686172745f46756e6374696f6e5f496e707574426c6f636bec9d98205f756e7365744f6e53657175656e636572436f6e74726f6ceba5bc20ec9dbdec96b4eb93a4ec9db4eb8a94eb...
+  Found 'InputBlock' at file 0x4AF9C48 (VA 0x144AF9C48) [DATA]
+    Context: ...20ecb0a8ed8ab83a2025232825232900496e707574426c6f636b0000000000005549436f6e74726f6c000000000000004368616e6765506861736550616e656c54616700000000005469...
+  Found 'InputBlock' at file 0x4DBCD30 (VA 0x144DBCD30) [DATA]
+    Context: ...722f3e5652414d3a0000000000000000496e707574426c6f636b46726f6d436f646500000000000055492f554942617365436f6e6669672e786d6c000000000055492f554947616d6543...
+  Found 'InputBlock' at file 0x5A94128 (VA 0x145A94128) [DATA]
+    Context: ...6543686172745f46756e6374696f6e5f496e707574426c6f636b40706140400090ee6f440100000000000000000000002e3f4156537461676543686172745f46756e6374696f6e5f4368...
+  Found 'BlockInput' at file 0x4CE29A8 (VA 0x144CE29A8) [DATA]
+    Context: ...5f646972656374696f6e000000000000426c6f636b496e70757447726f75704576656e744461746100000000000000005f636f6e74726f6c546172676574496400000000000000005f75...
+
+[3b] Searching for potential guard action hashes/IDs...
+
+[3c] Searching for cross-references to key functions in CODE...
+
+================================================================================
+PHASE 4a: ClientAttackActorComponent Analysis
+================================================================================
+
+  slot[0] at 0x140306450: 15 bytes, 5 insns
+
+  slot[1] at 0x14074E150: 5 bytes, 1 insns
+
+  slot[2] at 0x140FF1080: 5 bytes, 2 insns
+
+  slot[3] at 0x141D1E100: 138 bytes, 34 insns
+
+  slot[4] at 0x141D1E190: 7 bytes, 2 insns
+
+  slot[5] at 0x1402AC370: 3 bytes, 1 insns
+
+  slot[6] at 0x1402B0C90: 10 bytes, 3 insns
+
+  slot[7] at 0x1402B0C90: 10 bytes, 3 insns
+
+================================================================================
+PHASE 4b: ClientInputActorComponent Analysis
+================================================================================
+
+  slot[0] at 0x14081E240: 18 bytes, 6 insns
+
+  slot[1] at 0x14074E150: 5 bytes, 1 insns
+
+  slot[2] at 0x140FF1080: 5 bytes, 2 insns
+
+  slot[3] at 0x141D1E100: 138 bytes, 34 insns
+
+  slot[4] at 0x14081E4D0: 11 bytes, 2 insns
+
+  slot[5] at 0x1402AC370: 3 bytes, 1 insns
+
+  slot[6] at 0x1402B0C90: 10 bytes, 3 insns
+
+  slot[7] at 0x1402B0C90: 10 bytes, 3 insns
+
+================================================================================
+PHASE 5: Broad pattern scan for guard suppression
+================================================================================
+
+[5a] Searching for 'test + jnz/jz' patterns near 'cmp reg, small_imm'...
+
+[5b] Searching for 'key_guard' string and code references to it...
+
+[5c] Searching for common input-blocking code patterns...
+  Looking for: test/cmp on struct member + conditional return/skip
+    Candidate at VA ~0x140FBC318: has cmp+test before return-false
+    --- Disassembly 0x140FBC2C8 to 0x140FBC328 ---
+      0x140FBC2C8: D2 74 0D 83                              sal byte ptr [rbp + rcx - 0x7d], cl
+      0x140FBC2CC: F9                                       stc 
+      0x140FBC2CD: 01 75 48                                 add dword ptr [rbp + 0x48], esi
+      0x140FBC2D0: 48 8D 05 E9 01 91 03                     lea rax, [rip + 0x39101e9]
+      0x140FBC2D7: C3                                       ret 
+      0x140FBC2D8: 48 8D 05 F9 01 91 03                     lea rax, [rip + 0x39101f9]
+      0x140FBC2DF: C3                                       ret 
+      0x140FBC2E0: 0F B6 CA                                 movzx ecx, dl
+      0x140FBC2E3: 84 D2                                    test dl, dl
+      0x140FBC2E5: 74 0D                                    je 0x140fbc2f4
+      0x140FBC2E7: 83 F9 01                                 cmp ecx, 1
+      0x140FBC2EA: 75 2C                                    jne 0x140fbc318
+      0x140FBC2EC: 48 8D 05 2D 01 91 03                     lea rax, [rip + 0x391012d]
+      0x140FBC2F3: C3                                       ret 
+      0x140FBC2F4: 48 8D 05 2D 01 91 03                     lea rax, [rip + 0x391012d]
+      0x140FBC2FB: C3                                       ret 
+      0x140FBC2FC: 0F B6 CA                                 movzx ecx, dl
+      0x140FBC2FF: 84 D2                                    test dl, dl
+      0x140FBC301: 74 0D                                    je 0x140fbc310
+      0x140FBC303: 83 F9 01                                 cmp ecx, 1
+      0x140FBC306: 75 10                                    jne 0x140fbc318
+      0x140FBC308: 48 8D 05 21 01 91 03                     lea rax, [rip + 0x3910121]
+      0x140FBC30F: C3                                       ret 
+      0x140FBC310: 48 8D 05 21 01 91 03                     lea rax, [rip + 0x3910121]
+      0x140FBC317: C3                                       ret 
+      0x140FBC318: 33 C0                                    xor eax, eax <<<
+      0x140FBC31A: C3                                       ret 
+      0x140FBC31B: 90                                       nop 
+      0x140FBC31C: 90                                       nop 
+      0x140FBC31D: C2 FB 00                                 ret 0xfb
+      0x140FBC320: AC                                       lodsb al, byte ptr [rsi]
+      0x140FBC321: C2 FB 00                                 ret 0xfb
+    Candidate at VA ~0x140FFD532: has cmp+test before return-false
+    --- Disassembly 0x140FFD4E2 to 0x140FFD542 ---
+      0x140FFD4E2: C3                                       ret 
+      0x140FFD4E3: 80 3C 1F 00                              cmp byte ptr [rdi + rbx], 0
+      0x140FFD4E7: 75 F7                                    jne 0x140ffd4e0
+      0x140FFD4E9: 83 EB 01                                 sub ebx, 1
+      0x140FFD4EC: 48 63 C3                                 movsxd rax, ebx
+      0x140FFD4EF: 78 20                                    js 0x140ffd511
+      0x140FFD4F1: 80 3C 38 2E                              cmp byte ptr [rax + rdi], 0x2e
+      0x140FFD4F5: 74 13                                    je 0x140ffd50a
+      0x140FFD4F7: FF CB                                    dec ebx
+      0x140FFD4F9: 48 83 E8 01                              sub rax, 1
+      0x140FFD4FD: 79 F2                                    jns 0x140ffd4f1
+      0x140FFD4FF: 48 8B 5C 24 30                           mov rbx, qword ptr [rsp + 0x30]
+      0x140FFD504: 48 83 C4 20                              add rsp, 0x20
+      0x140FFD508: 5F                                       pop rdi
+      0x140FFD509: C3                                       ret 
+      0x140FFD50A: 48 63 C3                                 movsxd rax, ebx
+      0x140FFD50D: C6 04 38 00                              mov byte ptr [rax + rdi], 0
+      0x140FFD511: 48 8B 5C 24 30                           mov rbx, qword ptr [rsp + 0x30]
+      0x140FFD516: 48 83 C4 20                              add rsp, 0x20
+      0x140FFD51A: 5F                                       pop rdi
+      0x140FFD51B: C3                                       ret 
+      0x140FFD51C: CC                                       int3 
+      0x140FFD51D: CC                                       int3 
+      0x140FFD51E: CC                                       int3 
+      0x140FFD51F: CC                                       int3 
+      0x140FFD520: 48 2B D1                                 sub rdx, rcx
+      0x140FFD523: 0F B6 01                                 movzx eax, byte ptr [rcx]
+      0x140FFD526: 3A 04 11                                 cmp al, byte ptr [rcx + rdx]
+      0x140FFD529: 75 0A                                    jne 0x140ffd535
+      0x140FFD52B: 48 FF C1                                 inc rcx
+      0x140FFD52E: 84 C0                                    test al, al
+      0x140FFD530: 75 F1                                    jne 0x140ffd523
+      0x140FFD532: 33 C0                                    xor eax, eax <<<
+      0x140FFD534: C3                                       ret 
+      0x140FFD535: 1B C0                                    sbb eax, eax
+      0x140FFD537: 83 C8 01                                 or eax, 1
+      0x140FFD53A: C3                                       ret 
+      0x140FFD53B: CC                                       int3 
+      0x140FFD53C: CC                                       int3 
+      0x140FFD53D: CC                                       int3 
+      0x140FFD53E: CC                                       int3 
+      0x140FFD53F: CC                                       int3 
+    Candidate at VA ~0x140FFDEF5: has cmp+test before return-false
+    --- Disassembly 0x140FFDEA5 to 0x140FFDF05 ---
+      0x140FFDEA5: 00 7D 47                                 add byte ptr [rbp + 0x47], bh
+      0x140FFDEA8: 41 8D 40 02                              lea eax, [r8 + 2]
+      0x140FFDEAC: 80 3C 10 00                              cmp byte ptr [rax + rdx], 0
+      0x140FFDEB0: 7D 3D                                    jge 0x140ffdeef
+      0x140FFDEB2: B8 03 00 00 00                           mov eax, 3
+      0x140FFDEB7: EB 23                                    jmp 0x140ffdedc
+      0x140FFDEB9: 0F B6 C1                                 movzx eax, cl
+      0x140FFDEBC: 24 C0                                    and al, 0xc0
+      0x140FFDEBE: 3C C0                                    cmp al, 0xc0
+      0x140FFDEC0: 75 11                                    jne 0x140ffded3
+      0x140FFDEC2: 41 8D 40 01                              lea eax, [r8 + 1]
+      0x140FFDEC6: 80 3C 10 00                              cmp byte ptr [rax + rdx], 0
+      0x140FFDECA: 7D 23                                    jge 0x140ffdeef
+      0x140FFDECC: B8 02 00 00 00                           mov eax, 2
+      0x140FFDED1: EB 09                                    jmp 0x140ffdedc
+      0x140FFDED3: 84 C9                                    test cl, cl
+      0x140FFDED5: 78 18                                    js 0x140ffdeef
+      0x140FFDED7: B8 01 00 00 00                           mov eax, 1
+      0x140FFDEDC: 44 03 C0                                 add r8d, eax
+      0x140FFDEDF: 41 FF C2                                 inc r10d
+      0x140FFDEE2: 45 3B C1                                 cmp r8d, r9d
+      0x140FFDEE5: 0F 82 75 FF FF FF                        jb 0x140ffde60
+      0x140FFDEEB: 41 8B C2                                 mov eax, r10d
+      0x140FFDEEE: C3                                       ret 
+      0x140FFDEEF: B8 FF FF FF FF                           mov eax, 0xffffffff
+      0x140FFDEF4: C3                                       ret 
+      0x140FFDEF5: 33 C0                                    xor eax, eax <<<
+      0x140FFDEF7: C3                                       ret 
+      0x140FFDEF8: CC                                       int3 
+      0x140FFDEF9: CC                                       int3 
+      0x140FFDEFA: CC                                       int3 
+      0x140FFDEFB: CC                                       int3 
+      0x140FFDEFC: CC                                       int3 
+      0x140FFDEFD: CC                                       int3 
+      0x140FFDEFE: CC                                       int3 
+      0x140FFDEFF: CC                                       int3 
+      0x140FFDF00: 48 89 5C 24 10                           mov qword ptr [rsp + 0x10], rbx
+    Candidate at VA ~0x14100C5A7: has cmp+test before return-false
+    --- Disassembly 0x14100C557 to 0x14100C5B7 ---
+      0x14100C557: 45 C0 48 8B 02                           ror byte ptr [r8 - 0x75], 2
+      0x14100C55C: 48 85 C0                                 test rax, rax
+      0x14100C55F: 74 05                                    je 0x14100c566
+      0x14100C561: 48 8B D0                                 mov rdx, rax
+      0x14100C564: EB 06                                    jmp 0x14100c56c
+      0x14100C566: 48 8B D1                                 mov rdx, rcx
+      0x14100C569: 48 8B C1                                 mov rax, rcx
+      0x14100C56C: 49 2B D0                                 sub rdx, r8
+      0x14100C56F: 80 38 00                                 cmp byte ptr [rax], 0
+      0x14100C572: 74 33                                    je 0x14100c5a7
+      0x14100C574: B8 01 00 00 00                           mov eax, 1
+      0x14100C579: 48 85 D2                                 test rdx, rdx
+      0x14100C57C: 74 31                                    je 0x14100c5af
+      0x14100C57E: 48 2B D0                                 sub rdx, rax
+      0x14100C581: 74 2C                                    je 0x14100c5af
+      0x14100C583: 0F 1F 40 00                              nop dword ptr [rax]
+      0x14100C587: 66 0F 1F 84 00 00 00 00 00               nop word ptr [rax + rax]
+      0x14100C590: 42 80 3C 02 0A                           cmp byte ptr [rdx + r8], 0xa
+      0x14100C595: 48 8D 48 01                              lea rcx, [rax + 1]
+      0x14100C599: 48 0F 45 C8                              cmovne rcx, rax
+      0x14100C59D: 48 8B C1                                 mov rax, rcx
+      0x14100C5A0: 48 83 EA 01                              sub rdx, 1
+      0x14100C5A4: 75 EA                                    jne 0x14100c590
+      0x14100C5A6: C3                                       ret 
+      0x14100C5A7: 33 C0                                    xor eax, eax <<<
+      0x14100C5A9: C3                                       ret 
+      0x14100C5AA: B8 FF FF FF FF                           mov eax, 0xffffffff
+      0x14100C5AF: C3                                       ret 
+      0x14100C5B0: 48 8B C4                                 mov rax, rsp
+      0x14100C5B3: 48 89 58 08                              mov qword ptr [rax + 8], rbx
+    Candidate at VA ~0x141114738: has cmp+test before return-false
+    --- Disassembly 0x1411146E8 to 0x141114748 ---
+      0x1411146E8: 0F 83 48 05 19 FF                        jae 0x1402a4c36
+    Candidate at VA ~0x14111545E: has cmp+test before return-false
+    --- Disassembly 0x14111540E to 0x14111546E ---
+      0x14111540E: CC                                       int3 
+      0x14111540F: CC                                       int3 
+      0x141115410: 85 D2                                    test edx, edx
+      0x141115412: 0F 84 98 E0 FD FF                        je 0x1410f34b0
+      0x141115418: 33 C0                                    xor eax, eax
+      0x14111541A: C3                                       ret 
+      0x14111541B: CC                                       int3 
+      0x14111541C: CC                                       int3 
+      0x14111541D: CC                                       int3 
+      0x14111541E: CC                                       int3 
+      0x14111541F: CC                                       int3 
+      0x141115420: 85 D2                                    test edx, edx
+      0x141115422: 0F 84 F8 DD FD FF                        je 0x1410f3220
+      0x141115428: 33 C0                                    xor eax, eax
+      0x14111542A: C3                                       ret 
+      0x14111542B: CC                                       int3 
+      0x14111542C: CC                                       int3 
+      0x14111542D: CC                                       int3 
+      0x14111542E: CC                                       int3 
+      0x14111542F: CC                                       int3 
+      0x141115430: 85 D2                                    test edx, edx
+      0x141115432: 0F 84 58 DB FD FF                        je 0x1410f2f90
+      0x141115438: 33 C0                                    xor eax, eax
+      0x14111543A: C3                                       ret 
+      0x14111543B: CC                                       int3 
+      0x14111543C: CC                                       int3 
+      0x14111543D: CC                                       int3 
+      0x14111543E: CC                                       int3 
+      0x14111543F: CC                                       int3 
+      0x141115440: 85 D2                                    test edx, edx
+      0x141115442: 0F 84 B8 D8 FD FF                        je 0x1410f2d00
+      0x141115448: 33 C0                                    xor eax, eax
+      0x14111544A: C3                                       ret 
+      0x14111544B: CC                                       int3 
+      0x14111544C: CC                                       int3 
+      0x14111544D: CC                                       int3 
+      0x14111544E: CC                                       int3 
+      0x14111544F: CC                                       int3 
+      0x141115450: 85 D2                                    test edx, edx
+      0x141115452: 75 05                                    jne 0x141115459
+      0x141115454: E9 A7 D8 FD FF                           jmp 0x1410f2d00
+      0x141115459: 83 FA 01                                 cmp edx, 1
+      0x14111545C: 74 F6                                    je 0x141115454
+      0x14111545E: 33 C0                                    xor eax, eax <<<
+      0x141115460: C3                                       ret 
+      0x141115461: CC                                       int3 
+      0x141115462: CC                                       int3 
+      0x141115463: CC                                       int3 
+      0x141115464: CC                                       int3 
+      0x141115465: CC                                       int3 
+      0x141115466: CC                                       int3 
+      0x141115467: CC                                       int3 
+      0x141115468: CC                                       int3 
+      0x141115469: CC                                       int3 
+      0x14111546A: CC                                       int3 
+      0x14111546B: CC                                       int3 
+      0x14111546C: CC                                       int3 
+      0x14111546D: CC                                       int3 
+    Candidate at VA ~0x14273DDBC: has cmp+test before return-false
+    --- Disassembly 0x14273DD6C to 0x14273DDCC ---
+      0x14273DD6C: 8D 44 24 20                              lea eax, [rsp + 0x20]
+      0x14273DD70: 48 8B 51 10                              mov rdx, qword ptr [rcx + 0x10]
+      0x14273DD74: 48 8B C8                                 mov rcx, rax
+      0x14273DD77: 0F 29 44 24 20                           movaps xmmword ptr [rsp + 0x20], xmm0
+      0x14273DD7C: E8 DF FE FF FF                           call 0x14273dc60
+      0x14273DD81: 48 83 C4 38                              add rsp, 0x38
+      0x14273DD85: C3                                       ret 
+      0x14273DD86: CC                                       int3 
+      0x14273DD87: CC                                       int3 
+      0x14273DD88: CC                                       int3 
+      0x14273DD89: CC                                       int3 
+      0x14273DD8A: CC                                       int3 
+      0x14273DD8B: CC                                       int3 
+      0x14273DD8C: CC                                       int3 
+      0x14273DD8D: CC                                       int3 
+      0x14273DD8E: CC                                       int3 
+      0x14273DD8F: CC                                       int3 
+      0x14273DD90: 48 8B 02                                 mov rax, qword ptr [rdx]
+      0x14273DD93: 48 3B 41 18                              cmp rax, qword ptr [rcx + 0x18]
+      0x14273DD97: 75 11                                    jne 0x14273ddaa
+      0x14273DD99: 48 85 C0                                 test rax, rax
+      0x14273DD9C: 74 08                                    je 0x14273dda6
+      0x14273DD9E: 8B 41 20                                 mov eax, dword ptr [rcx + 0x20]
+      0x14273DDA1: 39 42 08                                 cmp dword ptr [rdx + 8], eax
+      0x14273DDA4: 75 04                                    jne 0x14273ddaa
+      0x14273DDA6: B0 01                                    mov al, 1
+      0x14273DDA8: EB 02                                    jmp 0x14273ddac
+      0x14273DDAA: 32 C0                                    xor al, al
+      0x14273DDAC: 41 83 F8 10                              cmp r8d, 0x10
+      0x14273DDB0: 75 0A                                    jne 0x14273ddbc
+      0x14273DDB2: 84 C0                                    test al, al
+      0x14273DDB4: 74 06                                    je 0x14273ddbc
+      0x14273DDB6: B8 01 00 00 00                           mov eax, 1
+      0x14273DDBB: C3                                       ret 
+      0x14273DDBC: 33 C0                                    xor eax, eax <<<
+      0x14273DDBE: C3                                       ret 
+      0x14273DDBF: CC                                       int3 
+      0x14273DDC0: E9 9B EE 0D 10                           jmp 0x15281cc60
+      0x14273DDC5: 0F 8D D0 87 E4 01                        jge 0x14458659b
+    Candidate at VA ~0x142998C48: has cmp+test before return-false
+    --- Disassembly 0x142998BF8 to 0x142998C58 ---
+      0x142998BF8: 80 00 00                                 add byte ptr [rax], 0
+      0x142998BFB: 00 76 06                                 add byte ptr [rsi + 6], dh
+      0x142998BFE: 0F BA E8 0A                              bts eax, 0xa
+      0x142998C02: EB 0A                                    jmp 0x142998c0e
+      0x142998C04: F6 C1 40                                 test cl, 0x40
+      0x142998C07: 76 05                                    jbe 0x142998c0e
+      0x142998C09: 0D 00 06 00 00                           or eax, 0x600
+      0x142998C0E: 41 85 CB                                 test r11d, ecx
+      0x142998C11: 76 04                                    jbe 0x142998c17
+      0x142998C13: 83 C8 01                                 or eax, 1
+      0x142998C16: C3                                       ret 
+      0x142998C17: F6 C1 02                                 test cl, 2
+      0x142998C1A: 76 04                                    jbe 0x142998c20
+      0x142998C1C: 83 C8 08                                 or eax, 8
+      0x142998C1F: C3                                       ret 
+      0x142998C20: F7 C1 0E 0B 64 00                        test ecx, 0x640b0e
+      0x142998C26: 74 04                                    je 0x142998c2c
+      0x142998C28: 83 C8 20                                 or eax, 0x20
+      0x142998C2B: C3                                       ret 
+      0x142998C2C: F6 C1 20                                 test cl, 0x20
+      0x142998C2F: 76 03                                    jbe 0x142998c34
+      0x142998C31: 83 C8 60                                 or eax, 0x60
+      0x142998C34: C3                                       ret 
+      0x142998C35: CC                                       int3 
+      0x142998C36: CC                                       int3 
+      0x142998C37: CC                                       int3 
+      0x142998C38: CC                                       int3 
+      0x142998C39: CC                                       int3 
+      0x142998C3A: CC                                       int3 
+      0x142998C3B: CC                                       int3 
+      0x142998C3C: CC                                       int3 
+      0x142998C3D: CC                                       int3 
+      0x142998C3E: CC                                       int3 
+      0x142998C3F: CC                                       int3 
+      0x142998C40: 81 F9 00 00 00 F0                        cmp ecx, 0xf0000000
+      0x142998C46: 75 03                                    jne 0x142998c4b
+      0x142998C48: 33 C0                                    xor eax, eax <<<
+      0x142998C4A: C3                                       ret 
+      0x142998C4B: 85 C9                                    test ecx, ecx
+      0x142998C4D: 75 06                                    jne 0x142998c55
+      0x142998C4F: B8 00 80 01 00                           mov eax, 0x18000
+      0x142998C54: C3                                       ret 
+    Candidate at VA ~0x142B3B16F: has cmp+test before return-false
+    --- Disassembly 0x142B3B11F to 0x142B3B17F ---
+      0x142B3B11F: 41 83 E9 01                              sub r9d, 1
+      0x142B3B123: 74 12                                    je 0x142b3b137
+      0x142B3B125: 41 83 F9 01                              cmp r9d, 1
+      0x142B3B129: 74 0C                                    je 0x142b3b137
+      0x142B3B12B: B8 00 00 00 F0                           mov eax, 0xf0000000
+      0x142B3B130: C3                                       ret 
+      0x142B3B131: B8 00 03 00 00                           mov eax, 0x300
+      0x142B3B136: C3                                       ret 
+      0x142B3B137: 41 80 F8 02                              cmp r8b, 2
+      0x142B3B13B: 74 32                                    je 0x142b3b16f
+      0x142B3B13D: F6 C2 40                                 test dl, 0x40
+      0x142B3B140: 75 30                                    jne 0x142b3b172
+      0x142B3B142: 0F BA E2 08                              bt edx, 8
+      0x142B3B146: 72 2A                                    jb 0x142b3b172
+      0x142B3B148: 84 D2                                    test dl, dl
+      0x142B3B14A: 79 06                                    jns 0x142b3b152
+      0x142B3B14C: B8 00 10 00 00                           mov eax, 0x1000
+      0x142B3B151: C3                                       ret 
+      0x142B3B152: 0F BA E2 0E                              bt edx, 0xe
+      0x142B3B156: 73 06                                    jae 0x142b3b15e
+      0x142B3B158: B8 00 00 01 00                           mov eax, 0x10000
+      0x142B3B15D: C3                                       ret 
+      0x142B3B15E: F6 C2 01                                 test dl, 1
+      0x142B3B161: 74 0C                                    je 0x142b3b16f
+      0x142B3B163: 41 80 F8 01                              cmp r8b, 1
+      0x142B3B167: 75 06                                    jne 0x142b3b16f
+      0x142B3B169: B8 20 00 00 00                           mov eax, 0x20
+      0x142B3B16E: C3                                       ret 
+      0x142B3B16F: 33 C0                                    xor eax, eax <<<
+      0x142B3B171: C3                                       ret 
+      0x142B3B172: B8 0E 2B 00 00                           mov eax, 0x2b0e
+      0x142B3B177: C3                                       ret 
+      0x142B3B178: CC                                       int3 
+      0x142B3B179: CC                                       int3 
+      0x142B3B17A: CC                                       int3 
+      0x142B3B17B: CC                                       int3 
+      0x142B3B17C: CC                                       int3 
+      0x142B3B17D: CC                                       int3 
+      0x142B3B17E: CC                                       int3 
+    Candidate at VA ~0x142B674B5: has cmp+test before return-false
+    --- Disassembly 0x142B67465 to 0x142B674C5 ---
+      0x142B67465: F9                                       stc 
+      0x142B67466: 01 75 73                                 add dword ptr [rbp + 0x73], esi
+      0x142B67469: 83 FA 0A                                 cmp edx, 0xa
+      0x142B6746C: 77 6E                                    ja 0x142b674dc
+      0x142B6746E: 48 8D 0D 8B 8B 49 FD                     lea rcx, [rip - 0x2b67475]
+      0x142B67475: 8B C2                                    mov eax, edx
+      0x142B67477: 8B 84 81 E4 74 B6 02                     mov eax, dword ptr [rcx + rax*4 + 0x2b674e4]
+      0x142B6747E: 48 03 C1                                 add rax, rcx
+      0x142B67481: FF E0                                    jmp rax
+      0x142B67483: B8 01 00 00 00                           mov eax, 1
+      0x142B67488: C3                                       ret 
+      0x142B67489: B8 02 00 00 00                           mov eax, 2
+      0x142B6748E: C3                                       ret 
+      0x142B6748F: B8 03 00 00 00                           mov eax, 3
+      0x142B67494: C3                                       ret 
+      0x142B67495: B8 04 00 00 00                           mov eax, 4
+      0x142B6749A: C3                                       ret 
+      0x142B6749B: 83 FA 06                                 cmp edx, 6
+      0x142B6749E: 77 3C                                    ja 0x142b674dc
+      0x142B674A0: 48 8D 0D 59 8B 49 FD                     lea rcx, [rip - 0x2b674a7]
+      0x142B674A7: 8B C2                                    mov eax, edx
+      0x142B674A9: 8B 84 81 10 75 B6 02                     mov eax, dword ptr [rcx + rax*4 + 0x2b67510]
+      0x142B674B0: 48 03 C1                                 add rax, rcx
+      0x142B674B3: FF E0                                    jmp rax
+      0x142B674B5: 33 C0                                    xor eax, eax <<<
+      0x142B674B7: C3                                       ret 
+      0x142B674B8: B8 05 00 00 00                           mov eax, 5
+      0x142B674BD: C3                                       ret 
+      0x142B674BE: B8 06 00 00 00                           mov eax, 6
+      0x142B674C3: C3                                       ret 
+    Candidate at VA ~0x142C5EF08: has cmp+test before return-false
+    --- Disassembly 0x142C5EEB8 to 0x142C5EF18 ---
+      0x142C5EEB8: D1 F6                                    sal esi, 1
+      0x142C5EEBA: C1 01 74                                 rol dword ptr [rcx], 0x74
+      0x142C5EEBD: 04 B0                                    add al, 0xb0
+      0x142C5EEBF: 01 EB                                    add ebx, ebp
+      0x142C5EEC1: 02 32                                    add dh, byte ptr [rdx]
+      0x142C5EEC3: C0 3A D0                                 sar byte ptr [rdx], 0xd0
+      0x142C5EEC6: 74 13                                    je 0x142c5eedb
+      0x142C5EEC8: 0F B6 C0                                 movzx eax, al
+      0x142C5EECB: 0F B6 CA                                 movzx ecx, dl
+      0x142C5EECE: 83 F1 01                                 xor ecx, 1
+      0x142C5EED1: 23 C8                                    and ecx, eax
+      0x142C5EED3: 8D 04 4D FF FF FF FF                     lea eax, [rcx*2 - 1]
+      0x142C5EEDA: C3                                       ret 
+      0x142C5EEDB: 41 8B 82 88 00 00 00                     mov eax, dword ptr [r10 + 0x88]
+      0x142C5EEE2: C1 E8 09                                 shr eax, 9
+      0x142C5EEE5: 41 C1 E8 09                              shr r8d, 9
+      0x142C5EEE9: 24 01                                    and al, 1
+      0x142C5EEEB: 41 80 E0 01                              and r8b, 1
+      0x142C5EEEF: 44 3A C0                                 cmp r8b, al
+      0x142C5EEF2: 74 14                                    je 0x142c5ef08
+      0x142C5EEF4: 0F B6 C8                                 movzx ecx, al
+      0x142C5EEF7: 41 0F B6 C0                              movzx eax, r8b
+      0x142C5EEFB: 83 F1 01                                 xor ecx, 1
+      0x142C5EEFE: 0B C8                                    or ecx, eax
+      0x142C5EF00: 8D 04 4D FF FF FF FF                     lea eax, [rcx*2 - 1]
+      0x142C5EF07: C3                                       ret 
+      0x142C5EF08: 33 C0                                    xor eax, eax <<<
+      0x142C5EF0A: C3                                       ret 
+      0x142C5EF0B: CC                                       int3 
+      0x142C5EF0C: CC                                       int3 
+      0x142C5EF0D: CC                                       int3 
+      0x142C5EF0E: CC                                       int3 
+      0x142C5EF0F: CC                                       int3 
+      0x142C5EF10: 85 D2                                    test edx, edx
+      0x142C5EF12: 0F 84 F0 01 00 00                        je 0x142c5f108
+    Candidate at VA ~0x1432BA905: has cmp+test before return-false
+    --- Disassembly 0x1432BA8B5 to 0x1432BA915 ---
+      0x1432BA8B5: C1 10 74                                 rcl dword ptr [rax], 0x74
+    Candidate at VA ~0x1432EC451: has cmp+test before return-false
+    --- Disassembly 0x1432EC401 to 0x1432EC461 ---
+      0x1432EC401: 8B 51 1C                                 mov edx, dword ptr [rcx + 0x1c]
+      0x1432EC404: 45 8B DA                                 mov r11d, r10d
+      0x1432EC407: 44 8B 49 28                              mov r9d, dword ptr [rcx + 0x28]
+      0x1432EC40B: 41 83 E3 08                              and r11d, 8
+      0x1432EC40F: 44 8B 41 24                              mov r8d, dword ptr [rcx + 0x24]
+      0x1432EC413: 41 0F BA E2 08                           bt r10d, 8
+      0x1432EC418: 0F 83 89 01 00 00                        jae 0x1432ec5a7
+      0x1432EC41E: 8B 41 2C                                 mov eax, dword ptr [rcx + 0x2c]
+      0x1432EC421: 45 85 DB                                 test r11d, r11d
+      0x1432EC424: 0F 84 90 00 00 00                        je 0x1432ec4ba
+      0x1432EC42A: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC42E: 74 60                                    je 0x1432ec490
+      0x1432EC430: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC434: 74 30                                    je 0x1432ec466
+      0x1432EC436: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC43A: 75 7B                                    jne 0x1432ec4b7
+      0x1432EC43C: 83 E8 02                                 sub eax, 2
+      0x1432EC43F: 74 1C                                    je 0x1432ec45d
+      0x1432EC441: 83 E8 01                                 sub eax, 1
+      0x1432EC444: 74 0E                                    je 0x1432ec454
+      0x1432EC446: 83 F8 01                                 cmp eax, 1
+      0x1432EC449: 75 6C                                    jne 0x1432ec4b7
+      0x1432EC44B: C7 02 79 00 00 00                        mov dword ptr [rdx], 0x79
+      0x1432EC451: 33 C0                                    xor eax, eax <<<
+      0x1432EC453: C3                                       ret 
+      0x1432EC454: C7 02 76 00 00 00                        mov dword ptr [rdx], 0x76
+      0x1432EC45A: 33 C0                                    xor eax, eax
+      0x1432EC45C: C3                                       ret 
+    Candidate at VA ~0x1432EC45A: has cmp+test before return-false
+    --- Disassembly 0x1432EC40A to 0x1432EC46A ---
+      0x1432EC40A: 28 41 83                                 sub byte ptr [rcx - 0x7d], al
+      0x1432EC40D: E3 08                                    jrcxz 0x1432ec417
+      0x1432EC40F: 44 8B 41 24                              mov r8d, dword ptr [rcx + 0x24]
+      0x1432EC413: 41 0F BA E2 08                           bt r10d, 8
+      0x1432EC418: 0F 83 89 01 00 00                        jae 0x1432ec5a7
+      0x1432EC41E: 8B 41 2C                                 mov eax, dword ptr [rcx + 0x2c]
+      0x1432EC421: 45 85 DB                                 test r11d, r11d
+      0x1432EC424: 0F 84 90 00 00 00                        je 0x1432ec4ba
+      0x1432EC42A: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC42E: 74 60                                    je 0x1432ec490
+      0x1432EC430: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC434: 74 30                                    je 0x1432ec466
+      0x1432EC436: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC43A: 75 7B                                    jne 0x1432ec4b7
+      0x1432EC43C: 83 E8 02                                 sub eax, 2
+      0x1432EC43F: 74 1C                                    je 0x1432ec45d
+      0x1432EC441: 83 E8 01                                 sub eax, 1
+      0x1432EC444: 74 0E                                    je 0x1432ec454
+      0x1432EC446: 83 F8 01                                 cmp eax, 1
+      0x1432EC449: 75 6C                                    jne 0x1432ec4b7
+      0x1432EC44B: C7 02 79 00 00 00                        mov dword ptr [rdx], 0x79
+      0x1432EC451: 33 C0                                    xor eax, eax
+      0x1432EC453: C3                                       ret 
+      0x1432EC454: C7 02 76 00 00 00                        mov dword ptr [rdx], 0x76
+      0x1432EC45A: 33 C0                                    xor eax, eax <<<
+      0x1432EC45C: C3                                       ret 
+      0x1432EC45D: C7 02 73 00 00 00                        mov dword ptr [rdx], 0x73
+      0x1432EC463: 33 C0                                    xor eax, eax
+      0x1432EC465: C3                                       ret 
+      0x1432EC466: 83 E8 02                                 sub eax, 2
+    Candidate at VA ~0x1432EC463: has cmp+test before return-false
+    --- Disassembly 0x1432EC413 to 0x1432EC473 ---
+      0x1432EC413: 41 0F BA E2 08                           bt r10d, 8
+      0x1432EC418: 0F 83 89 01 00 00                        jae 0x1432ec5a7
+      0x1432EC41E: 8B 41 2C                                 mov eax, dword ptr [rcx + 0x2c]
+      0x1432EC421: 45 85 DB                                 test r11d, r11d
+      0x1432EC424: 0F 84 90 00 00 00                        je 0x1432ec4ba
+      0x1432EC42A: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC42E: 74 60                                    je 0x1432ec490
+      0x1432EC430: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC434: 74 30                                    je 0x1432ec466
+      0x1432EC436: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC43A: 75 7B                                    jne 0x1432ec4b7
+      0x1432EC43C: 83 E8 02                                 sub eax, 2
+      0x1432EC43F: 74 1C                                    je 0x1432ec45d
+      0x1432EC441: 83 E8 01                                 sub eax, 1
+      0x1432EC444: 74 0E                                    je 0x1432ec454
+      0x1432EC446: 83 F8 01                                 cmp eax, 1
+      0x1432EC449: 75 6C                                    jne 0x1432ec4b7
+      0x1432EC44B: C7 02 79 00 00 00                        mov dword ptr [rdx], 0x79
+      0x1432EC451: 33 C0                                    xor eax, eax
+      0x1432EC453: C3                                       ret 
+      0x1432EC454: C7 02 76 00 00 00                        mov dword ptr [rdx], 0x76
+      0x1432EC45A: 33 C0                                    xor eax, eax
+      0x1432EC45C: C3                                       ret 
+      0x1432EC45D: C7 02 73 00 00 00                        mov dword ptr [rdx], 0x73
+      0x1432EC463: 33 C0                                    xor eax, eax <<<
+      0x1432EC465: C3                                       ret 
+      0x1432EC466: 83 E8 02                                 sub eax, 2
+      0x1432EC469: 74 1C                                    je 0x1432ec487
+      0x1432EC46B: 83 E8 01                                 sub eax, 1
+      0x1432EC46E: 74 0E                                    je 0x1432ec47e
+      0x1432EC470: 83 F8 01                                 cmp eax, 1
+    Candidate at VA ~0x1432EC4FE: has cmp+test before return-false
+    --- Disassembly 0x1432EC4AE to 0x1432EC50E ---
+      0x1432EC4AE: 33 C0                                    xor eax, eax
+      0x1432EC4B0: C3                                       ret 
+      0x1432EC4B1: C7 02 53 00 00 00                        mov dword ptr [rdx], 0x53
+      0x1432EC4B7: 33 C0                                    xor eax, eax
+      0x1432EC4B9: C3                                       ret 
+      0x1432EC4BA: 41 F6 C2 06                              test r10b, 6
+      0x1432EC4BE: 0F 84 6D 01 00 00                        je 0x1432ec631
+      0x1432EC4C4: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC4C8: 0F 84 96 00 00 00                        je 0x1432ec564
+      0x1432EC4CE: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC4D2: 74 4D                                    je 0x1432ec521
+      0x1432EC4D4: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC4D8: 0F 85 50 01 00 00                        jne 0x1432ec62e
+      0x1432EC4DE: 83 E8 02                                 sub eax, 2
+      0x1432EC4E1: 74 2E                                    je 0x1432ec511
+      0x1432EC4E3: 83 E8 01                                 sub eax, 1
+      0x1432EC4E6: 74 19                                    je 0x1432ec501
+      0x1432EC4E8: 83 F8 01                                 cmp eax, 1
+      0x1432EC4EB: 0F 85 3D 01 00 00                        jne 0x1432ec62e
+      0x1432EC4F1: 33 C0                                    xor eax, eax
+      0x1432EC4F3: 45 85 C9                                 test r9d, r9d
+      0x1432EC4F6: 0F 95 C0                                 setne al
+      0x1432EC4F9: 83 C0 77                                 add eax, 0x77
+      0x1432EC4FC: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC4FE: 33 C0                                    xor eax, eax <<<
+      0x1432EC500: C3                                       ret 
+      0x1432EC501: 33 C0                                    xor eax, eax
+      0x1432EC503: 45 85 C9                                 test r9d, r9d
+      0x1432EC506: 0F 95 C0                                 setne al
+      0x1432EC509: 83 C0 74                                 add eax, 0x74
+      0x1432EC50C: 89 02                                    mov dword ptr [rdx], eax
+    Candidate at VA ~0x1432EC50E: has cmp+test before return-false
+    --- Disassembly 0x1432EC4BE to 0x1432EC51E ---
+      0x1432EC4BE: 0F 84 6D 01 00 00                        je 0x1432ec631
+      0x1432EC4C4: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC4C8: 0F 84 96 00 00 00                        je 0x1432ec564
+      0x1432EC4CE: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC4D2: 74 4D                                    je 0x1432ec521
+      0x1432EC4D4: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC4D8: 0F 85 50 01 00 00                        jne 0x1432ec62e
+      0x1432EC4DE: 83 E8 02                                 sub eax, 2
+      0x1432EC4E1: 74 2E                                    je 0x1432ec511
+      0x1432EC4E3: 83 E8 01                                 sub eax, 1
+      0x1432EC4E6: 74 19                                    je 0x1432ec501
+      0x1432EC4E8: 83 F8 01                                 cmp eax, 1
+      0x1432EC4EB: 0F 85 3D 01 00 00                        jne 0x1432ec62e
+      0x1432EC4F1: 33 C0                                    xor eax, eax
+      0x1432EC4F3: 45 85 C9                                 test r9d, r9d
+      0x1432EC4F6: 0F 95 C0                                 setne al
+      0x1432EC4F9: 83 C0 77                                 add eax, 0x77
+      0x1432EC4FC: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC4FE: 33 C0                                    xor eax, eax
+      0x1432EC500: C3                                       ret 
+      0x1432EC501: 33 C0                                    xor eax, eax
+      0x1432EC503: 45 85 C9                                 test r9d, r9d
+      0x1432EC506: 0F 95 C0                                 setne al
+      0x1432EC509: 83 C0 74                                 add eax, 0x74
+      0x1432EC50C: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC50E: 33 C0                                    xor eax, eax <<<
+      0x1432EC510: C3                                       ret 
+      0x1432EC511: 33 C0                                    xor eax, eax
+      0x1432EC513: 45 85 C9                                 test r9d, r9d
+      0x1432EC516: 0F 95 C0                                 setne al
+      0x1432EC519: 83 C0 71                                 add eax, 0x71
+      0x1432EC51C: 89 02                                    mov dword ptr [rdx], eax
+    Candidate at VA ~0x1432EC5FE: has cmp+test before return-false
+    --- Disassembly 0x1432EC5AE to 0x1432EC60E ---
+      0x1432EC5AE: F8                                       clc 
+      0x1432EC5AF: 10 74 1E 41                              adc byte ptr [rsi + rbx + 0x41], dh
+      0x1432EC5B3: 83 F8 20                                 cmp eax, 0x20
+      0x1432EC5B6: 74 0F                                    je 0x1432ec5c7
+      0x1432EC5B8: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC5BC: 75 18                                    jne 0x1432ec5d6
+      0x1432EC5BE: C7 02 70 00 00 00                        mov dword ptr [rdx], 0x70
+      0x1432EC5C4: 33 C0                                    xor eax, eax
+      0x1432EC5C6: C3                                       ret 
+      0x1432EC5C7: C7 02 64 00 00 00                        mov dword ptr [rdx], 0x64
+      0x1432EC5CD: 33 C0                                    xor eax, eax
+      0x1432EC5CF: C3                                       ret 
+      0x1432EC5D0: C7 02 4C 00 00 00                        mov dword ptr [rdx], 0x4c
+      0x1432EC5D6: 33 C0                                    xor eax, eax
+      0x1432EC5D8: C3                                       ret 
+      0x1432EC5D9: 41 F6 C2 06                              test r10b, 6
+      0x1432EC5DD: 74 42                                    je 0x1432ec621
+      0x1432EC5DF: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC5E3: 74 2C                                    je 0x1432ec611
+      0x1432EC5E5: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC5E9: 74 16                                    je 0x1432ec601
+      0x1432EC5EB: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC5EF: 75 2D                                    jne 0x1432ec61e
+      0x1432EC5F1: 33 C0                                    xor eax, eax
+      0x1432EC5F3: 45 85 C9                                 test r9d, r9d
+      0x1432EC5F6: 0F 95 C0                                 setne al
+      0x1432EC5F9: 83 C0 6E                                 add eax, 0x6e
+      0x1432EC5FC: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC5FE: 33 C0                                    xor eax, eax <<<
+      0x1432EC600: C3                                       ret 
+      0x1432EC601: 33 C0                                    xor eax, eax
+      0x1432EC603: 45 85 C9                                 test r9d, r9d
+      0x1432EC606: 0F 95 C0                                 setne al
+      0x1432EC609: 83 C0 62                                 add eax, 0x62
+      0x1432EC60C: 89 02                                    mov dword ptr [rdx], eax
+    Candidate at VA ~0x1432EC60E: has cmp+test before return-false
+    --- Disassembly 0x1432EC5BE to 0x1432EC61E ---
+      0x1432EC5BE: C7 02 70 00 00 00                        mov dword ptr [rdx], 0x70
+      0x1432EC5C4: 33 C0                                    xor eax, eax
+      0x1432EC5C6: C3                                       ret 
+      0x1432EC5C7: C7 02 64 00 00 00                        mov dword ptr [rdx], 0x64
+      0x1432EC5CD: 33 C0                                    xor eax, eax
+      0x1432EC5CF: C3                                       ret 
+      0x1432EC5D0: C7 02 4C 00 00 00                        mov dword ptr [rdx], 0x4c
+      0x1432EC5D6: 33 C0                                    xor eax, eax
+      0x1432EC5D8: C3                                       ret 
+      0x1432EC5D9: 41 F6 C2 06                              test r10b, 6
+      0x1432EC5DD: 74 42                                    je 0x1432ec621
+      0x1432EC5DF: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC5E3: 74 2C                                    je 0x1432ec611
+      0x1432EC5E5: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC5E9: 74 16                                    je 0x1432ec601
+      0x1432EC5EB: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC5EF: 75 2D                                    jne 0x1432ec61e
+      0x1432EC5F1: 33 C0                                    xor eax, eax
+      0x1432EC5F3: 45 85 C9                                 test r9d, r9d
+      0x1432EC5F6: 0F 95 C0                                 setne al
+      0x1432EC5F9: 83 C0 6E                                 add eax, 0x6e
+      0x1432EC5FC: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC5FE: 33 C0                                    xor eax, eax
+      0x1432EC600: C3                                       ret 
+      0x1432EC601: 33 C0                                    xor eax, eax
+      0x1432EC603: 45 85 C9                                 test r9d, r9d
+      0x1432EC606: 0F 95 C0                                 setne al
+      0x1432EC609: 83 C0 62                                 add eax, 0x62
+      0x1432EC60C: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC60E: 33 C0                                    xor eax, eax <<<
+      0x1432EC610: C3                                       ret 
+      0x1432EC611: 33 C0                                    xor eax, eax
+      0x1432EC613: 45 85 C9                                 test r9d, r9d
+      0x1432EC616: 0F 95 C0                                 setne al
+      0x1432EC619: 83 C0 4A                                 add eax, 0x4a
+      0x1432EC61C: 89 02                                    mov dword ptr [rdx], eax
+    Candidate at VA ~0x1432EC61E: has cmp+test before return-false
+    --- Disassembly 0x1432EC5CE to 0x1432EC62E ---
+      0x1432EC5CE: C0 C3 C7                                 rol bl, 0xc7
+      0x1432EC5D1: 02 4C 00 00                              add cl, byte ptr [rax + rax]
+      0x1432EC5D5: 00 33                                    add byte ptr [rbx], dh
+      0x1432EC5D7: C0 C3 41                                 rol bl, 0x41
+      0x1432EC5DA: F6 C2 06                                 test dl, 6
+      0x1432EC5DD: 74 42                                    je 0x1432ec621
+      0x1432EC5DF: 41 83 F8 10                              cmp r8d, 0x10
+      0x1432EC5E3: 74 2C                                    je 0x1432ec611
+      0x1432EC5E5: 41 83 F8 20                              cmp r8d, 0x20
+      0x1432EC5E9: 74 16                                    je 0x1432ec601
+      0x1432EC5EB: 41 83 F8 40                              cmp r8d, 0x40
+      0x1432EC5EF: 75 2D                                    jne 0x1432ec61e
+      0x1432EC5F1: 33 C0                                    xor eax, eax
+      0x1432EC5F3: 45 85 C9                                 test r9d, r9d
+      0x1432EC5F6: 0F 95 C0                                 setne al
+      0x1432EC5F9: 83 C0 6E                                 add eax, 0x6e
+      0x1432EC5FC: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC5FE: 33 C0                                    xor eax, eax
+      0x1432EC600: C3                                       ret 
+      0x1432EC601: 33 C0                                    xor eax, eax
+      0x1432EC603: 45 85 C9                                 test r9d, r9d
+      0x1432EC606: 0F 95 C0                                 setne al
+      0x1432EC609: 83 C0 62                                 add eax, 0x62
+      0x1432EC60C: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC60E: 33 C0                                    xor eax, eax
+      0x1432EC610: C3                                       ret 
+      0x1432EC611: 33 C0                                    xor eax, eax
+      0x1432EC613: 45 85 C9                                 test r9d, r9d
+      0x1432EC616: 0F 95 C0                                 setne al
+      0x1432EC619: 83 C0 4A                                 add eax, 0x4a
+      0x1432EC61C: 89 02                                    mov dword ptr [rdx], eax
+      0x1432EC61E: 33 C0                                    xor eax, eax <<<
+      0x1432EC620: C3                                       ret 
+      0x1432EC621: 41 0F BA E2 1C                           bt r10d, 0x1c
+      0x1432EC626: 73 09                                    jae 0x1432ec631
+      0x1432EC628: C7 02 00 00 00 00                        mov dword ptr [rdx], 0
+    Candidate at VA ~0x143353F42: has cmp+test before return-false
+    --- Disassembly 0x143353EF2 to 0x143353F52 ---
+      0x143353EF2: 02 4C 8B 01                              add cl, byte ptr [rbx + rcx*4 + 1]
+      0x143353EF6: 48 8B 00                                 mov rax, qword ptr [rax]
+      0x143353EF9: 49 8B 10                                 mov rdx, qword ptr [r8]
+      0x143353EFC: 48 2B D0                                 sub rdx, rax
+      0x143353EFF: 90                                       nop 
+      0x143353F00: 0F B6 08                                 movzx ecx, byte ptr [rax]
+      0x143353F03: 3A 0C 10                                 cmp cl, byte ptr [rax + rdx]
+      0x143353F06: 75 0A                                    jne 0x143353f12
+      0x143353F08: 48 FF C0                                 inc rax
+      0x143353F0B: 84 C9                                    test cl, cl
+      0x143353F0D: 75 F1                                    jne 0x143353f00
+      0x143353F0F: 33 C0                                    xor eax, eax
+      0x143353F11: C3                                       ret 
+      0x143353F12: 1B C0                                    sbb eax, eax
+      0x143353F14: 83 C8 01                                 or eax, 1
+      0x143353F17: C3                                       ret 
+      0x143353F18: CC                                       int3 
+      0x143353F19: CC                                       int3 
+      0x143353F1A: CC                                       int3 
+      0x143353F1B: CC                                       int3 
+      0x143353F1C: CC                                       int3 
+      0x143353F1D: CC                                       int3 
+      0x143353F1E: CC                                       int3 
+      0x143353F1F: CC                                       int3 
+      0x143353F20: 4C 8B 02                                 mov r8, qword ptr [rdx]
+      0x143353F23: 48 8B 01                                 mov rax, qword ptr [rcx]
+      0x143353F26: 49 8B 10                                 mov rdx, qword ptr [r8]
+      0x143353F29: 48 8B 00                                 mov rax, qword ptr [rax]
+      0x143353F2C: 48 2B D0                                 sub rdx, rax
+      0x143353F2F: 90                                       nop 
+      0x143353F30: 0F B7 08                                 movzx ecx, word ptr [rax]
+      0x143353F33: 66 3B 0C 10                              cmp cx, word ptr [rax + rdx]
+      0x143353F37: 75 0C                                    jne 0x143353f45
+      0x143353F39: 48 83 C0 02                              add rax, 2
+      0x143353F3D: 66 85 C9                                 test cx, cx
+      0x143353F40: 75 EE                                    jne 0x143353f30
+      0x143353F42: 33 C0                                    xor eax, eax <<<
+      0x143353F44: C3                                       ret 
+      0x143353F45: 1B C0                                    sbb eax, eax
+      0x143353F47: 83 C8 01                                 or eax, 1
+      0x143353F4A: C3                                       ret 
+      0x143353F4B: CC                                       int3 
+      0x143353F4C: CC                                       int3 
+      0x143353F4D: CC                                       int3 
+      0x143353F4E: CC                                       int3 
+      0x143353F4F: CC                                       int3 
+    Candidate at VA ~0x14344C9B5: has cmp+test before return-false
+    --- Disassembly 0x14344C965 to 0x14344C9C5 ---
+      0x14344C965: C1 48 85 C9                              ror dword ptr [rax - 0x7b], 0xc9
+      0x14344C969: 74 4A                                    je 0x14344c9b5
+      0x14344C96B: 48 85 D2                                 test rdx, rdx
+      0x14344C96E: 74 45                                    je 0x14344c9b5
+      0x14344C970: 4C 8B 01                                 mov r8, qword ptr [rcx]
+      0x14344C973: 4D 85 C0                                 test r8, r8
+      0x14344C976: 74 3D                                    je 0x14344c9b5
+      0x14344C978: 0F 1F 84 00 00 00 00 00                  nop dword ptr [rax + rax]
+      0x14344C980: 4D 8B CA                                 mov r9, r10
+      0x14344C983: 4D 2B C8                                 sub r9, r8
+      0x14344C986: 66 66 0F 1F 84 00 00 00 00 00            nop word ptr [rax + rax]
+      0x14344C990: 41 0F B6 10                              movzx edx, byte ptr [r8]
+      0x14344C994: 43 0F B6 0C 08                           movzx ecx, byte ptr [r8 + r9]
+      0x14344C999: 2B D1                                    sub edx, ecx
+      0x14344C99B: 75 07                                    jne 0x14344c9a4
+      0x14344C99D: 49 FF C0                                 inc r8
+      0x14344C9A0: 85 C9                                    test ecx, ecx
+      0x14344C9A2: 75 EC                                    jne 0x14344c990
+      0x14344C9A4: 85 D2                                    test edx, edx
+      0x14344C9A6: 74 10                                    je 0x14344c9b8
+      0x14344C9A8: 4C 8B 40 10                              mov r8, qword ptr [rax + 0x10]
+      0x14344C9AC: 48 83 C0 10                              add rax, 0x10
+      0x14344C9B0: 4D 85 C0                                 test r8, r8
+      0x14344C9B3: 75 CB                                    jne 0x14344c980
+      0x14344C9B5: 33 C0                                    xor eax, eax <<<
+      0x14344C9B7: C3                                       ret 
+      0x14344C9B8: 48 8B 40 08                              mov rax, qword ptr [rax + 8]
+      0x14344C9BC: C3                                       ret 
+      0x14344C9BD: CC                                       int3 
+      0x14344C9BE: CC                                       int3 
+      0x14344C9BF: CC                                       int3 
+      0x14344C9C0: 8B 41 0C                                 mov eax, dword ptr [rcx + 0xc]
+    Candidate at VA ~0x14344F66C: has cmp+test before return-false
+    --- Disassembly 0x14344F61C to 0x14344F67C ---
+      0x14344F61C: EB 18                                    jmp 0x14344f636
+      0x14344F61E: 8B D1                                    mov edx, ecx
+      0x14344F620: 83 CA 08                                 or edx, 8
+      0x14344F623: 41 83 F8 02                              cmp r8d, 2
+      0x14344F627: 0F 45 D1                                 cmovne edx, ecx
+      0x14344F62A: 41 83 F8 01                              cmp r8d, 1
+      0x14344F62E: 74 0C                                    je 0x14344f63c
+      0x14344F630: 41 83 F8 03                              cmp r8d, 3
+      0x14344F634: 74 06                                    je 0x14344f63c
+      0x14344F636: F6 43 0C 01                              test byte ptr [rbx + 0xc], 1
+      0x14344F63A: 74 04                                    je 0x14344f640
+      0x14344F63C: 41 83 C9 01                              or r9d, 1
+      0x14344F640: 49 8B 43 30                              mov rax, qword ptr [r11 + 0x30]
+      0x14344F644: 48 8B 5C 24 08                           mov rbx, qword ptr [rsp + 8]
+      0x14344F649: 48 8B 88 F0 02 00 00                     mov rcx, qword ptr [rax + 0x2f0]
+      0x14344F650: 41 8B C1                                 mov eax, r9d
+      0x14344F653: 83 C8 08                                 or eax, 8
+      0x14344F656: 80 79 20 00                              cmp byte ptr [rcx + 0x20], 0
+      0x14344F65A: 41 89 92 6C 11 00 00                     mov dword ptr [r10 + 0x116c], edx
+      0x14344F661: 41 0F 45 C1                              cmovne eax, r9d
+      0x14344F665: 41 89 82 68 11 00 00                     mov dword ptr [r10 + 0x1168], eax
+      0x14344F66C: 33 C0                                    xor eax, eax <<<
+      0x14344F66E: C3                                       ret 
+      0x14344F66F: CC                                       int3 
+      0x14344F670: 48 89 6C 24 18                           mov qword ptr [rsp + 0x18], rbp
+      0x14344F675: 48 89 74 24 20                           mov qword ptr [rsp + 0x20], rsi
+      0x14344F67A: 57                                       push rdi
+    Candidate at VA ~0x143468B41: has cmp+test before return-false
+    --- Disassembly 0x143468AF1 to 0x143468B51 ---
+      0x143468AF1: 3B C1                                    cmp eax, ecx
+      0x143468AF3: 77 5C                                    ja 0x143468b51
+      0x143468AF5: 66 66 66 0F 1F 84 00 00 00 00 00         nop word ptr [rax + rax]
+      0x143468B00: 49 8B C1                                 mov rax, r9
+      0x143468B03: 49 2B C0                                 sub rax, r8
+      0x143468B06: 48 C1 F8 04                              sar rax, 4
+      0x143468B0A: 48 99                                    cqo 
+      0x143468B0C: 48 2B C2                                 sub rax, rdx
+      0x143468B0F: 48 D1 F8                                 sar rax, 1
+      0x143468B12: 48 C1 E0 04                              shl rax, 4
+      0x143468B16: 49 03 C0                                 add rax, r8
+      0x143468B19: 8B 10                                    mov edx, dword ptr [rax]
+      0x143468B1B: C1 E2 10                                 shl edx, 0x10
+      0x143468B1E: 0B 50 04                                 or edx, dword ptr [rax + 4]
+      0x143468B21: 41 3B D2                                 cmp edx, r10d
+      0x143468B24: 74 1E                                    je 0x143468b44
+      0x143468B26: 48 8D 48 F0                              lea rcx, [rax - 0x10]
+      0x143468B2A: 4C 0F 43 C9                              cmovae r9, rcx
+      0x143468B2E: 48 83 C0 10                              add rax, 0x10
+      0x143468B32: 41 3B D2                                 cmp edx, r10d
+      0x143468B35: 49 0F 43 C0                              cmovae rax, r8
+      0x143468B39: 4C 8B C0                                 mov r8, rax
+      0x143468B3C: 49 3B C1                                 cmp rax, r9
+      0x143468B3F: 76 BF                                    jbe 0x143468b00
+      0x143468B41: 33 C0                                    xor eax, eax <<<
+      0x143468B43: C3                                       ret 
+      0x143468B44: 8B 48 08                                 mov ecx, dword ptr [rax + 8]
+      0x143468B47: 41 89 0B                                 mov dword ptr [r11], ecx
+      0x143468B4A: 8B 48 0C                                 mov ecx, dword ptr [rax + 0xc]
+      0x143468B4D: 41 89 4B 04                              mov dword ptr [r11 + 4], ecx
+    Candidate at VA ~0x143476E7E: has cmp+test before return-false
+    --- Disassembly 0x143476E2E to 0x143476E8E ---
+      0x143476E2E: CC                                       int3 
+      0x143476E2F: CC                                       int3 
+      0x143476E30: 48 8B 01                                 mov rax, qword ptr [rcx]
+      0x143476E33: BA 01 00 00 00                           mov edx, 1
+      0x143476E38: 4C 8B D1                                 mov r10, rcx
+      0x143476E3B: 44 8B 80 18 02 00 00                     mov r8d, dword ptr [rax + 0x218]
+      0x143476E42: 44 89 41 18                              mov dword ptr [rcx + 0x18], r8d
+      0x143476E46: 4C 8B 88 28 02 00 00                     mov r9, qword ptr [rax + 0x228]
+      0x143476E4D: 4C 89 49 20                              mov qword ptr [rcx + 0x20], r9
+      0x143476E51: 44 3B C2                                 cmp r8d, edx
+      0x143476E54: 76 28                                    jbe 0x143476e7e
+      0x143476E56: 66 66 0F 1F 84 00 00 00 00 00            nop word ptr [rax + rax]
+      0x143476E60: 8B CA                                    mov ecx, edx
+      0x143476E62: 44 8D 42 FF                              lea r8d, [rdx - 1]
+      0x143476E66: 48 03 C9                                 add rcx, rcx
+      0x143476E69: 4D 03 C0                                 add r8, r8
+      0x143476E6C: 41 8B 0C C9                              mov ecx, dword ptr [r9 + rcx*8]
+      0x143476E70: 43 39 0C C1                              cmp dword ptr [r9 + r8*8], ecx
+      0x143476E74: 73 0B                                    jae 0x143476e81
+      0x143476E76: FF C2                                    inc edx
+      0x143476E78: 41 3B 52 18                              cmp edx, dword ptr [r10 + 0x18]
+      0x143476E7C: 72 E2                                    jb 0x143476e60
+      0x143476E7E: 33 C0                                    xor eax, eax <<<
+      0x143476E80: C3                                       ret 
+      0x143476E81: B8 08 00 00 00                           mov eax, 8
+      0x143476E86: C3                                       ret 
+      0x143476E87: CC                                       int3 
+      0x143476E88: CC                                       int3 
+      0x143476E89: CC                                       int3 
+      0x143476E8A: CC                                       int3 
+      0x143476E8B: CC                                       int3 
+      0x143476E8C: CC                                       int3 
+      0x143476E8D: CC                                       int3 
+    Candidate at VA ~0x1434A33E8: has cmp+test before return-false
+    --- Disassembly 0x1434A3398 to 0x1434A33F8 ---
+      0x1434A3398: 0F BE 09                                 movsx ecx, byte ptr [rcx]
+      0x1434A339B: 49 FF C1                                 inc r9
+      0x1434A339E: 42 0F B6 94 19 F0 9D 42 04               movzx edx, byte ptr [rcx + r11 + 0x4429df0]
+      0x1434A33A7: 8D 0C 80                                 lea ecx, [rax + rax*4]
+      0x1434A33AA: 45 0F B6 01                              movzx r8d, byte ptr [r9]
+      0x1434A33AE: 8D 04 4A                                 lea eax, [rdx + rcx*2]
+      0x1434A33B1: 41 0F BE C8                              movsx ecx, r8b
+      0x1434A33B5: 83 E1 07                                 and ecx, 7
+      0x1434A33B8: 49 C1 E8 03                              shr r8, 3
+      0x1434A33BC: BA 01 00 00 00                           mov edx, 1
+      0x1434A33C1: D3 E2                                    shl edx, cl
+      0x1434A33C3: 43 84 94 18 70 9E 42 04                  test byte ptr [r8 + r11 + 0x4429e70], dl
+      0x1434A33CB: 75 C3                                    jne 0x1434a3390
+      0x1434A33CD: 8B C8                                    mov ecx, eax
+      0x1434A33CF: F7 D9                                    neg ecx
+      0x1434A33D1: 45 85 D2                                 test r10d, r10d
+      0x1434A33D4: 0F 45 C1                                 cmovne eax, ecx
+      0x1434A33D7: C3                                       ret 
+      0x1434A33D8: B8 FF FF FF 7F                           mov eax, 0x7fffffff
+      0x1434A33DD: 8B C8                                    mov ecx, eax
+      0x1434A33DF: F7 D9                                    neg ecx
+      0x1434A33E1: 45 85 D2                                 test r10d, r10d
+      0x1434A33E4: 0F 45 C1                                 cmovne eax, ecx
+      0x1434A33E7: C3                                       ret 
+      0x1434A33E8: 33 C0                                    xor eax, eax <<<
+      0x1434A33EA: C3                                       ret 
+      0x1434A33EB: CC                                       int3 
+      0x1434A33EC: CC                                       int3 
+      0x1434A33ED: CC                                       int3 
+      0x1434A33EE: CC                                       int3 
+      0x1434A33EF: CC                                       int3 
+      0x1434A33F0: 48 83 EC 08                              sub rsp, 8
+      0x1434A33F4: 48 85 C9                                 test rcx, rcx
+    Candidate at VA ~0x1434A355A: has cmp+test before return-false
+    --- Disassembly 0x1434A350A to 0x1434A356A ---
+      0x1434A350A: 42 04 84                                 add al, 0x84
+      0x1434A350D: D1 74 4C 3D                              sal dword ptr [rsp + rcx*2 + 0x3d], 1
+      0x1434A3511: 98                                       cwde 
+      0x1434A3512: 99                                       cdq 
+      0x1434A3513: 99                                       cdq 
+      0x1434A3514: 19 73 3D                                 sbb dword ptr [rbx + 0x3d], esi
+      0x1434A3517: 49 0F BE C8                              movsx rcx, r8b
+      0x1434A351B: 49 FF C1                                 inc r9
+      0x1434A351E: 42 0F B6 94 11 F0 9D 42 04               movzx edx, byte ptr [rcx + r10 + 0x4429df0]
+      0x1434A3527: 8D 0C 80                                 lea ecx, [rax + rax*4]
+      0x1434A352A: 45 0F B6 01                              movzx r8d, byte ptr [r9]
+      0x1434A352E: 8D 04 4A                                 lea eax, [rdx + rcx*2]
+      0x1434A3531: 41 0F BE C8                              movsx ecx, r8b
+      0x1434A3535: 83 E1 07                                 and ecx, 7
+      0x1434A3538: BA 01 00 00 00                           mov edx, 1
+      0x1434A353D: D3 E2                                    shl edx, cl
+      0x1434A353F: 41 8B C8                                 mov ecx, r8d
+      0x1434A3542: 48 C1 E9 03                              shr rcx, 3
+      0x1434A3546: 42 0F B6 8C 11 70 9E 42 04               movzx ecx, byte ptr [rcx + r10 + 0x4429e70]
+      0x1434A354F: 84 D1                                    test cl, dl
+      0x1434A3551: 75 BD                                    jne 0x1434a3510
+      0x1434A3553: C3                                       ret 
+      0x1434A3554: B8 FF FF FF FF                           mov eax, 0xffffffff
+      0x1434A3559: C3                                       ret 
+      0x1434A355A: 33 C0                                    xor eax, eax <<<
+      0x1434A355C: C3                                       ret 
+      0x1434A355D: CC                                       int3 
+      0x1434A355E: CC                                       int3 
+      0x1434A355F: CC                                       int3 
+      0x1434A3560: 4C 8B C9                                 mov r9, rcx
+      0x1434A3563: 48 85 C9                                 test rcx, rcx
+    Candidate at VA ~0x1434A3603: has cmp+test before return-false
+    --- Disassembly 0x1434A35B3 to 0x1434A3613 ---
+      0x1434A35B3: C2 73 47                                 ret 0x4773
+      0x1434A35B6: 49 0F BE C8                              movsx rcx, r8b
+      0x1434A35BA: 49 FF C1                                 inc r9
+      0x1434A35BD: 42 0F B6 94 19 F0 9D 42 04               movzx edx, byte ptr [rcx + r11 + 0x4429df0]
+      0x1434A35C6: 0F B7 C8                                 movzx ecx, ax
+      0x1434A35C9: 45 0F B6 01                              movzx r8d, byte ptr [r9]
+      0x1434A35CD: 66 C1 E1 02                              shl cx, 2
+      0x1434A35D1: 66 03 C1                                 add ax, cx
+      0x1434A35D4: 41 0F BE C8                              movsx ecx, r8b
+      0x1434A35D8: 83 E1 07                                 and ecx, 7
+      0x1434A35DB: 66 03 C0                                 add ax, ax
+      0x1434A35DE: 66 03 C2                                 add ax, dx
+      0x1434A35E1: BA 01 00 00 00                           mov edx, 1
+      0x1434A35E6: D3 E2                                    shl edx, cl
+      0x1434A35E8: 41 8B C8                                 mov ecx, r8d
+      0x1434A35EB: 48 C1 E9 03                              shr rcx, 3
+      0x1434A35EF: 42 0F B6 8C 19 70 9E 42 04               movzx ecx, byte ptr [rcx + r11 + 0x4429e70]
+      0x1434A35F8: 84 D1                                    test cl, dl
+      0x1434A35FA: 75 B4                                    jne 0x1434a35b0
+      0x1434A35FC: C3                                       ret 
+      0x1434A35FD: B8 FF FF 00 00                           mov eax, 0xffff
+      0x1434A3602: C3                                       ret 
+      0x1434A3603: 33 C0                                    xor eax, eax <<<
+      0x1434A3605: C3                                       ret 
+      0x1434A3606: CC                                       int3 
+      0x1434A3607: CC                                       int3 
+      0x1434A3608: CC                                       int3 
+      0x1434A3609: CC                                       int3 
+      0x1434A360A: CC                                       int3 
+      0x1434A360B: CC                                       int3 
+      0x1434A360C: CC                                       int3 
+      0x1434A360D: CC                                       int3 
+      0x1434A360E: CC                                       int3 
+      0x1434A360F: CC                                       int3 
+    Candidate at VA ~0x1434BA558: has cmp+test before return-false
+    --- Disassembly 0x1434BA508 to 0x1434BA568 ---
+      0x1434BA508: 03 48 83                                 add ecx, dword ptr [rax - 0x7d]
+    Candidate at VA ~0x1434BCEE7: has cmp+test before return-false
+    --- Disassembly 0x1434BCE97 to 0x1434BCEF7 ---
+      0x1434BCE97: C9                                       leave 
+      0x1434BCE98: 74 4D                                    je 0x1434bcee7
+      0x1434BCE9A: 0F B6 01                                 movzx eax, byte ptr [rcx]
+      0x1434BCE9D: 84 C0                                    test al, al
+      0x1434BCE9F: 74 46                                    je 0x1434bcee7
+      0x1434BCEA1: 41 BA 00 01 00 00                        mov r10d, 0x100
+      0x1434BCEA7: 66 0F 1F 84 00 00 00 00 00               nop word ptr [rax + rax]
+      0x1434BCEB0: 44 0F BE C0                              movsx r8d, al
+      0x1434BCEB4: 4D 8D 49 01                              lea r9, [r9 + 1]
+      0x1434BCEB8: 41 0F B6 01                              movzx eax, byte ptr [r9]
+      0x1434BCEBC: 45 0B C2                                 or r8d, r10d
+      0x1434BCEBF: 41 8B C8                                 mov ecx, r8d
+      0x1434BCEC2: 41 81 C2 00 01 00 00                     add r10d, 0x100
+      0x1434BCEC9: C1 E9 02                                 shr ecx, 2
+      0x1434BCECC: 41 33 C8                                 xor ecx, r8d
+      0x1434BCECF: 45 0F AF C0                              imul r8d, r8d
+      0x1434BCED3: 83 E1 0F                                 and ecx, 0xf
+      0x1434BCED6: D3 C2                                    rol edx, cl
+      0x1434BCED8: 41 33 D0                                 xor edx, r8d
+      0x1434BCEDB: 84 C0                                    test al, al
+      0x1434BCEDD: 75 D1                                    jne 0x1434bceb0
+      0x1434BCEDF: 8B C2                                    mov eax, edx
+      0x1434BCEE1: C1 E8 10                                 shr eax, 0x10
+      0x1434BCEE4: 33 C2                                    xor eax, edx
+      0x1434BCEE6: C3                                       ret 
+      0x1434BCEE7: 33 C0                                    xor eax, eax <<<
+      0x1434BCEE9: C3                                       ret 
+      0x1434BCEEA: CC                                       int3 
+      0x1434BCEEB: CC                                       int3 
+      0x1434BCEEC: CC                                       int3 
+      0x1434BCEED: CC                                       int3 
+      0x1434BCEEE: CC                                       int3 
+      0x1434BCEEF: CC                                       int3 
+      0x1434BCEF0: 48 89 5C 24 08                           mov qword ptr [rsp + 8], rbx
+  Total candidates with cmp+test+ret_false: 83
+
+================================================================================
+PHASE 6: Deep InputBlock call graph analysis
+================================================================================
+
+  InputBlock vtable functions call 8 unique functions
+
+  Interesting callee at 0x140480D90 (149 bytes)
+    Switch:   0x140480DB4: 83 FA 14                                 cmp edx, 0x14
+    Switch:   0x140480DC2: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+    Switch:   0x140480DF2: 83 FB 14                                 cmp ebx, 0x14
+    Switch:   0x140480DFC: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+    CMP:   0x140480DB4: 83 FA 14                                 cmp edx, 0x14 (value=0x14=20)
+    CMP:   0x140480DF2: 83 FB 14                                 cmp ebx, 0x14 (value=0x14=20)
+
+  Interesting callee at 0x140FFE600 (291 bytes)
+    Switch:   0x140FFE6C8: 3B C8                                    cmp ecx, eax
+
+  Interesting callee at 0x140FFEB30 (1103 bytes)
+    Switch:   0x140FFEB81: 44 3B D1                                 cmp r10d, ecx
+    Switch:   0x140FFEC8B: 83 F9 55                                 cmp ecx, 0x55
+    Switch:   0x140FFECAD: 41 83 FD 14                              cmp r13d, 0x14
+    Switch:   0x140FFECBC: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFECE1: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFED0C: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFED51: 39 44 24 78                              cmp dword ptr [rsp + 0x78], eax
+    Switch:   0x140FFED66: 41 3B FE                                 cmp edi, r14d
+    Switch:   0x140FFED9C: 41 83 FE 14                              cmp r14d, 0x14
+    Switch:   0x140FFEDAE: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+    Switch:   0x140FFEDD3: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+    Switch:   0x140FFEDF7: 41 83 FD 14                              cmp r13d, 0x14
+    Switch:   0x140FFEE09: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFEE2E: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFEE59: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+    Switch:   0x140FFEE96: 44 39 74 24 78                           cmp dword ptr [rsp + 0x78], r14d
+    Switch:   0x140FFEEBC: 44 3B D1                                 cmp r10d, ecx
+    Switch:   0x140FFEECC: 41 3B DF                                 cmp ebx, r15d
+    CMP:   0x140FFEB79: 80 FA 25                                 cmp dl, 0x25 (value=0x25=37)
+    CMP:   0x140FFEBBC: 80 FA 2D                                 cmp dl, 0x2d (value=0x2D=45)
+    CMP:   0x140FFEBC1: 3C 60                                    cmp al, 0x60 (value=0x60=96)
+    CMP:   0x140FFEBC8: 80 FA 30                                 cmp dl, 0x30 (value=0x30=48)
+    CMP:   0x140FFEBCE: 80 FA 39                                 cmp dl, 0x39 (value=0x39=57)
+    CMP:   0x140FFEBF5: 80 FA 30                                 cmp dl, 0x30 (value=0x30=48)
+    CMP:   0x140FFEBFB: 80 FA 39                                 cmp dl, 0x39 (value=0x39=57)
+    CMP:   0x140FFEC05: 80 3C 33 6C                              cmp byte ptr [rbx + rsi], 0x6c (value=0x6C=108)
+    CMP:   0x140FFEC11: 80 3C 30 6C                              cmp byte ptr [rax + rsi], 0x6c (value=0x6C=108)
+    CMP:   0x140FFEC31: 3C 30                                    cmp al, 0x30 (value=0x30=48)
+    CMP:   0x140FFEC36: 3C 39                                    cmp al, 0x39 (value=0x39=57)
+    CMP:   0x140FFEC3F: 80 3C 32 2E                              cmp byte ptr [rdx + rsi], 0x2e (value=0x2E=46)
+    CMP:   0x140FFEC55: 80 3C 30 30                              cmp byte ptr [rax + rsi], 0x30 (value=0x30=48)
+    CMP:   0x140FFEC5C: 80 3C 30 39                              cmp byte ptr [rax + rsi], 0x39 (value=0x39=57)
+    CMP:   0x140FFEC72: 80 3C 33 30                              cmp byte ptr [rbx + rsi], 0x30 (value=0x30=48)
+    CMP:   0x140FFEC79: 80 3C 33 39                              cmp byte ptr [rbx + rsi], 0x39 (value=0x39=57)
+    CMP:   0x140FFEC8B: 83 F9 55                                 cmp ecx, 0x55 (value=0x55=85)
+    CMP:   0x140FFECAD: 41 83 FD 14                              cmp r13d, 0x14 (value=0x14=20)
+    CMP:   0x140FFED9C: 41 83 FE 14                              cmp r14d, 0x14 (value=0x14=20)
+    CMP:   0x140FFEDF7: 41 83 FD 14                              cmp r13d, 0x14 (value=0x14=20)
+
+  Interesting callee at 0x141CA2100 (431 bytes)
+    Switch:   0x141CA216C: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+    Switch:   0x141CA21AB: 83 78 08 02                              cmp dword ptr [rax + 8], 2
+    Switch:   0x141CA21F4: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+    Switch:   0x141CA2229: 3B 5E 08                                 cmp ebx, dword ptr [rsi + 8]
+
+  === Deep dive: 0x140480D90 ===
+  0x140480D90: 48 89 5C 24 08                           mov qword ptr [rsp + 8], rbx
+  0x140480D95: 48 89 74 24 10                           mov qword ptr [rsp + 0x10], rsi
+  0x140480D9A: 48 89 7C 24 18                           mov qword ptr [rsp + 0x18], rdi
+  0x140480D9F: 41 56                                    push r14
+  0x140480DA1: 48 83 EC 20                              sub rsp, 0x20
+  0x140480DA5: 8B DA                                    mov ebx, edx
+  0x140480DA7: 49 8B F1                                 mov rsi, r9
+  0x140480DAA: 48 8D 3D 2F 80 79 05                     lea rdi, [rip + 0x579802f]
+  0x140480DB1: 4D 8B F0                                 mov r14, r8
+  0x140480DB4: 83 FA 14                                 cmp edx, 0x14
+  0x140480DB7: 72 04                                    jb 0x140480dbd
+  0x140480DB9: 33 D2                                    xor edx, edx
+  0x140480DBB: EB 16                                    jmp 0x140480dd3
+  0x140480DBD: E8 9E D7 B7 00                           call 0x140ffe560
+  0x140480DC2: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+  0x140480DC5: 77 05                                    ja 0x140480dcc
+  0x140480DC7: 48 8B D7                                 mov rdx, rdi
+  0x140480DCA: EB 07                                    jmp 0x140480dd3
+  0x140480DCC: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140480DCF: 48 8B 14 D8                              mov rdx, qword ptr [rax + rbx*8]
+  0x140480DD3: 41 8B 0E                                 mov ecx, dword ptr [r14]
+  0x140480DD6: 41 B9 0A 00 00 00                        mov r9d, 0xa
+  0x140480DDC: 41 B8 01 08 00 00                        mov r8d, 0x801
+  0x140480DE2: FF 15 58 32 F6 03                        call qword ptr [rip + 0x3f63258]
+  0x140480DE8: 48 8B 36                                 mov rsi, qword ptr [rsi]
+  0x140480DEB: FF C3                                    inc ebx
+  0x140480DED: 48 85 F6                                 test rsi, rsi
+  0x140480DF0: 74 1D                                    je 0x140480e0f
+  0x140480DF2: 83 FB 14                                 cmp ebx, 0x14
+  0x140480DF5: 73 18                                    jae 0x140480e0f
+  0x140480DF7: E8 64 D7 B7 00                           call 0x140ffe560
+  0x140480DFC: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+  0x140480DFF: 76 07                                    jbe 0x140480e08
+  0x140480E01: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140480E04: 48 8B 3C D8                              mov rdi, qword ptr [rax + rbx*8]
+  0x140480E08: 48 89 B7 08 08 00 00                     mov qword ptr [rdi + 0x808], rsi
+  0x140480E0F: 48 8B 5C 24 30                           mov rbx, qword ptr [rsp + 0x30]
+  0x140480E14: 48 8B 74 24 38                           mov rsi, qword ptr [rsp + 0x38]
+  0x140480E19: 48 8B 7C 24 40                           mov rdi, qword ptr [rsp + 0x40]
+  0x140480E1E: 48 83 C4 20                              add rsp, 0x20
+  0x140480E22: 41 5E                                    pop r14
+  0x140480E24: C3                                       ret 
+
+  === Deep dive: 0x140FFE600 ===
+  0x140FFE600: 48 89 5C 24 10                           mov qword ptr [rsp + 0x10], rbx
+  0x140FFE605: 55                                       push rbp
+  0x140FFE606: 56                                       push rsi
+  0x140FFE607: 57                                       push rdi
+  0x140FFE608: 41 54                                    push r12
+  0x140FFE60A: 41 55                                    push r13
+  0x140FFE60C: 41 56                                    push r14
+  0x140FFE60E: 41 57                                    push r15
+  0x140FFE610: 48 83 EC 20                              sub rsp, 0x20
+  0x140FFE614: 4C 8B E1                                 mov r12, rcx
+  0x140FFE617: 85 D2                                    test edx, edx
+  0x140FFE619: 0F 84 EC 00 00 00                        je 0x140ffe70b
+  0x140FFE61F: 41 BF 04 02 00 00                        mov r15d, 0x204
+  0x140FFE625: 65 48 8B 04 25 58 00 00 00               mov rax, qword ptr gs:[0x58]
+  0x140FFE62E: 4C 03 38                                 add r15, qword ptr [rax]
+  0x140FFE631: 8B EA                                    mov ebp, edx
+  0x140FFE633: 33 DB                                    xor ebx, ebx
+  0x140FFE635: 44 8D 6B 01                              lea r13d, [rbx + 1]
+  0x140FFE639: 0F 1F 80 00 00 00 00                     nop dword ptr [rax]
+  0x140FFE640: E8 1B FF FF FF                           call 0x140ffe560
+  0x140FFE645: 4C 8B F0                                 mov r14, rax
+  0x140FFE648: BA 10 00 00 00                           mov edx, 0x10
+  0x140FFE64D: B9 20 18 00 00                           mov ecx, 0x1820
+  0x140FFE652: 41 80 3F 00                              cmp byte ptr [r15], 0
+  0x140FFE656: 74 07                                    je 0x140ffe65f
+  0x140FFE658: E8 6B D3 C2 02                           call 0x143c2b9c8
+  0x140FFE65D: EB 05                                    jmp 0x140ffe664
+  0x140FFE65F: E8 9C D2 C2 02                           call 0x143c2b900
+  0x140FFE664: 48 8B F0                                 mov rsi, rax
+  0x140FFE667: 48 85 C0                                 test rax, rax
+  0x140FFE66A: 75 19                                    jne 0x140ffe685
+  0x140FFE66C: E8 0F FD F0 FF                           call 0x140f0e380
+  0x140FFE671: 45 33 C9                                 xor r9d, r9d
+  0x140FFE674: 45 33 C0                                 xor r8d, r8d
+  0x140FFE677: 41 8B D5                                 mov edx, r13d
+  0x140FFE67A: B9 02 00 00 A0                           mov ecx, 0xa0000002
+  0x140FFE67F: FF 15 D3 4A 3E 03                        call qword ptr [rip + 0x33e4ad3]
+  0x140FFE685: 48 89 74 24 70                           mov qword ptr [rsp + 0x70], rsi
+  0x140FFE68A: 48 85 F6                                 test rsi, rsi
+  0x140FFE68D: 74 1A                                    je 0x140ffe6a9
+  0x140FFE68F: C6 06 00                                 mov byte ptr [rsi], 0
+  0x140FFE692: 48 89 9E 08 08 00 00                     mov qword ptr [rsi + 0x808], rbx
+  0x140FFE699: 66 89 9E 10 08 00 00                     mov word ptr [rsi + 0x810], bx
+  0x140FFE6A0: 48 89 9E 18 18 00 00                     mov qword ptr [rsi + 0x1818], rbx
+  0x140FFE6A7: EB 03                                    jmp 0x140ffe6ac
+  0x140FFE6A9: 48 8B F3                                 mov rsi, rbx
+  0x140FFE6AC: 48 89 5C 24 60                           mov qword ptr [rsp + 0x60], rbx
+  0x140FFE6B1: 48 8B FB                                 mov rdi, rbx
+  0x140FFE6B4: 48 85 F6                                 test rsi, rsi
+  0x140FFE6B7: 48 0F 45 FE                              cmovne rdi, rsi
+  0x140FFE6BB: 48 89 7C 24 60                           mov qword ptr [rsp + 0x60], rdi
+  0x140FFE6C0: 41 8B 4E 0C                              mov ecx, dword ptr [r14 + 0xc]
+  0x140FFE6C4: 41 8B 46 08                              mov eax, dword ptr [r14 + 8]
+  0x140FFE6C8: 3B C8                                    cmp ecx, eax
+  0x140FFE6CA: 77 23                                    ja 0x140ffe6ef
+  0x140FFE6CC: 8D 14 4D 01 00 00 00                     lea edx, [rcx*2 + 1]
+  0x140FFE6D3: 03 D1                                    add edx, ecx
+  0x140FFE6D5: D1 EA                                    shr edx, 1
+  0x140FFE6D7: 83 FA 01                                 cmp edx, 1
+  0x140FFE6DA: 41 0F 42 D5                              cmovb edx, r13d
+  0x140FFE6DE: 3B C2                                    cmp eax, edx
+  0x140FFE6E0: 0F 47 D0                                 cmova edx, eax
+  0x140FFE6E3: 49 8B CE                                 mov rcx, r14
+  0x140FFE6E6: E8 55 87 84 FF                           call 0x140846e40
+  0x140FFE6EB: 41 8B 46 08                              mov eax, dword ptr [r14 + 8]
+  0x140FFE6EF: 8B C8                                    mov ecx, eax
+  0x140FFE6F1: 49 8B 06                                 mov rax, qword ptr [r14]
+  0x140FFE6F4: 48 89 3C C8                              mov qword ptr [rax + rcx*8], rdi
+  0x140FFE6F8: 48 89 5C 24 60                           mov qword ptr [rsp + 0x60], rbx
+  0x140FFE6FD: 41 FF 46 08                              inc dword ptr [r14 + 8]
+  0x140FFE701: 48 83 ED 01                              sub rbp, 1
+  0x140FFE705: 0F 85 35 FF FF FF                        jne 0x140ffe640
+  0x140FFE70B: 49 8B C4                                 mov rax, r12
+  0x140FFE70E: 48 8B 5C 24 68                           mov rbx, qword ptr [rsp + 0x68]
+  0x140FFE713: 48 83 C4 20                              add rsp, 0x20
+  0x140FFE717: 41 5F                                    pop r15
+  0x140FFE719: 41 5E                                    pop r14
+  0x140FFE71B: 41 5D                                    pop r13
+  0x140FFE71D: 41 5C                                    pop r12
+  0x140FFE71F: 5F                                       pop rdi
+  0x140FFE720: 5E                                       pop rsi
+  0x140FFE721: 5D                                       pop rbp
+  0x140FFE722: C3                                       ret 
+
+  === Deep dive: 0x140FFEB30 ===
+  0x140FFEB30: 48 89 5C 24 08                           mov qword ptr [rsp + 8], rbx
+  0x140FFEB35: 89 54 24 10                              mov dword ptr [rsp + 0x10], edx
+  0x140FFEB39: 55                                       push rbp
+  0x140FFEB3A: 56                                       push rsi
+  0x140FFEB3B: 57                                       push rdi
+  0x140FFEB3C: 41 54                                    push r12
+  0x140FFEB3E: 41 55                                    push r13
+  0x140FFEB40: 41 56                                    push r14
+  0x140FFEB42: 41 57                                    push r15
+  0x140FFEB44: 48 83 EC 20                              sub rsp, 0x20
+  0x140FFEB48: 44 8D 52 FF                              lea r10d, [rdx - 1]
+  0x140FFEB4C: 49 8B F0                                 mov rsi, r8
+  0x140FFEB4F: 44 89 54 24 78                           mov dword ptr [rsp + 0x78], r10d
+  0x140FFEB54: 4C 8B E1                                 mov r12, rcx
+  0x140FFEB57: 45 33 ED                                 xor r13d, r13d
+  0x140FFEB5A: 49 C7 C7 FF FF FF FF                     mov r15, 0xffffffffffffffff
+  0x140FFEB61: 49 FF C7                                 inc r15
+  0x140FFEB64: 47 38 2C 38                              cmp byte ptr [r8 + r15], r13b
+  0x140FFEB68: 75 F7                                    jne 0x140ffeb61
+  0x140FFEB6A: 33 ED                                    xor ebp, ebp
+  0x140FFEB6C: 4C 8D 1D 8D 14 00 FF                     lea r11, [rip - 0xffeb73]
+  0x140FFEB73: 33 DB                                    xor ebx, ebx
+  0x140FFEB75: 0F B6 14 33                              movzx edx, byte ptr [rbx + rsi]
+  0x140FFEB79: 80 FA 25                                 cmp dl, 0x25
+  0x140FFEB7C: 74 32                                    je 0x140ffebb0
+  0x140FFEB7E: 8D 4D 01                                 lea ecx, [rbp + 1]
+  0x140FFEB81: 44 3B D1                                 cmp r10d, ecx
+  0x140FFEB84: 0F 86 81 03 00 00                        jbe 0x140ffef0b
+  0x140FFEB8A: 8B C5                                    mov eax, ebp
+  0x140FFEB8C: 8B E9                                    mov ebp, ecx
+  0x140FFEB8E: 80 FA 09                                 cmp dl, 9
+  0x140FFEB91: 74 09                                    je 0x140ffeb9c
+  0x140FFEB93: 42 88 14 20                              mov byte ptr [rax + r12], dl
+  0x140FFEB97: E9 2E 03 00 00                           jmp 0x140ffeeca
+  0x140FFEB9C: 42 C6 04 20 09                           mov byte ptr [rax + r12], 9
+  0x140FFEBA1: E9 24 03 00 00                           jmp 0x140ffeeca
+  0x140FFEBA6: 66 66 0F 1F 84 00 00 00 00 00            nop word ptr [rax + rax]
+  0x140FFEBB0: FF C3                                    inc ebx
+  0x140FFEBB2: 44 8B CB                                 mov r9d, ebx
+  0x140FFEBB5: 0F B6 14 33                              movzx edx, byte ptr [rbx + rsi]
+  0x140FFEBB9: 0F B6 C2                                 movzx eax, dl
+  0x140FFEBBC: 80 FA 2D                                 cmp dl, 0x2d
+  0x140FFEBBF: 74 EF                                    je 0x140ffebb0
+  0x140FFEBC1: 3C 60                                    cmp al, 0x60
+  0x140FFEBC3: 74 EB                                    je 0x140ffebb0
+  0x140FFEBC5: 45 33 F6                                 xor r14d, r14d
+  0x140FFEBC8: 80 FA 30                                 cmp dl, 0x30
+  0x140FFEBCB: 0F 9D C1                                 setge cl
+  0x140FFEBCE: 80 FA 39                                 cmp dl, 0x39
+  0x140FFEBD1: 0F 9E C0                                 setle al
+  0x140FFEBD4: 84 C8                                    test al, cl
+  0x140FFEBD6: 74 2D                                    je 0x140ffec05
+  0x140FFEBD8: 0F 1F 84 00 00 00 00 00                  nop dword ptr [rax + rax]
+  0x140FFEBE0: FF C3                                    inc ebx
+  0x140FFEBE2: 0F BE C2                                 movsx eax, dl
+  0x140FFEBE5: 47 8D 34 B6                              lea r14d, [r14 + r14*4]
+  0x140FFEBE9: 45 8D 76 E8                              lea r14d, [r14 - 0x18]
+  0x140FFEBED: 0F B6 14 33                              movzx edx, byte ptr [rbx + rsi]
+  0x140FFEBF1: 46 8D 34 70                              lea r14d, [rax + r14*2]
+  0x140FFEBF5: 80 FA 30                                 cmp dl, 0x30
+  0x140FFEBF8: 0F 9D C1                                 setge cl
+  0x140FFEBFB: 80 FA 39                                 cmp dl, 0x39
+  0x140FFEBFE: 0F 9E C0                                 setle al
+  0x140FFEC01: 84 C8                                    test al, cl
+  0x140FFEC03: 75 DB                                    jne 0x140ffebe0
+  0x140FFEC05: 80 3C 33 6C                              cmp byte ptr [rbx + rsi], 0x6c
+  0x140FFEC09: 44 8B C3                                 mov r8d, ebx
+  0x140FFEC0C: 75 0D                                    jne 0x140ffec1b
+  0x140FFEC0E: 8D 43 01                                 lea eax, [rbx + 1]
+  0x140FFEC11: 80 3C 30 6C                              cmp byte ptr [rax + rsi], 0x6c
+  0x140FFEC15: 75 04                                    jne 0x140ffec1b
+  0x140FFEC17: B0 01                                    mov al, 1
+  0x140FFEC19: EB 02                                    jmp 0x140ffec1d
+  0x140FFEC1B: 32 C0                                    xor al, al
+  0x140FFEC1D: 84 C0                                    test al, al
+  0x140FFEC1F: 8D 53 02                                 lea edx, [rbx + 2]
+  0x140FFEC22: 0F 44 D3                                 cmove edx, ebx
+  0x140FFEC25: 45 85 F6                                 test r14d, r14d
+  0x140FFEC28: 75 15                                    jne 0x140ffec3f
+  0x140FFEC2A: 8D 42 01                                 lea eax, [rdx + 1]
+  0x140FFEC2D: 0F B6 04 30                              movzx eax, byte ptr [rax + rsi]
+  0x140FFEC31: 3C 30                                    cmp al, 0x30
+  0x140FFEC33: 0F 9D C1                                 setge cl
+  0x140FFEC36: 3C 39                                    cmp al, 0x39
+  0x140FFEC38: 0F 9E C0                                 setle al
+  0x140FFEC3B: 84 C8                                    test al, cl
+  0x140FFEC3D: 74 0A                                    je 0x140ffec49
+  0x140FFEC3F: 80 3C 32 2E                              cmp byte ptr [rdx + rsi], 0x2e
+  0x140FFEC43: 75 04                                    jne 0x140ffec49
+  0x140FFEC45: B1 01                                    mov cl, 1
+  0x140FFEC47: EB 02                                    jmp 0x140ffec4b
+  0x140FFEC49: 32 C9                                    xor cl, cl
+  0x140FFEC4B: 84 C9                                    test cl, cl
+  0x140FFEC4D: 8D 42 01                                 lea eax, [rdx + 1]
+  0x140FFEC50: 0F 44 C2                                 cmove eax, edx
+  0x140FFEC53: 8B D8                                    mov ebx, eax
+  0x140FFEC55: 80 3C 30 30                              cmp byte ptr [rax + rsi], 0x30
+  0x140FFEC59: 0F 9D C1                                 setge cl
+  0x140FFEC5C: 80 3C 30 39                              cmp byte ptr [rax + rsi], 0x39
+  0x140FFEC60: 0F 9E C0                                 setle al
+  0x140FFEC63: 84 C8                                    test al, cl
+  0x140FFEC65: 74 1D                                    je 0x140ffec84
+  0x140FFEC67: 66 0F 1F 84 00 00 00 00 00               nop word ptr [rax + rax]
+  0x140FFEC70: FF C3                                    inc ebx
+  0x140FFEC72: 80 3C 33 30                              cmp byte ptr [rbx + rsi], 0x30
+  0x140FFEC76: 0F 9D C2                                 setge dl
+  0x140FFEC79: 80 3C 33 39                              cmp byte ptr [rbx + rsi], 0x39
+  0x140FFEC7D: 0F 9E C0                                 setle al
+  0x140FFEC80: 84 D0                                    test al, dl
+  0x140FFEC82: 75 EC                                    jne 0x140ffec70
+  0x140FFEC84: 0F BE 0C 33                              movsx ecx, byte ptr [rbx + rsi]
+  0x140FFEC88: 83 C1 DD                                 add ecx, -0x23
+  0x140FFEC8B: 83 F9 55                                 cmp ecx, 0x55
+  0x140FFEC8E: 0F 87 36 02 00 00                        ja 0x140ffeeca
+  0x140FFEC94: 48 63 C1                                 movsxd rax, ecx
+  0x140FFEC97: 41 0F B6 84 03 28 EF FF 00               movzx eax, byte ptr [r11 + rax + 0xffef28]
+  0x140FFECA0: 41 8B 8C 83 18 EF FF 00                  mov ecx, dword ptr [r11 + rax*4 + 0xffef18]
+  0x140FFECA8: 49 03 CB                                 add rcx, r11
+  0x140FFECAB: FF E1                                    jmp rcx
+  0x140FFECAD: 41 83 FD 14                              cmp r13d, 0x14
+  0x140FFECB1: 0F 83 13 02 00 00                        jae 0x140ffeeca
+  0x140FFECB7: E8 A4 F8 FF FF                           call 0x140ffe560
+  0x140FFECBC: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+  0x140FFECC0: 77 09                                    ja 0x140ffeccb
+  0x140FFECC2: 48 8D 05 17 A1 C1 04                     lea rax, [rip + 0x4c1a117]
+  0x140FFECC9: EB 07                                    jmp 0x140ffecd2
+  0x140FFECCB: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140FFECCE: 4A 8B 04 E8                              mov rax, qword ptr [rax + r13*8]
+  0x140FFECD2: 48 83 B8 08 08 00 00 00                  cmp qword ptr [rax + 0x808], 0
+  0x140FFECDA: 74 2B                                    je 0x140ffed07
+  0x140FFECDC: E8 7F F8 FF FF                           call 0x140ffe560
+  0x140FFECE1: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+  0x140FFECE5: 77 10                                    ja 0x140ffecf7
+  0x140FFECE7: 4C 8D 05 F2 A0 C1 04                     lea r8, [rip + 0x4c1a0f2]
+  0x140FFECEE: 4D 8B 80 08 08 00 00                     mov r8, qword ptr [r8 + 0x808]
+  0x140FFECF5: EB 2B                                    jmp 0x140ffed22
+  0x140FFECF7: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140FFECFA: 4E 8B 04 E8                              mov r8, qword ptr [rax + r13*8]
+  0x140FFECFE: 4D 8B 80 08 08 00 00                     mov r8, qword ptr [r8 + 0x808]
+  0x140FFED05: EB 1B                                    jmp 0x140ffed22
+  0x140FFED07: E8 54 F8 FF FF                           call 0x140ffe560
+  0x140FFED0C: 44 39 68 08                              cmp dword ptr [rax + 8], r13d
+  0x140FFED10: 77 09                                    ja 0x140ffed1b
+  0x140FFED12: 4C 8D 05 C7 A0 C1 04                     lea r8, [rip + 0x4c1a0c7]
+  0x140FFED19: EB 07                                    jmp 0x140ffed22
+  0x140FFED1B: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140FFED1E: 4E 8B 04 E8                              mov r8, qword ptr [rax + r13*8]
+  0x140FFED22: 48 C7 C7 FF FF FF FF                     mov rdi, 0xffffffffffffffff
+  0x140FFED29: 0F 1F 80 00 00 00 00                     nop dword ptr [rax]
+  0x140FFED30: 48 FF C7                                 inc rdi
+  0x140FFED33: 41 80 3C 38 00                           cmp byte ptr [r8 + rdi], 0
+  0x140FFED38: 75 F6                                    jne 0x140ffed30
+  0x140FFED3A: 8B CD                                    mov ecx, ebp
+  0x140FFED3C: 41 8B C6                                 mov eax, r14d
+  0x140FFED3F: 49 03 CC                                 add rcx, r12
+  0x140FFED42: 49 C7 C1 FF FF FF FF                     mov r9, 0xffffffffffffffff
+  0x140FFED49: 44 3B F7                                 cmp r14d, edi
+  0x140FFED4C: 0F 42 C7                                 cmovb eax, edi
+  0x140FFED4F: 03 C5                                    add eax, ebp
+  0x140FFED51: 39 44 24 78                              cmp dword ptr [rsp + 0x78], eax
+  0x140FFED55: 0F 86 96 01 00 00                        jbe 0x140ffeef1
+  0x140FFED5B: 8D 57 01                                 lea edx, [rdi + 1]
+  0x140FFED5E: FF 15 BC 56 3E 03                        call qword ptr [rip + 0x33e56bc]
+  0x140FFED64: 03 EF                                    add ebp, edi
+  0x140FFED66: 41 3B FE                                 cmp edi, r14d
+  0x140FFED69: 73 18                                    jae 0x140ffed83
+  0x140FFED6B: 44 2B F7                                 sub r14d, edi
+  0x140FFED6E: 8B CD                                    mov ecx, ebp
+  0x140FFED70: 45 8B C6                                 mov r8d, r14d
+  0x140FFED73: 49 03 CC                                 add rcx, r12
+  0x140FFED76: BA 20 00 00 00                           mov edx, 0x20
+  0x140FFED7B: E8 C0 A2 CC 02                           call 0x143cc9040
+  0x140FFED80: 41 03 EE                                 add ebp, r14d
+  0x140FFED83: 44 8B 54 24 78                           mov r10d, dword ptr [rsp + 0x78]
+  0x140FFED88: 4C 8D 1D 71 12 00 FF                     lea r11, [rip - 0xffed8f]
+  0x140FFED8F: 41 FF C5                                 inc r13d
+  0x140FFED92: E9 33 01 00 00                           jmp 0x140ffeeca
+  0x140FFED97: 45 3B C8                                 cmp r9d, r8d
+  0x140FFED9A: 74 5B                                    je 0x140ffedf7
+  0x140FFED9C: 41 83 FE 14                              cmp r14d, 0x14
+  0x140FFEDA0: 0F 83 24 01 00 00                        jae 0x140ffeeca
+  0x140FFEDA6: E8 B5 F7 FF FF                           call 0x140ffe560
+  0x140FFEDAB: 41 8B FE                                 mov edi, r14d
+  0x140FFEDAE: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+  0x140FFEDB2: 77 09                                    ja 0x140ffedbd
+  0x140FFEDB4: 48 8D 05 25 A0 C1 04                     lea rax, [rip + 0x4c1a025]
+  0x140FFEDBB: EB 07                                    jmp 0x140ffedc4
+  0x140FFEDBD: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x140FFEDC0: 4A 8B 04 F0                              mov rax, qword ptr [rax + r14*8]
+  0x140FFEDC4: 48 83 B8 08 08 00 00 00                  cmp qword ptr [rax + 0x808], 0
+  0x140FFEDCC: 74 1E                                    je 0x140ffedec
+  0x140FFEDCE: E8 8D F7 FF FF                           call 0x140ffe560
+  0x140FFEDD3: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+  0x140FFEDD7: 77 6B                                    ja 0x140ffee44
+  0x140FFEDD9: 4C 8D 05 00 A0 C1 04                     lea r8, [rip + 0x4c1a000]
+  0x140FFEDE0: 4D 8B 80 08 08 00 00                     mov r8, qword ptr [r8 + 0x808]
+  0x140FFEDE7: E9 83 00 00 00                           jmp 0x140ffee6f
+  0x140FFEDEC: E8 6F F7 FF FF                           call 0x140ffe560
+  0x140FFEDF1: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+  0x140FFEDF5: EB 66                                    jmp 0x140ffee5d
+
+  === Deep dive: 0x141CA2100 ===
+  0x141CA2100: 48 89 5C 24 08                           mov qword ptr [rsp + 8], rbx
+  0x141CA2105: 48 89 6C 24 10                           mov qword ptr [rsp + 0x10], rbp
+  0x141CA210A: 48 89 74 24 20                           mov qword ptr [rsp + 0x20], rsi
+  0x141CA210F: 44 88 44 24 18                           mov byte ptr [rsp + 0x18], r8b
+  0x141CA2114: 57                                       push rdi
+  0x141CA2115: 41 56                                    push r14
+  0x141CA2117: 41 57                                    push r15
+  0x141CA2119: B8 60 10 00 00                           mov eax, 0x1060
+  0x141CA211E: E8 3D 44 02 02                           call 0x143cc6560
+  0x141CA2123: 48 2B E0                                 sub rsp, rax
+  0x141CA2126: 65 48 8B 04 25 58 00 00 00               mov rax, qword ptr gs:[0x58]
+  0x141CA212F: 48 8B 28                                 mov rbp, qword ptr [rax]
+  0x141CA2132: B8 50 02 00 00                           mov eax, 0x250
+  0x141CA2137: 45 33 F6                                 xor r14d, r14d
+  0x141CA213A: 44 89 34 28                              mov dword ptr [rax + rbp], r14d
+  0x141CA213E: 41 8D 56 04                              lea edx, [r14 + 4]
+  0x141CA2142: 48 8D 8C 24 90 10 00 00                  lea rcx, [rsp + 0x1090]
+  0x141CA214A: E8 B1 C4 35 FF                           call 0x140ffe600
+  0x141CA214F: 90                                       nop 
+  0x141CA2150: 48 8B 84 24 E0 10 00 00                  mov rax, qword ptr [rsp + 0x10e0]
+  0x141CA2158: 48 8B 38                                 mov rdi, qword ptr [rax]
+  0x141CA215B: 48 8D 1D 7E 6C F7 03                     lea rbx, [rip + 0x3f76c7e]
+  0x141CA2162: 48 85 FF                                 test rdi, rdi
+  0x141CA2165: 74 1D                                    je 0x141ca2184
+  0x141CA2167: E8 F4 C3 35 FF                           call 0x140ffe560
+  0x141CA216C: 44 39 70 08                              cmp dword ptr [rax + 8], r14d
+  0x141CA2170: 77 05                                    ja 0x141ca2177
+  0x141CA2172: 48 8B C3                                 mov rax, rbx
+  0x141CA2175: EB 06                                    jmp 0x141ca217d
+  0x141CA2177: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x141CA217A: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x141CA217D: 48 89 B8 08 08 00 00                     mov qword ptr [rax + 0x808], rdi
+  0x141CA2184: 4C 8B 84 24 E8 10 00 00                  mov r8, qword ptr [rsp + 0x10e8]
+  0x141CA218C: BA 01 00 00 00                           mov edx, 1
+  0x141CA2191: E8 2A E8 35 FF                           call 0x1410009c0
+  0x141CA2196: 48 8B 84 24 F0 10 00 00                  mov rax, qword ptr [rsp + 0x10f0]
+  0x141CA219E: 48 8B 38                                 mov rdi, qword ptr [rax]
+  0x141CA21A1: 48 85 FF                                 test rdi, rdi
+  0x141CA21A4: 74 19                                    je 0x141ca21bf
+  0x141CA21A6: E8 B5 C3 35 FF                           call 0x140ffe560
+  0x141CA21AB: 83 78 08 02                              cmp dword ptr [rax + 8], 2
+  0x141CA21AF: 76 07                                    jbe 0x141ca21b8
+  0x141CA21B1: 48 8B 00                                 mov rax, qword ptr [rax]
+  0x141CA21B4: 48 8B 58 10                              mov rbx, qword ptr [rax + 0x10]
+  0x141CA21B8: 48 89 BB 08 08 00 00                     mov qword ptr [rbx + 0x808], rdi
+  0x141CA21BF: 4C 8B 84 24 F8 10 00 00                  mov r8, qword ptr [rsp + 0x10f8]
+  0x141CA21C7: BA 03 00 00 00                           mov edx, 3
+  0x141CA21CC: E8 EF E7 35 FF                           call 0x1410009c0
+  0x141CA21D1: 4C 8B 84 24 D8 10 00 00                  mov r8, qword ptr [rsp + 0x10d8]
+  0x141CA21D9: BA 00 10 00 00                           mov edx, 0x1000
+  0x141CA21DE: 48 8D 4C 24 60                           lea rcx, [rsp + 0x60]
+  0x141CA21E3: E8 48 C9 35 FF                           call 0x140ffeb30
+  0x141CA21E8: 90                                       nop 
+  0x141CA21E9: E8 72 C3 35 FF                           call 0x140ffe560
+  0x141CA21EE: 48 8B F0                                 mov rsi, rax
+  0x141CA21F1: 41 8B DE                                 mov ebx, r14d
+  0x141CA21F4: 39 58 08                                 cmp dword ptr [rax + 8], ebx
+  0x141CA21F7: 76 35                                    jbe 0x141ca222e
+  0x141CA21F9: 41 BF 04 02 00 00                        mov r15d, 0x204
+  0x141CA21FF: 90                                       nop 
+  0x141CA2200: 8B D3                                    mov edx, ebx
+  0x141CA2202: 48 8B 0E                                 mov rcx, qword ptr [rsi]
+  0x141CA2205: 48 8D 3C D1                              lea rdi, [rcx + rdx*8]
+  0x141CA2209: 48 8B 0F                                 mov rcx, qword ptr [rdi]
+  0x141CA220C: 48 85 C9                                 test rcx, rcx
+  0x141CA220F: 74 16                                    je 0x141ca2227
+  0x141CA2211: 41 80 3C 2F 00                           cmp byte ptr [r15 + rbp], 0
+  0x141CA2216: 74 07                                    je 0x141ca221f
+  0x141CA2218: E8 EF A0 F8 01                           call 0x143c2c30c
+  0x141CA221D: EB 05                                    jmp 0x141ca2224
+  0x141CA221F: E8 E8 9F F8 01                           call 0x143c2c20c
+  0x141CA2224: 4C 89 37                                 mov qword ptr [rdi], r14
+  0x141CA2227: FF C3                                    inc ebx
+  0x141CA2229: 3B 5E 08                                 cmp ebx, dword ptr [rsi + 8]
+  0x141CA222C: 72 D2                                    jb 0x141ca2200
+  0x141CA222E: 44 89 76 08                              mov dword ptr [rsi + 8], r14d
+  0x141CA2232: 48 8D 44 24 60                           lea rax, [rsp + 0x60]
+  0x141CA2237: 48 89 44 24 58                           mov qword ptr [rsp + 0x58], rax
+  0x141CA223C: C7 44 24 50 06 00 00 00                  mov dword ptr [rsp + 0x50], 6
+  0x141CA2244: 8B 84 24 C8 10 00 00                     mov eax, dword ptr [rsp + 0x10c8]
+  0x141CA224B: 89 44 24 48                              mov dword ptr [rsp + 0x48], eax
+  0x141CA224F: 4C 8D 0D 2A 3C AA 02                     lea r9, [rip + 0x2aa3c2a]
+  0x141CA2256: 4C 89 4C 24 40                           mov qword ptr [rsp + 0x40], r9
+  0x141CA225B: 44 89 74 24 38                           mov dword ptr [rsp + 0x38], r14d
+  0x141CA2260: 4C 89 4C 24 30                           mov qword ptr [rsp + 0x30], r9
+  0x141CA2265: 4C 89 4C 24 28                           mov qword ptr [rsp + 0x28], r9
+  0x141CA226A: 4C 89 4C 24 20                           mov qword ptr [rsp + 0x20], r9
+  0x141CA226F: B1 01                                    mov cl, 1
+  0x141CA2271: E8 3A 26 35 FF                           call 0x140ff48b0
+  0x141CA2276: 0F B6 D8                                 movzx ebx, al
+  0x141CA2279: 84 C0                                    test al, al
+  0x141CA227B: 74 15                                    je 0x141ca2292
+  0x141CA227D: E8 9E 07 35 FF                           call 0x140ff2a20
+  0x141CA2282: 48 05 00 5C 26 05                        add rax, 0x5265c00
+  0x141CA2288: 48 89 05 59 6A F7 03                     mov qword ptr [rip + 0x3f76a59], rax
+  0x141CA228F: 0F B6 C3                                 movzx eax, bl
+  0x141CA2292: 4C 8D 9C 24 60 10 00 00                  lea r11, [rsp + 0x1060]
+  0x141CA229A: 49 8B 5B 20                              mov rbx, qword ptr [r11 + 0x20]
+  0x141CA229E: 49 8B 6B 28                              mov rbp, qword ptr [r11 + 0x28]
+  0x141CA22A2: 49 8B 73 38                              mov rsi, qword ptr [r11 + 0x38]
+  0x141CA22A6: 49 8B E3                                 mov rsp, r11
+  0x141CA22A9: 41 5F                                    pop r15
+  0x141CA22AB: 41 5E                                    pop r14
+  0x141CA22AD: 5F                                       pop rdi
+  0x141CA22AE: C3                                       ret 
+
+================================================================================
+Analysis complete in 3.2s
+================================================================================
+
+================================================================================
+CONSOLIDATED FINDINGS (Post-Script Deep Analysis)
+================================================================================
+
+## Architecture Overview
+
+The guard suppression during attacks involves THREE layers:
+
+### Layer 1: StageChart InputBlock (Data-Driven)
+- Class: StageChart_Function_InputBlock
+- vtable: 0x144AFCC70
+- Key function: slot[3] at 0x141C8F760 (696 bytes)
+- This function iterates over InputBlock entries in the .paac stage chart data
+- Each InputBlock entry specifies an "input group" to block
+- Returns non-zero block code if the input's group is blocked
+- Returns 0 if input is allowed
+
+### Layer 2: InputBlockFromCode (Code-Driven)
+- Function: 0x14319E1F0
+- Called from: 0x140AD5001 (inside combat action setup at 0x140AD4F00)
+- Creates an InputBlock at object offset +0x31190
+- Only called when global flag at [rip+0x517432A] (VA ~0x145C4931A) is non-zero
+- Takes dl=1 to enable, dl=0 to disable
+
+### Layer 3: Themida-Protected Input Validator
+- Function 0x140745E90 -> jumps to 0x148CBAB20 (Themida-encrypted CODE section)
+- This is called BEFORE the detailed input check at 0x140745330
+- Located in CODE section at VA 0x147BFB000, size 0x1350000
+- Cannot be analyzed without runtime decryption (VEH + NtAllocateVirtualMemory trick)
+
+## Key Functions
+
+### 0x140AD4F00 - Combat Action Entry Gate
+- Args: rcx=player_obj, dx=action_id(u16)
+- Flow:
+  1. Check byte [rcx+0x9C8] override flag
+  2. If NOT set: call 0x140745E90(rsi) [Themida] -> if true, allow
+  3. If NOT set and Themida returns false: call 0x140745330(rsi, bx) [unencrypted]
+  4. If returns true -> proceed to execute action
+  5. Sets [rdi+0x9C0] = action_id
+  6. Sets byte [rdi+0x9CA] = 1 (action active)
+  7. Calls [rdi+0x558]->vtable[5] (sequencer start)
+  8. Optionally calls InputBlockFromCode to block further input
+
+### 0x140745330 - Detailed Input Permission Check (~1400 bytes, UNENCRYPTED)
+- Args: rcx=input_component, dx=action_id(u16)
+- Checks a global enable flag at [rip+0x5503FAE]
+- Checks for 0xFFFF (invalid action sentinel)
+- Calls 0x1406B0BE0 to get sequencer state
+- Calls 0x140746F40 to check if action is valid in current state
+- Checks current sequencer action vs requested action
+- Compares action against slot data at [r8+0xCA] and [r8+0xD2]
+- This is the function that decides if guard (or any input) can proceed
+
+### 0x140746F40 - Action Validity in Current State
+- Checks [action_data+0x68]->word[0x30] against the requested action
+- Calls 0x1412F4830 to check if action is valid during current sequence
+- Checks [action_data+0x68]+0x190 -> iterates a 3-entry array checking action slots
+- Calls 0x140747120 at end to process the transition
+
+## String References Found
+
+- "Key_JustGuard" at VA 0x14478A940 (ClientInputActorComponent data area)
+- "Key_JustEvade" at VA 0x14478A950
+- "InputBlockFromCode" at VA 0x144DBCD30
+- "input-block-inputgroup" at VA 0x144DBCDC3
+- "BlockInputGroupEventData" at VA 0x144CE29A8
+- "_inputBlockType" at VA 0x144904D32
+- "_unsetOnSequencerControl" at VA 0x144904D92
+- "OnBattle_GuardByStat" at VA 0x144946889
+- "OnBattle_GuardSuccess" at VA 0x1449468B9
+- "OnBattle_GuardBroken" at VA 0x1449468D3 (nearby)
+- "_guardOnHit" at VA 0x14494E011
+- "UnguardableAttack" at VA 0x144B39592
+
+## RTTI Classes (Fresh Dump VAs - CONFIRMED)
+
+| Class | vtable VA | TypeDescriptor VA |
+|-------|-----------|-------------------|
+| StageChart_Function_InputBlock | 0x144AFCC70 | 0x145A94100 |
+| ClientAttackActorComponent | 0x144748100 | 0x1459B94B0 |
+| ClientInputActorComponent | 0x14478E108 | 0x1459D5EE8 |
+| ClientSequencerStage_StageChartProcessor | 0x144757920 | 0x1459C0D00 |
+
+## Callers of InputBlock::slot[3] (0x141C8F760) - 12 call sites
+
+0x141C923F9, 0x141C92746, 0x141C92B7D, 0x141C93C34,
+0x141C95F25, 0x141C96EBD, 0x141C9B971, 0x141C9BD23,
+0x141C9C2B9, 0x141C9DC0C, 0x141C9E111, 0x141C9EB98
+
+## Approach for Guard Cancel Mod
+
+### Option A: Patch InputBlock Data (PREFERRED if feasible)
+The InputBlock system reads data from the .paac stage chart. If guard is blocked via
+an InputBlock entry in the attack state's chart, removing/modifying that entry would
+allow guard during attacks. This is a DATA patch, no code modification needed.
+- Need to identify which _inputBlockType value corresponds to guard
+- Need to find the InputBlock entries in twohandsword attack states
+
+### Option B: Patch 0x140745330 (Unencrypted Input Permission Check)
+This ~1400 byte function decides if actions are valid in the current state.
+Could be patched to always allow guard actions regardless of state.
+- Would need to identify the guard action ID (u16 value)
+- Would need to NOP or bypass the rejection path for that specific action
+- Risk: may cause issues with other input blocking logic
+
+### Option C: Patch InputBlockFromCode caller (0x140AD4FE7)
+The byte at [rip+0x517432A] (VA ~0x145C4931A) controls whether InputBlockFromCode
+is called. Setting this to 0 would disable code-driven input blocks entirely.
+- AOB: 80 3D ?? ?? ?? ?? 00 74 16 at 0x140AD4FE7
+- Patch: Change 74 16 (je skip) to EB 16 (jmp skip) to ALWAYS skip InputBlockFromCode
+- Risk: this only affects code-driven blocks, not data-driven StageChart blocks
+
+### Option D: Hook input dispatch at runtime (ASI mod)
+Similar to HurryTheFUp approach:
+1. AOB scan for the InputBlock::slot[3] return check pattern
+2. Hook to force return 0 (not blocked) when the input is guard
+3. Needs CRC bypass for Themida protection if patching .sdata
+
+## AOB Candidates
+
+### Pattern 1: InputBlock::slot[3] return check in caller 0x141C95EE0
+Bytes at 0x141C95F25: E8 36 98 FF FF     (call InputBlock::slot[3])
+Next:  0x141C95F2A: 8B 45 90             (mov eax, [rbp-0x70])
+Next:  0x141C95F2D: 85 C0                (test eax, eax)
+Next:  0x141C95F2F: 0F 85 ED 03 00 00    (jne blocked_path)
+AOB: E8 ?? ?? ?? ?? 8B 45 90 85 C0 0F 85
+Patch: NOP the jne (0F 85 ED 03 00 00 -> 90 90 90 90 90 90)
+CAVEAT: This only patches ONE of 12 call sites. All 12 would need patching.
+
+### Pattern 2: InputBlockFromCode gate
+Bytes at 0x140AD4FE7: 80 3D ?? ?? ?? ?? 00 74 16
+Patch: 74 -> EB (always skip InputBlockFromCode)
+RVA: 0x00AD4FEE (offset of the 74)
+
+### Pattern 3: Function prologue of 0x140745330 (input permission check)
+Bytes: 48 89 5C 24 08 55 56 57 41 54 41 55 41 56 41 57
+       48 8D AC 24 20 F0 FF FF B8 E0 10 00 00
+This is unique enough for AOB scan. Hooking this function could intercept
+all input permission decisions.
+
+## Next Steps
+
+1. Identify the guard action ID (u16) - likely in range 0-60 based on cmp ax, 0x3d
+2. Test Option C first (simplest, just one byte patch)
+3. If guard is still blocked, the suppression is in StageChart data, use Option A
+4. If neither works, build an ASI mod that hooks 0x140745330 to bypass guard checks

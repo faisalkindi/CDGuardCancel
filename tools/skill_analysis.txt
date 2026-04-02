@@ -1,0 +1,1083 @@
+
+================================================================================
+  FILE OVERVIEW
+================================================================================
+File: extracted/actionchart/bin__/upperaction/1_pc/1_phm/common_skill_upper.paac
+Size: 1,029,944 bytes (0xfb738)
+Header node count: 570
+Header speed: 0.1667
+Header flags: 0x00000000
+States found (via marker): 515
+  (Header says 570 -- difference of 55 may include sub-nodes in condition graph)
+Total transitions: 161
+Label strings: 47
+Animation paths: 295
+Extra string tables: 9
+
+================================================================================
+  FILE MEMORY MAP
+================================================================================
+0x00000000 - 0x00000043  Header (68 bytes)
+0x00000044 - 0x0005dcd9  State records (384,149 bytes)
+0x0005de70 - 0x0005e160  Label string table (47 entries)
+0x0005e160 - 0x0006302c  Animation paths (295 entries)
+0x0006302c - 0x000631f0  Extra table 0 (6 entries)
+0x000631f0 - 0x00063f0d  Extra table 1 (75 entries)
+0x00063f0d                  Extra table 2 (0 entries, empty)
+0x00063f0f - 0x00064181  Extra table 3 (7 entries)
+0x00064181 - 0x0006427a  Extra table 4 (16 entries)
+0x0006427a - 0x000643f8  Extra table 5 (17 entries)
+0x000643f8 - 0x000644d5  Extra table 6 (3 entries)
+0x000644d5 - 0x00064513  Extra table 7 (1 entries)
+0x00064513                  Extra table 8 (0 entries, empty)
+0x00064515 - 0x000fb738  Condition graph (619,043 bytes)
+
+================================================================================
+  LABEL STRING TABLE
+================================================================================
+Offset: 0x5de70
+Count: 47
+
+  [  0] len= 46 @0x5de72: "upperaction/1_pc/1_phm/common_upper_branchset"
+  [  1] len= 14 @0x5dea1: "keyguide_shot"
+  [  2] len= 15 @0x5deb0: "key_hardattack"
+  [  3] len=  9 @0x5dec0: "RightArm"
+  [  4] len= 12 @0x5deca: "key_skill_2"
+  [  5] len= 13 @0x5ded7: "key_skill_12"
+  [  6] len= 13 @0x5dee5: "BothForearms"
+  [  7] len=  4 @0x5def3: "off"
+  [  8] len= 13 @0x5def8: "key_skill_14"
+  [  9] len= 12 @0x5df06: "key_skill_4"
+  [ 10] len= 12 @0x5df13: "key_skill_1"
+  [ 11] len=  8 @0x5df20: "LeftArm"
+  [ 12] len= 19 @0x5df29: "key_skill_14_start"
+  [ 13] len= 15 @0x5df3d: "key_fistattack"
+  [ 14] len= 13 @0x5df4d: "key_skill_17"
+  [ 15] len= 26 @0x5df5b: "keyguide_elementalaugment"
+  [ 16] len= 13 @0x5df76: "key_skill_18"
+  [ 17] len= 13 @0x5df84: "equip_shield"
+  [ 18] len= 26 @0x5df92: "CharacterMeshEffectWeapon"
+  [ 19] len= 13 @0x5dfad: "Spine2_Upper"
+  [ 20] len= 16 @0x5dfbb: "NeckAndRightArm"
+  [ 21] len= 15 @0x5dfcc: "key_glidestart"
+  [ 22] len= 16 @0x5dfdc: "key_roll_repeat"
+  [ 23] len= 13 @0x5dfed: "key_jump_ing"
+  [ 24] len= 10 @0x5dffb: "key_evade"
+  [ 25] len=  9 @0x5e006: "key_jump"
+  [ 26] len=  8 @0x5e010: "key_run"
+  [ 27] len=  9 @0x5e019: "key_dash"
+  [ 28] len= 23 @0x5e023: "keyguide_mount_release"
+  [ 29] len= 11 @0x5e03b: "key_cancel"
+  [ 30] len= 14 @0x5e047: "keyguide_stab"
+  [ 31] len= 15 @0x5e056: "key_climbstart"
+  [ 32] len= 14 @0x5e066: "key_subattack"
+  [ 33] len= 19 @0x5e075: "key_skill_16_start"
+  [ 34] len= 16 @0x5e089: "PointClimbStiff"
+  [ 35] len= 10 @0x5e09a: "key_guard"
+  [ 36] len= 15 @0x5e0a5: "key_cancel_any"
+  [ 37] len= 12 @0x5e0b5: "key_skill_3"
+  [ 38] len= 16 @0x5e0c2: "keyguide_cancel"
+  [ 39] len= 18 @0x5e0d3: "key_skill_4_start"
+  [ 40] len= 20 @0x5e0e6: "equip_twohandhammer"
+  [ 41] len= 19 @0x5e0fb: "equip_twohandsword"
+  [ 42] len= 13 @0x5e10f: "key_run_once"
+  [ 43] len= 12 @0x5e11d: "key_skill_9"
+  [ 44] len= 15 @0x5e12a: "key_kickattack"
+  [ 45] len= 13 @0x5e13a: "key_skill_16"
+  [ 46] len= 23 @0x5e148: "key_norattack_downonce"
+
+Key labels: {'hardattack': 2, 'guard': 35, 'norattack': 46}
+
+================================================================================
+  ANIMATION PATHS (summary)
+================================================================================
+Count: 295
+  attack_other: 127
+  movement: 74
+  other: 48
+  idle: 41
+  skill: 2
+  attack_normal: 2
+  jump: 1
+
+Attack animations:
+  [  4] 1_pc/1_phm/cd_phm_sword_01_01_att_longrangeatt_001_move_f_handl_footl_swing_01.paa
+  [  5] 1_pc/1_phm/cd_phm_sword_01_01_att_kick_move_a_l_000.paa
+  [  6] 1_pc/1_phm/cd_phm_sword_01_01_att_kick_move_a_r_000.paa
+  [ 10] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_f_roll_kick_01.paa
+  [ 11] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_move_f_roll_legcatch_00.paa
+  [ 12] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_standup_kick_00.paa
+  [ 17] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_stepon_00.paa
+  [ 19] 1_pc/1_phm/cd_phm_basic_01_00_nor_att_move_f_kick_singleturnkick_footl_00.paa
+  [ 20] 1_pc/1_phm/cd_phm_basic_01_00_nor_att_move_f_kick_jumpsidekick_footl_01.paa
+  [ 25] 1_pc/1_phm/cd_phm_battleaxe_01_01_att_normal_headbutt_001.paa
+  [ 26] 1_pc/1_phm/cd_phm_dlsd_01_01_nor_att_move_f_headbutt_00.paa
+  [ 27] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_jumpstep_f_3kick_stt_00.paa
+  [ 28] 1_pc/2_phw/cd_phw_basic_01_00_nor_att_move_f_kick_hectopascal_stt_00.paa
+  [ 29] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_jumpstep_f_3kick_ing_00.paa
+  [ 30] 1_pc/2_phw/cd_phw_basic_01_00_nor_att_move_f_kick_hectopascal_ing_00.paa
+  [ 31] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_jumpstep_f_3kick_end_00.paa
+  [ 32] 1_pc/2_phw/cd_phw_basic_01_00_nor_att_move_f_kick_hectopascal_end_00.paa
+  [ 33] 1_pc/2_phw/cd_phw_basic_01_00_nor_att_move_f_kick_jumpaxekick_00.paa
+  [ 34] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_move_b_jumpkick_00.paa
+  [ 35] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_f_approach_dash_00.paa
+  [ 36] 1_pc/2_phw/cd_phm_basic_00_01_att_nor_std_charge_00.paa
+  [ 37] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_f_scissorsk_kick_00.paa
+  [ 38] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_f_720k_kick_00.paa
+  [ 39] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_risecatchdown_stt_00.paa
+  [ 40] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_risecatchdown_ing_00.paa
+  [ 41] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_risecatchdown_end_00.paa
+  [ 42] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_phm_move_over_00.paa
+  [ 43] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_move_swappos_turn90l_throw_00.paa
+  [ 44] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_move_swappos_turn90r_throw_00.paa
+  [ 46] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_move_swappos_turn180r_throw_00.paa
+  [ 47] 1_pc/2_phw/cd_phw_basic_01_01_att_nor_lk_move_f_flying_kneekick_00.paa
+  [ 48] 1_pc/1_phm/cd_phm_basic_01_01_link_phm_legneckatt_move_00.paa
+  [ 50] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_phm_move_pjumpgrapspin_throw_f_00.paa
+  [ 51] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_phm_move_pjumpgrapspin_throw_b_00.paa
+  [ 52] 1_pc/2_phw/cd_phw_rpr_00_01_att_nor_move_f_shield_throw_stt_00.paa
+  [ 53] 1_pc/2_phw/cd_phw_rpr_00_01_att_nor_move_f_shield_throw_att_00.paa
+  [ 54] 1_pc/2_phw/cd_phw_rpr_00_01_att_nor_move_f_shield_throw_end_00.paa
+  [ 56] 1_pc/1_phm/cd_phm_basic_01_00_att_air_move_groundkick_stt_00.paa
+  [ 57] 1_pc/1_phm/cd_phm_basic_01_00_att_air_move_groundkick_end_00.paa
+  [ 58] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_jumpstep_f_3kick_00.paa
+  [ 59] 1_pc/1_phm/cd_phm_01_01_att_skill_buff_roar_01.paa
+  [ 61] 1_pc/1_phm/cd_phm_basic_01_01_link_phm_jumpneckatt_move_00.paa
+  [ 65] 1_pc/1_phm/cd_phm_basic_01_01_link_phm_armdownatt_move_00.paa
+  [ 66] 1_pc/1_phm/cd_phm_basic_01_01_link_phm_liftmoveatt_move_00.paa
+  [ 70] 1_pc/1_phm/cd_phm_sword_01_01_att_grab_a_001_move_f_handlr_footl_04_000.paa
+  [ 71] 1_pc/1_phm/cd_phm_basic_01_01_link_phm_kneeheadatt_move_00.paa
+  [ 72] 1_pc/1_phm/cd_phm_basic_01_00_mr_att_nor_lk_phm_giantswing_ing_to0101_00.paa
+  [ 75] 1_pc/1_phm/cd_phm_basic_00_00_att_nor_spindown_link_phm_move_judo_00.paa
+  [ 76] 1_pc/1_phm/cd_phm_basic_00_00_att_nor_twistdown_link_phm_move_judo_00.paa
+  [ 80] 1_pc/1_phm/cd_phm_1hcn_01_01_nor_att_std_lk_shoot_00.paa
+  [ 85] 1_pc/1_phm/cd_phm_sword_01_01_att_grab_a_001_move_f_handlr_footr_02_00.paa
+  [ 87] 1_pc/1_phm/cd_phm_battleaxe_01_01_att_skill_normal_combo_d_001.paa
+  [ 89] 1_pc/1_phm/cd_phm_sword_01_01_att_grab_a_001_move_f_handlr_footl_03_000.paa
+  [ 90] 1_pc/1_phm/cd_phm_sword_01_01_att_grab_a_001_turn_b_handlr_footr_02.paa
+  [ 91] 1_pc/1_phm/cd_phm_basic_01_01_nor_att_jumpstepatt_elbowpress_00.paa
+  [ 92] 1_pc/1_phm/cd_phm_sword_01_01_att_grab_afail_001_move_f_handlr_footr_02.paa
+  [ 93] 1_pc/1_phm/cd_phm_baxe_01_01_att_grab_afail_001_move_f_handl_footr_00.paa
+  [ 94] 1_pc/1_phm/cd_phm_sword_01_01_att_groundtostandup_link_phm_move_f_start_00.paa
+  [ 95] 1_pc/1_phm/cd_phm_sword_01_01_att_facedowntostandup_link_phm_move_f_start_00.paa
+  [ 96] 1_pc/1_phm/cd_phm_fist_01_01_nor_att_std_lk_throwup_00.paa
+  [107] 1_pc/1_phm/cd_phm_longsword_01_03_link_phm_counteratt_move_f_00.paa
+  [110] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_release_00.paa
+  [111] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_01.paa
+  [112] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_00.paa
+  [113] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_02.paa
+  [114] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_qte_lk_phm_stomstab_end_00.paa
+  [115] 1_pc/1_phm/cd_phm_basic_01_00_mr_att_nor_lk_phm_giantswing_stt_00.paa
+  [116] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_giantswing_stt_00.paa
+  [117] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_giantswing_ing_00.paa
+  [118] 1_pc/1_phm/cd_phm_basic_01_00_mr_att_nor_lk_phm_giantswing_ing_00.paa
+  [119] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_giantswing_ing_to0101mr_00.paa
+  [120] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_giantswing_end_00.paa
+  [121] 1_pc/1_phm/cd_phm_basic_01_00_mr_att_nor_lk_phm_giantswing_end_00.paa
+  [148] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_move_downgrab_stt_00.paa
+  [150] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_std_downgrab_idle_00.paa
+  [154] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_move_turn180_downgrab_00.paa
+  [155] 1_pc/1_phm/cd_phm_basic_01_00_att_nor_lk_phm_std_downgrab_fin_end_00.paa
+  [159] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_std_grab_shieldhuman_thrust_00.paa
+  [160] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_std_grab_shieldhuman_thrust_01.paa
+  [161] 1_pc/1_phm/cd_phm_basic_01_01_att_sit_lk_move_stealthkillr_00.paa
+  [167] 1_pc/2_phw/cd_phw_spr_01_01_nor_att_move_f_jumpstep_00.paa
+  [169] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_jumpstep_01.paa
+  [170] 1_pc/2_phw/cd_phw_2rpr_01_01_nor_att_move_f_jumpstep_00.paa
+  [171] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_move_jumpstep_swing_00.paa
+  [172] 1_pc/2_phw/cd_phw_2rpr_01_01_nor_att_move_f_jumpstep_bash_handlr_00.paa
+  [173] 1_pc/2_phw/cd_phw_rpr_01_01_att_nor_lk_move_kickdown_00.paa
+  [176] 1_pc/1_phm/cd_phm_battleaxe_01_01_att_overroll_move_handr_thrust_00.paa
+  [177] 1_pc/1_phm/cd_phm_dlsd_01_01_nor_att_overroll_move_handlr_swing_00.paa
+  [178] 1_pc/1_phm/cd_phm_baxe_01_01_att_nor_move_overroll_kick_00.paa
+  [179] 1_pc/1_phm/cd_phm_fist_01_01_att_nor_move_f_lk_jumpsmash_01.paa
+  [180] 1_pc/1_phm/cd_phm_basic_01_01_nor_att_move_grab_rko_00.paa
+  [181] 1_pc/1_phm/cd_phm_fist_01_01_att_nor_move_f_lk_jumpgrab_00.paa
+  [182] 1_pc/2_phw/cd_phw_basic_01_00_nor_att_move_grab_throw_02.paa
+  [183] 1_pc/1_phm/00_mon/cd_catfishknight_n_01_01_att_nor_move_f_jumpatt_01.paa
+  [184] 1_pc/1_phm/cd_phm_sword_01_01_nor_move_jumpstepatt_bodypress_stt_00.paa
+  [185] 1_pc/1_phm/cd_phm_sword_01_01_nor_move_jumpstepatt_bodypress_ing_00.paa
+  [186] 1_pc/1_phm/cd_phm_sword_01_01_nor_move_jumpstepatt_bodypress_end_00.paa
+  [200] 1_pc/1_phm/cd_phm_baxe_01_01_nor_att_rush_move_f_stt_00.paa
+  [201] 1_pc/1_phm/cd_phm_baxe_01_01_nor_att_rush_move_f_ing_00.paa
+  [202] 1_pc/1_phm/cd_phm_baxe_01_01_nor_att_rush_move_f_end_00.paa
+  [203] 1_pc/1_phm/cd_phm_dlsd_01_01_nor_att_rush_move_f_stt_00.paa
+  [204] 1_pc/1_phm/cd_phm_dlsd_01_01_nor_att_rush_move_f_ing_00.paa
+  [205] 1_pc/1_phm/cd_phm_dlsd_01_01_nor_att_rush_move_f_end_00.paa
+  [206] 1_pc/1_phm/cd_phm_baxe_01_01_nor_att_move_f_roll_end_swing_00.paa
+  [209] 1_pc/1_phm/cd_phm_baxe_01_01_nor_att_gmk_move_thrust_swing_00.paa
+  [210] 1_pc/1_phm/cd_phm_mon_baxe_01_01_att_nor_comstrike_move_f_00.paa
+  [212] 1_pc/1_phm/cd_phm_baxe_01_01_att_nor_fastatt_move_f_swing_00.paa
+  [213] 1_pc/1_phm/cd_phm_battleaxe_01_01_att_spinstrike_move_f_swing_6_00.paa
+  [215] 1_pc/1_phm/cd_kliff_koobaxe_01_01_att_nor_comb_move_f_run_end_00.paa
+  [217] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_thrust_5_handlr_00.paa
+  [218] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_thrust_5_handlr_ing_00.paa
+  [219] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_thrust_5_handlr_recovery_00.paa
+  [220] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_thrust_5_handlr_recovery_00_mr.paa
+  [221] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_01.paa
+  [225] 1_pc/1_phm/cd_phm_lswd_01_01_nor_att_comf_1_move_swing_00.paa
+  [226] 1_pc/1_phm/cd_phm_lswd_01_01_nor_att_comf_2_move_swing_3_00.paa
+  [267] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_thrust_move_f_ing_00.paa
+  [268] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_thrust_move_f_end_00.paa
+  [269] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_thrust_move_l_end_00.paa
+  [270] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_thrust_move_r_end_00.paa
+  [271] 1_pc/1_phm/cd_phm_whip_00_01_nor_att_coma_1_move_f_whipping_00.paa
+  [274] 1_pc/1_phm/cd_phm_basic_slopeclimb_std_thrust_att_00.paa
+  [282] 1_pc/1_phm/cd_phm_1hcn_01_01_nor_att_std_charging_shoot_stt_handr_00.paa
+  [283] 1_pc/1_phm/cd_phm_1hcn_01_01_nor_att_std_charging_shoot_ing_handr_00.paa
+  [284] 1_pc/1_phm/cd_phm_1hcn_01_01_nor_att_std_pounding_stt_handr_00.paa
+  [285] 1_pc/1_phm/00_mon/cd_dragonslayer_swds_01_01_att_nor_move_f_jumpatt_01.paa
+  [286] 1_pc/1_phm/cd_phm_1hcn_01_01_nor_att_move_f_jetatt_ground_handr_00.paa
+  [293] 1_pc/1_phm/cd_phm_baxe_01_01_att_nor_com_1_dash_move_f_push_00.paa
+  [294] 1_pc/1_phm/cd_phm_battleaxe_01_01_att_normal_move_f_handlr_footl_shouldercharge_05.paa
+
+================================================================================
+  COMPLETE STATE LIST
+================================================================================
+Transition count distribution:
+  0 transitions: 484 states
+  1 transitions: 8 states
+  2 transitions: 2 states
+  3 transitions: 7 states
+  4 transitions: 2 states
+  5 transitions: 1 states
+  6 transitions: 3 states
+  7 transitions: 1 states
+  8 transitions: 1 states
+  9 transitions: 1 states
+  10 transitions: 1 states
+  12 transitions: 1 states
+  13 transitions: 1 states
+  18 transitions: 1 states
+  20 transitions: 1 states
+
+ Idx    Offset                 Label  Trans  Targets
+--------------------------------------------------------------------------------
+   0  0x000046                <none>      0  []
+   1  0x0000f7                <none>      5  [0, 6, 12, 18, 51]
+   2  0x0001f8                <none>      4  [84, 95, 18, 51]
+   3  0x000309                <none>      3  [84, 95, 234]
+   4  0x000420                <none>      8  [84, 267, 270, 347, 354, 276, 273, 51]
+   5  0x0005dd                <none>     10  [458, 465, 484, 532, 499, 514, 565, 470...]
+   6  0x001419                <none>      3  [465, 633, 636]
+   7  0x001616                <none>      3  [465, 633, 636]
+   8  0x001813                <none>      3  [465, 633, 636]
+   9  0x001a00                <none>      3  [465, 633, 636]
+  10  0x001bed                <none>     13  [387, 639, 458, 532, 654, 668, 514, 691...]
+  11  0x001e6e                <none>     12  [458, 1136, 1166, 1180, 1200, 1233, 429, 1266...]
+  12  0x00344a                <none>     18  [1455, 1460, 1466, 1472, 484, 458, 514, 1479...]
+  13  0x003801                <none>     20  [1455, 1460, 1466, 1472, 484, 1784, 458, 514...]
+  14  0x003bd8                <none>      9  [387, 1460, 1466, 1472, 1795, 1809, 392, 912...]
+  15  0x003fa7                <none>      0  []
+  16  0x0045ce                <none>      0  []
+  17  0x004c55                <none>      6  [387, 1460, 1466, 1472, 633, 636]
+  18  0x00501c                <none>      6  [387, 1460, 1466, 1472, 633, 636]
+  19  0x0053e3                <none>      0  []
+  20  0x0058de                <none>      0  []
+  21  0x005e29                <none>      0  []
+  22  0x006413                <none>      7  [784, 790, 387, 1795, 1809, 392, 407]
+  23  0x008c44                <none>      0  []
+  24  0x008e65               LeftArm      0  []
+  25  0x00908a              RightArm      0  []
+  26  0x0092af                <none>      0  []
+  27  0x009640                <none>      0  []
+  28  0x009cdc                <none>      0  []
+  29  0x009fef                <none>      0  []
+  30  0x00a302                <none>      0  []
+  31  0x00a615                <none>      0  []
+  32  0x00a928                <none>      0  []
+  33  0x00ab7d                <none>      0  []
+  34  0x00add2                <none>      0  []
+  35  0x00afc7                <none>      0  []
+  36  0x00b1bc                <none>      3  [784, 790, 407]
+  37  0x00b3e1                <none>      2  [784, 790]
+  38  0x00b5f6                <none>      0  []
+  39  0x00b99f                <none>      0  []
+  40  0x00bda4                <none>      0  []
+  41  0x00c055                <none>      0  []
+  42  0x00c763                <none>      0  []
+  43  0x00d031                <none>      0  []
+  44  0x00d404                <none>      0  []
+  45  0x00d90b                <none>      0  []
+  46  0x00dcf5                <none>      0  []
+  47  0x00dee2                <none>      0  []
+  48  0x00e245                <none>      0  []
+  49  0x00e608                <none>      0  []
+  50  0x00e9c9                <none>      0  []
+  51  0x00ed8a                <none>      0  []
+  52  0x00f2ec                <none>      0  []
+  53  0x00f4d9                <none>      0  []
+  54  0x00f5d6                <none>      0  []
+  55  0x00f885                <none>      0  []
+  56  0x00fa0e                <none>      0  []
+  57  0x00fb4f                <none>      0  []
+  58  0x00fc4c                <none>      0  []
+  59  0x00fefb                <none>      0  []
+  60  0x010050                <none>      0  []
+  61  0x0101bd                <none>      0  []
+  62  0x0102d2                <none>      0  []
+  63  0x0103e3                <none>      0  []
+  64  0x0104f8                <none>      0  []
+  65  0x010619                <none>      0  []
+  66  0x01075e                <none>      1  [387]
+  67  0x01087f                <none>      0  []
+  68  0x010cce                <none>      0  []
+  69  0x010fbd                <none>      0  []
+  70  0x01129c                <none>      0  []
+  71  0x0117ca                <none>      0  []
+  72  0x0119af                <none>      0  []
+  73  0x011b32                <none>      0  []
+  74  0x011e3b                <none>      0  []
+  75  0x012144                <none>      0  []
+  76  0x0124c1                <none>      0  []
+  77  0x01289a                <none>      0  []
+  78  0x012c73                <none>      0  []
+  79  0x012ea8                <none>      0  []
+  80  0x01334b                <none>      0  []
+  81  0x0137ee                <none>      0  []
+  82  0x013d09                <none>      0  []
+  83  0x014224                <none>      0  []
+  84  0x014459                <none>      0  []
+  85  0x0148ec                <none>      0  []
+  86  0x014d7f                <none>      0  []
+  87  0x01528a                <none>      0  []
+  88  0x015795                <none>      0  []
+  89  0x0159ca                <none>      0  []
+  90  0x015e7d                <none>      0  []
+  91  0x016330                <none>      0  []
+  92  0x01685b                <none>      0  []
+  93  0x016d86                <none>      0  []
+  94  0x016fab                <none>      0  []
+  95  0x0173d2                <none>      0  []
+  96  0x0177f9                <none>      0  []
+  97  0x017c98                <none>      0  []
+  98  0x018137          Spine2_Upper      0  []
+  99  0x0182bc          Spine2_Upper      0  []
+ 100  0x018451                <none>      0  []
+ 101  0x0188a5                <none>      0  []
+ 102  0x0189a4                <none>      0  []
+ 103  0x018ab3                <none>      0  []
+ 104  0x018cb4                <none>      0  []
+ 105  0x018e75                <none>      0  []
+ 106  0x01915c                <none>      0  []
+ 107  0x01930d                <none>      0  []
+ 108  0x0194ce                <none>      0  []
+ 109  0x0196ff                <none>      0  []
+ 110  0x0199e6                <none>      0  []
+ 111  0x019b87                <none>      0  []
+ 112  0x019d38                <none>      0  []
+ 113  0x019f69                <none>      0  []
+ 114  0x01a290                <none>      0  []
+ 115  0x01a471                <none>      0  []
+ 116  0x01a662                <none>      0  []
+ 117  0x01a8b3                <none>      0  []
+ 118  0x01ab9a                <none>      0  []
+ 119  0x01ad4b                <none>      0  []
+ 120  0x01af0c                <none>      0  []
+ 121  0x01b35e                <none>      0  []
+ 122  0x01b677                <none>      0  []
+ 123  0x01b834                <none>      0  []
+ 124  0x01be06                <none>      0  []
+ 125  0x01c307                <none>      0  []
+ 126  0x01c4f0                <none>      0  []
+ 127  0x01c8c1                <none>      0  []
+ 128  0x01cc46                <none>      0  []
+ 129  0x01cfe7                <none>      0  []
+ 130  0x01d3e8                <none>      0  []
+ 131  0x01d79d                <none>      0  []
+ 132  0x01dbb2                <none>      0  []
+ 133  0x01df37                <none>      0  []
+ 134  0x01e31c                <none>      0  []
+ 135  0x01e613                <none>      0  []
+ 136  0x01e96a                <none>      0  []
+ 137  0x01ed8b                <none>      0  []
+ 138  0x01f12c                <none>      0  []
+ 139  0x01f52d                <none>      0  []
+ 140  0x01f8be                <none>      0  []
+ 141  0x01fcaf                <none>      0  []
+ 142  0x020074                <none>      0  []
+ 143  0x020219                <none>      0  []
+ 144  0x0204d0                <none>      0  []
+ 145  0x020ad2                <none>      0  []
+ 146  0x020ff7                <none>      0  []
+ 147  0x021244                <none>      0  []
+ 148  0x02151b                <none>      0  []
+ 149  0x0217e2                <none>      0  []
+ 150  0x0219d1                <none>      0  []
+ 151  0x021c5c                <none>      0  []
+ 152  0x021da9                <none>      0  []
+ 153  0x0220f0                <none>      0  []
+ 154  0x02236b                <none>      0  []
+ 155  0x0224b8                <none>      0  []
+ 156  0x0227ff                <none>      0  []
+ 157  0x022a7a                <none>      0  []
+ 158  0x022bc7                <none>      0  []
+ 159  0x022f02                <none>      0  []
+ 160  0x0233cf                <none>      0  []
+ 161  0x02380c                <none>      0  []
+ 162  0x023bd9                <none>      0  []
+ 163  0x023fa2                <none>      0  []
+ 164  0x024343                <none>      0  []
+ 165  0x0245fe                <none>      0  []
+ 166  0x02481b                <none>      0  []
+ 167  0x024ad6                <none>      0  []
+ 168  0x024cf3                <none>      0  []
+ 169  0x024f12                <none>      0  []
+ 170  0x025131                <none>      0  []
+ 171  0x025408                <none>      0  []
+ 172  0x0256df                <none>      0  []
+ 173  0x0259e6                <none>      0  []
+ 174  0x025ced                <none>      0  []
+ 175  0x025ebc                <none>      0  []
+ 176  0x0260c1                <none>      0  []
+ 177  0x026314                <none>      0  []
+ 178  0x026445                <none>      0  []
+ 179  0x0265da                <none>      0  []
+ 180  0x0266c7                <none>      0  []
+ 181  0x0269aa                <none>      0  []
+ 182  0x026b7b                <none>      0  []
+ 183  0x026cfc                <none>      0  []
+ 184  0x02706d                <none>      0  []
+ 185  0x0272e4                <none>      0  []
+ 186  0x02749b                <none>      0  []
+ 187  0x0276d6                <none>      0  []
+ 188  0x02785b                <none>      0  []
+ 189  0x027a96                <none>      0  []
+ 190  0x028123                <none>      2  [1305, 1719]
+ 191  0x028218                <none>      1  [1719]
+ 192  0x0282d9                <none>      0  []
+ 193  0x0283ce                <none>      0  []
+ 194  0x0284cf                <none>      0  []
+ 195  0x0285c4                <none>      0  []
+ 196  0x028821                <none>      0  []
+ 197  0x028986                <none>      0  []
+ 198  0x028af3                <none>      0  []
+ 199  0x028fc0                <none>      0  []
+ 200  0x0290b5                <none>      0  []
+ 201  0x0291be                <none>      0  []
+ 202  0x029397                <none>      0  []
+ 203  0x029480                <none>      0  []
+ 204  0x02955d                <none>      0  []
+ 205  0x0296ca                <none>      0  []
+ 206  0x029897                <none>      0  []
+ 207  0x0299d4                <none>      0  []
+ 208  0x029b11                <none>      0  []
+ 209  0x029c7e                <none>      0  []
+ 210  0x029e5b                <none>      0  []
+ 211  0x02a0ee                <none>      0  []
+ 212  0x02a381                <none>      0  []
+ 213  0x02a4d6                <none>      0  []
+ 214  0x02a62b                <none>      0  []
+ 215  0x02a780                <none>      0  []
+ 216  0x02a8d5                <none>      0  []
+ 217  0x02aa1a                <none>      0  []
+ 218  0x02ab5f                <none>      0  []
+ 219  0x02ad20                <none>      0  []
+ 220  0x02af01                <none>      0  []
+ 221  0x02b0a4                <none>      0  []
+ 222  0x02b1b5                <none>      0  []
+ 223  0x02b37c                <none>      0  []
+ 224  0x02b49d                <none>      0  []
+ 225  0x02b680                <none>      1  [387]
+ 226  0x02b7a1                <none>      0  []
+ 227  0x02b984                <none>      1  [387]
+ 228  0x02baa5                <none>      0  []
+ 229  0x02bcc8                <none>      1  [387]
+ 230  0x02bde1                <none>      0  []
+ 231  0x02bf1a                <none>      0  []
+ 232  0x02c053                <none>      0  []
+ 233  0x02c174                <none>      0  []
+ 234  0x02c2ad                <none>      0  []
+ 235  0x02c3ce                <none>      0  []
+ 236  0x02c4ef                <none>      0  []
+ 237  0x02c5dc                <none>      0  []
+ 238  0x02c6b1                <none>      0  []
+ 239  0x02c7d2                <none>      0  []
+ 240  0x02c8df                <none>      0  []
+ 241  0x02ca20                <none>      0  []
+ 242  0x02cb05                <none>      0  []
+ 243  0x02cbea                <none>      0  []
+ 244  0x02cccf                <none>      0  []
+ 245  0x02cdb4                <none>      0  []
+ 246  0x02ce99                <none>      0  []
+ 247  0x02cf7e                <none>      0  []
+ 248  0x02d063                <none>      0  []
+ 249  0x02d148                <none>      0  []
+ 250  0x02d22d                <none>      0  []
+ 251  0x02d312                <none>      0  []
+ 252  0x02d3f7                <none>      0  []
+ 253  0x02d4dc                <none>      0  []
+ 254  0x02d5b1                <none>      0  []
+ 255  0x02d686                <none>      0  []
+ 256  0x02d75b                <none>      0  []
+ 257  0x02d830                <none>      0  []
+ 258  0x02d9f3                <none>      0  []
+ 259  0x02dbd0                <none>      0  []
+ 260  0x02dca5                <none>      0  []
+ 261  0x02dd8a                <none>      0  []
+ 262  0x02de6f                <none>      1  [514]
+ 263  0x02df54                <none>      0  []
+ 264  0x02e079                <none>      0  []
+ 265  0x02e21a                <none>      0  []
+ 266  0x02e36b                <none>      0  []
+ 267  0x02e46c                <none>      0  []
+ 268  0x02e56d                <none>      0  []
+ 269  0x02e6a2                <none>      0  []
+ 270  0x02e803                <none>      0  []
+ 271  0x02ea60                <none>      0  []
+ 272  0x02ec81                <none>      0  []
+ 273  0x02ee52                <none>      0  []
+ 274  0x02ef57                <none>      0  []
+ 275  0x02f0b8                <none>      0  []
+ 276  0x02f1a9                <none>      0  []
+ 277  0x02f316                <none>      0  []
+ 278  0x02f443                <none>      6  [387, 1795, 1809, 392, 912, 407]
+ 279  0x02f678                <none>      0  []
+ 280  0x02f85d                <none>      0  []
+ 281  0x02fa92                <none>      0  []
+ 282  0x02fbdf                <none>      0  []
+ 283  0x02fd7c                <none>      0  []
+ 284  0x02ff0d                <none>      0  []
+ 285  0x030152                <none>      0  []
+ 286  0x0302df                <none>      0  []
+ 287  0x030444                <none>      0  []
+ 288  0x030679                <none>      0  []
+ 289  0x030806                <none>      4  [387, 1795, 1809, 912]
+ 290  0x030a27                <none>      0  []
+ 291  0x030c1c                <none>      0  []
+ 292  0x030e61                <none>      0  []
+ 293  0x031076                <none>      0  []
+ 294  0x0312db                <none>      0  []
+ 295  0x03146c                <none>      0  []
+ 296  0x03168d                <none>      0  []
+ 297  0x03181e                <none>      0  []
+ 298  0x031a63                <none>      0  []
+ 299  0x031cf4                <none>      0  []
+ 300  0x031f31                <none>      0  []
+ 301  0x0321be                <none>      0  []
+ 302  0x0323fb                <none>      0  []
+ 303  0x032688                <none>      0  []
+ 304  0x0327b9                <none>      0  []
+ 305  0x0328ea                <none>      0  []
+ 306  0x032b0b                <none>      0  []
+ 307  0x032db4                <none>      0  []
+ 308  0x033021                <none>      0  []
+ 309  0x0331e2                <none>      0  []
+ 310  0x0334ed                <none>      0  []
+ 311  0x0336ae                <none>      0  []
+ 312  0x033999                <none>      0  []
+ 313  0x033b6a                <none>      0  []
+ 314  0x033dcf                <none>      0  []
+ 315  0x033f90                <none>      0  []
+ 316  0x0342db                <none>      0  []
+ 317  0x034478                <none>      0  []
+ 318  0x034631                <none>      0  []
+ 319  0x03477a                <none>      0  []
+ 320  0x03496f                <none>      0  []
+ 321  0x034b90                <none>      0  []
+ 322  0x034cc9                <none>      0  []
+ 323  0x034e02                <none>      0  []
+ 324  0x034f3b                <none>      0  []
+ 325  0x0350d8                <none>      0  []
+ 326  0x035211                <none>      0  []
+ 327  0x035406                <none>      0  []
+ 328  0x03553f                <none>      0  []
+ 329  0x035734                <none>      0  []
+ 330  0x03586d                <none>      0  []
+ 331  0x035a62                <none>      0  []
+ 332  0x035b9b                <none>      0  []
+ 333  0x035d98                <none>      0  []
+ 334  0x035f01                <none>      0  []
+ 335  0x036140                <none>      1  [387]
+ 336  0x0362b9                <none>      0  []
+ 337  0x036422                <none>      0  []
+ 338  0x036661                <none>      1  [387]
+ 339  0x03721c                <none>      0  []
+ 340  0x0373dd                <none>      0  []
+ 341  0x0375de                <none>      0  []
+ 342  0x0377bf                <none>      0  []
+ 343  0x0379e0                <none>      0  []
+ 344  0x037dfd                <none>      0  []
+ 345  0x038220                <none>      0  []
+ 346  0x0388b3                <none>      0  []
+ 347  0x03900c          Spine2_Upper      0  []
+ 348  0x0391bd          Spine2_Upper      0  []
+ 349  0x0393ae          Spine2_Upper      0  []
+ 350  0x0397cb                <none>      0  []
+ 351  0x03998c                <none>      0  []
+ 352  0x039b8d                <none>      0  []
+ 353  0x03a61c                <none>      0  []
+ 354  0x03ac9f                <none>      0  []
+ 355  0x03b33a                <none>      0  []
+ 356  0x03bb1c                <none>      0  []
+ 357  0x03c889                <none>      0  []
+ 358  0x03ce06                <none>      0  []
+ 359  0x03d6ac                <none>      0  []
+ 360  0x03ddaf                <none>      0  []
+ 361  0x03e4f8                <none>      0  []
+ 362  0x03e9c1                <none>      0  []
+ 363  0x03f182                <none>      0  []
+ 364  0x03f92b                <none>      0  []
+ 365  0x03ff72                <none>      0  []
+ 366  0x0405d1                <none>      0  []
+ 367  0x040d4a                <none>      0  []
+ 368  0x0410e3                <none>      0  []
+ 369  0x041444                <none>      0  []
+ 370  0x041789                <none>      0  []
+ 371  0x041aea                <none>      0  []
+ 372  0x04220c                <none>      0  []
+ 373  0x042339                <none>      0  []
+ 374  0x0426ec                <none>      0  []
+ 375  0x042b4b                <none>      0  []
+ 376  0x042faa                <none>      0  []
+ 377  0x043649                <none>      0  []
+ 378  0x043ce8                <none>      0  []
+ 379  0x044167                <none>      0  []
+ 380  0x0445e6                <none>      0  []
+ 381  0x044897                <none>      0  []
+ 382  0x0464e1                <none>      0  []
+ 383  0x0465ee                <none>      0  []
+ 384  0x049563                <none>      0  []
+ 385  0x04a174                <none>      0  []
+ 386  0x04c946                <none>      0  []
+ 387  0x04ccb7                <none>      0  []
+ 388  0x04cdb8                <none>      0  []
+ 389  0x04cf71                <none>      0  []
+ 390  0x04d3c0                <none>      0  []
+ 391  0x04d551                <none>      0  []
+ 392  0x04d9a0                <none>      0  []
+ 393  0x04dc51                <none>      0  []
+ 394  0x04e0b0                <none>      0  []
+ 395  0x04e50f                <none>      0  []
+ 396  0x04e7c0                <none>      0  []
+ 397  0x04ebc3                <none>      0  []
+ 398  0x04efc6                <none>      0  []
+ 399  0x04f75c                <none>      0  []
+ 400  0x04fde6                <none>      0  []
+ 401  0x0506ad                <none>      0  []
+ 402  0x0509b2                <none>      0  []
+ 403  0x050d03                <none>      0  []
+ 404  0x050ed8                <none>      0  []
+ 405  0x051275                <none>      0  []
+ 406  0x0513b2                <none>      0  []
+ 407  0x0514ef                <none>      0  []
+ 408  0x0515e4                <none>      0  []
+ 409  0x0516c9                <none>      0  []
+ 410  0x05184a                <none>      0  []
+ 411  0x0519cb                <none>      0  []
+ 412  0x051aec                <none>      0  []
+ 413  0x051bcd                <none>      0  []
+ 414  0x051d2e                <none>      0  []
+ 415  0x051e5f                <none>      0  []
+ 416  0x051f80                <none>      0  []
+ 417  0x052061                <none>      0  []
+ 418  0x0521d2                <none>      0  []
+ 419  0x052313                <none>      0  []
+ 420  0x052428                <none>      0  []
+ 421  0x05252d                <none>      0  []
+ 422  0x052642                <none>      0  []
+ 423  0x052747                <none>      0  []
+ 424  0x05285c                <none>      0  []
+ 425  0x052961                <none>      0  []
+ 426  0x052a76                <none>      0  []
+ 427  0x052b7b                <none>      0  []
+ 428  0x052d88                <none>      0  []
+ 429  0x052fdd                <none>      0  []
+ 430  0x0531ea                <none>      0  []
+ 431  0x05343f                <none>      0  []
+ 432  0x053544                <none>      0  []
+ 433  0x053639                <none>      0  []
+ 434  0x05373e                <none>      0  []
+ 435  0x053833                <none>      0  []
+ 436  0x053938                <none>      0  []
+ 437  0x053a2d                <none>      0  []
+ 438  0x053b32                <none>      0  []
+ 439  0x053c27                <none>      0  []
+ 440  0x053d18                <none>      0  []
+ 441  0x053df9                <none>      0  []
+ 442  0x053f56                <none>      0  []
+ 443  0x0540b3                <none>      0  []
+ 444  0x0541d0                <none>      0  []
+ 445  0x0542b5                <none>      0  []
+ 446  0x0543fa                <none>      0  []
+ 447  0x05457b                <none>      0  []
+ 448  0x054680                <none>      0  []
+ 449  0x054785                <none>      0  []
+ 450  0x05488a                <none>      0  []
+ 451  0x05498f                <none>      0  []
+ 452  0x054be4                <none>      0  []
+ 453  0x054e39                <none>      0  []
+ 454  0x054f2e                <none>      0  []
+ 455  0x055023                <none>      0  []
+ 456  0x055118                <none>      0  []
+ 457  0x05520d                <none>      0  []
+ 458  0x0552ee                <none>      0  []
+ 459  0x05545b                <none>      0  []
+ 460  0x0555a8                <none>      0  []
+ 461  0x055707                <none>      0  []
+ 462  0x055866                <none>      0  []
+ 463  0x0559c5                <none>      0  []
+ 464  0x055b96                <none>      0  []
+ 465  0x055d57                <none>      0  []
+ 466  0x05622d                <none>      0  []
+ 467  0x05636a                <none>      0  []
+ 468  0x05673b                <none>      0  []
+ 469  0x056938                <none>      0  []
+ 470  0x056b95                <none>      0  []
+ 471  0x056c72                <none>      0  []
+ 472  0x056ea7                <none>      0  []
+ 473  0x05713c                <none>      0  []
+ 474  0x0572e9                <none>      0  []
+ 475  0x05751e                <none>      0  []
+ 476  0x0576cb                <none>      0  []
+ 477  0x057900                <none>      0  []
+ 478  0x057aad                <none>      0  []
+ 479  0x057ce2                <none>      0  []
+ 480  0x057e8f                <none>      0  []
+ 481  0x05804c                <none>      0  []
+ 482  0x0582f9                <none>      0  []
+ 483  0x058588                <none>      0  []
+ 484  0x05891d                <none>      0  []
+ 485  0x058bac                <none>      0  []
+ 486  0x058f21                <none>      0  []
+ 487  0x0591d0                <none>      0  []
+ 488  0x059565                <none>      0  []
+ 489  0x0597f4                <none>      0  []
+ 490  0x059af1                <none>      0  []
+ 491  0x059cd6                <none>      0  []
+ 492  0x059e6b                <none>      0  []
+ 493  0x05a0f8                <none>      3  [458, 1166, 1180]
+ 494  0x05a219                <none>      0  []
+ 495  0x05a3ba                <none>      0  []
+ 496  0x05a7bd                <none>      0  []
+ 497  0x05adb8                <none>      0  []
+ 498  0x05aedd                <none>      0  []
+ 499  0x05b002                <none>      0  []
+ 500  0x05b127                <none>      0  []
+ 501  0x05b27c                <none>      0  []
+ 502  0x05bace                <none>      0  []
+ 503  0x05bcab                <none>      0  []
+ 504  0x05bfce                <none>      0  []
+ 505  0x05c14b                <none>      0  []
+ 506  0x05c31c                <none>      0  []
+ 507  0x05c499                <none>      0  []
+ 508  0x05c69a                <none>      0  []
+ 509  0x05c863                <none>      0  []
+ 510  0x05d55f                <none>      0  []
+ 511  0x05d610                <none>      0  []
+ 512  0x05d6d1                <none>      0  []
+ 513  0x05d79a                <none>      0  []
+ 514  0x05db09                <none>      0  []
+
+================================================================================
+  TRANSITION MAP
+================================================================================
+Forward transitions (state -> targets):
+  State    1 -> 0(thresh=0.00,seq=0), 6(thresh=0.00,seq=1), 12(thresh=0.00,seq=2), 18(thresh=0.17,seq=3), 51(thresh=0.30,seq=4)
+  State    2 -> 84(thresh=0.00,seq=0), 95(thresh=0.00,seq=1), 18(thresh=2.33,seq=2), 51(thresh=2.63,seq=3)
+  State    3 -> 84(thresh=0.00,seq=0), 95(thresh=0.00,seq=1), 234(thresh=0.00,seq=2)
+  State    4 -> 84(thresh=0.00,seq=0), 267(thresh=0.00,seq=1), 270(thresh=0.00,seq=2), 347(thresh=0.00,seq=3), 354(thresh=0.00,seq=4), 276(thresh=0.03,seq=5), 273(thresh=0.50,seq=6), 51(thresh=0.52,seq=7)
+  State    5 -> 458(thresh=0.00,seq=0), 465(thresh=0.00,seq=1), 484(thresh=0.00,seq=2), 532(thresh=0.15,seq=3), 499(thresh=0.30,seq=4), 514(thresh=0.40,seq=5), 565(thresh=0.43,seq=6), 470(thresh=0.50,seq=7), 630(thresh=0.50,seq=8), 429(thresh=0.53,seq=9)
+  State    6 -> 465(thresh=0.00,seq=0), 633(thresh=0.00,seq=1), 636(thresh=0.67,seq=2)
+  State    7 -> 465(thresh=0.00,seq=0), 633(thresh=0.00,seq=1), 636(thresh=0.67,seq=2)
+  State    8 -> 465(thresh=0.00,seq=0), 633(thresh=0.00,seq=1), 636(thresh=0.67,seq=2)
+  State    9 -> 465(thresh=0.00,seq=0), 633(thresh=0.00,seq=1), 636(thresh=0.67,seq=2)
+  State   10 -> 387(thresh=0.00,seq=0), 639(thresh=0.00,seq=1), 458(thresh=0.10,seq=2), 532(thresh=0.17,seq=3), 654(thresh=0.37,seq=4), 668(thresh=0.37,seq=5), 514(thresh=0.42,seq=6), 691(thresh=0.53,seq=7), 565(thresh=0.57,seq=8), 682(thresh=0.60,seq=9), 685(thresh=0.60,seq=10), 429(thresh=0.60,seq=11), 688(thresh=0.62,seq=12)
+  State   11 -> 458(thresh=0.00,seq=0), 1136(thresh=0.83,seq=1), 1166(thresh=0.83,seq=2), 1180(thresh=0.83,seq=3), 1200(thresh=0.83,seq=4), 1233(thresh=0.83,seq=5), 429(thresh=0.83,seq=6), 1266(thresh=0.97,seq=7), 1151(thresh=1.00,seq=8), 514(thresh=1.20,seq=9), 1299(thresh=1.20,seq=10), 1302(thresh=1.60,seq=11)
+  State   12 -> 1455(thresh=0.00,seq=0), 1460(thresh=0.00,seq=1), 1466(thresh=0.00,seq=2), 1472(thresh=0.00,seq=3), 484(thresh=0.00,seq=4), 458(thresh=0.23,seq=5), 514(thresh=0.23,seq=6), 1479(thresh=0.23,seq=7), 1495(thresh=0.23,seq=8), 1509(thresh=0.23,seq=9), 1523(thresh=0.23,seq=10), 1537(thresh=0.23,seq=11), 1551(thresh=0.23,seq=12), 1719(thresh=0.23,seq=13), 1751(thresh=0.25,seq=14), 1487(thresh=0.47,seq=15), 1635(thresh=0.47,seq=16), 1722(thresh=0.47,seq=17)
+  State   13 -> 1455(thresh=0.00,seq=0), 1460(thresh=0.00,seq=1), 1466(thresh=0.00,seq=2), 1472(thresh=0.00,seq=3), 484(thresh=0.00,seq=4), 1784(thresh=0.10,seq=5), 458(thresh=0.23,seq=6), 514(thresh=0.23,seq=7), 1479(thresh=0.23,seq=8), 1495(thresh=0.23,seq=9), 1509(thresh=0.23,seq=10), 1523(thresh=0.23,seq=11), 1537(thresh=0.23,seq=12), 1551(thresh=0.23,seq=13), 1719(thresh=0.23,seq=14), 1751(thresh=0.25,seq=15), 1788(thresh=0.27,seq=16), 1487(thresh=0.47,seq=17), 1635(thresh=0.47,seq=18), 1722(thresh=0.47,seq=19)
+  State   14 -> 387(thresh=0.00,seq=0), 1460(thresh=0.00,seq=1), 1466(thresh=0.00,seq=2), 1472(thresh=0.00,seq=3), 1795(thresh=0.00,seq=4), 1809(thresh=0.00,seq=5), 392(thresh=0.27,seq=6), 912(thresh=0.27,seq=7), 407(thresh=0.43,seq=8)
+  State   17 -> 387(thresh=0.00,seq=0), 1460(thresh=0.00,seq=1), 1466(thresh=0.00,seq=2), 1472(thresh=0.00,seq=3), 633(thresh=0.00,seq=4), 636(thresh=0.93,seq=5)
+  State   18 -> 387(thresh=0.00,seq=0), 1460(thresh=0.00,seq=1), 1466(thresh=0.00,seq=2), 1472(thresh=0.00,seq=3), 633(thresh=0.00,seq=4), 636(thresh=0.93,seq=5)
+  State   22 -> 784(thresh=0.00,seq=0), 790(thresh=0.00,seq=1), 387(thresh=0.00,seq=2), 1795(thresh=0.00,seq=3), 1809(thresh=0.00,seq=4), 392(thresh=0.27,seq=5), 407(thresh=0.43,seq=6)
+  State   36 -> 784(thresh=0.00,seq=0), 790(thresh=0.00,seq=1), 407(thresh=0.00,seq=2)
+  State   37 -> 784(thresh=0.00,seq=0), 790(thresh=0.00,seq=1)
+  State   66 -> 387(thresh=0.00,seq=0)
+  State  190 -> 1305(thresh=0.00,seq=0), 1719(thresh=0.00,seq=1)
+  State  191 -> 1719(thresh=0.00,seq=0)
+  State  225 -> 387(thresh=0.00,seq=0)
+  State  227 -> 387(thresh=0.00,seq=0)
+  State  229 -> 387(thresh=0.00,seq=0)
+  State  262 -> 514(thresh=0.00,seq=0)
+  State  278 -> 387(thresh=0.00,seq=0), 1795(thresh=0.00,seq=1), 1809(thresh=0.00,seq=2), 392(thresh=0.27,seq=3), 912(thresh=0.27,seq=4), 407(thresh=0.43,seq=5)
+  State  289 -> 387(thresh=0.00,seq=0), 1795(thresh=0.00,seq=1), 1809(thresh=0.00,seq=2), 912(thresh=0.27,seq=3)
+  State  335 -> 387(thresh=0.00,seq=0)
+  State  338 -> 387(thresh=0.00,seq=0)
+  State  493 -> 458(thresh=0.00,seq=0), 1166(thresh=0.67,seq=1), 1180(thresh=0.67,seq=2)
+
+Most targeted states (reverse map):
+  State  387 (<none>): targeted by 13 states
+  State  458 (<none>): targeted by 6 states
+  State  514 (<none>): targeted by 6 states
+  State  633 (<state 633 not in marker set>): targeted by 6 states
+  State  636 (<state 636 not in marker set>): targeted by 6 states
+  State  465 (<none>): targeted by 5 states
+  State 1460 (<state 1460 not in marker set>): targeted by 5 states
+  State 1466 (<state 1466 not in marker set>): targeted by 5 states
+  State 1472 (<state 1472 not in marker set>): targeted by 5 states
+  State 1719 (<state 1719 not in marker set>): targeted by 4 states
+  State 1795 (<state 1795 not in marker set>): targeted by 4 states
+  State 1809 (<state 1809 not in marker set>): targeted by 4 states
+  State  407 (<none>): targeted by 4 states
+  State   51 (<none>): targeted by 3 states
+  State   84 (<none>): targeted by 3 states
+  State  484 (<none>): targeted by 3 states
+  State  429 (<none>): targeted by 3 states
+  State  392 (<none>): targeted by 3 states
+  State  912 (<state 912 not in marker set>): targeted by 3 states
+  State  784 (<state 784 not in marker set>): targeted by 3 states
+  State  790 (<state 790 not in marker set>): targeted by 3 states
+  State   18 (<none>): targeted by 2 states
+  State   95 (<none>): targeted by 2 states
+  State  532 (<state 532 not in marker set>): targeted by 2 states
+  State  565 (<state 565 not in marker set>): targeted by 2 states
+  State 1166 (<state 1166 not in marker set>): targeted by 2 states
+  State 1180 (<state 1180 not in marker set>): targeted by 2 states
+  State 1455 (<state 1455 not in marker set>): targeted by 2 states
+  State 1479 (<state 1479 not in marker set>): targeted by 2 states
+  State 1495 (<state 1495 not in marker set>): targeted by 2 states
+
+================================================================================
+  GUARD TRANSITION ANALYSIS
+================================================================================
+Guard state: 0
+  Label: <none>
+  Own transitions: 0
+
+States that CANNOT transition to guard (state 0): 30 of 515
+States that CAN transition to guard: 1
+States with no transitions at all: 484
+
+Guard-blocked states with transitions (likely attack sub-states):
+  State    2 (<none>): transitions to [84, 95, 18, 51]
+  State    3 (<none>): transitions to [84, 95, 234]
+  State    4 (<none>): transitions to [84, 267, 270, 347, 354, 276, 273, 51]
+  State    5 (<none>): transitions to [458, 465, 484, 532, 499, 514, 565, 470, 630, 429]
+  State    6 (<none>): transitions to [465, 633, 636]
+  State    7 (<none>): transitions to [465, 633, 636]
+  State    8 (<none>): transitions to [465, 633, 636]
+  State    9 (<none>): transitions to [465, 633, 636]
+  State   10 (<none>): transitions to [387, 639, 458, 532, 654, 668, 514, 691, 565, 682, 685, 429, 688]
+  State   11 (<none>): transitions to [458, 1136, 1166, 1180, 1200, 1233, 429, 1266, 1151, 514, 1299, 1302]
+  State   12 (<none>): transitions to [1455, 1460, 1466, 1472, 484, 458, 514, 1479, 1495, 1509, 1523, 1537, 1551, 1719, 1751, 1487, 1635, 1722]
+  State   13 (<none>): transitions to [1455, 1460, 1466, 1472, 484, 1784, 458, 514, 1479, 1495, 1509, 1523, 1537, 1551, 1719, 1751, 1788, 1487, 1635, 1722]
+  State   14 (<none>): transitions to [387, 1460, 1466, 1472, 1795, 1809, 392, 912, 407]
+  State   17 (<none>): transitions to [387, 1460, 1466, 1472, 633, 636]
+  State   18 (<none>): transitions to [387, 1460, 1466, 1472, 633, 636]
+  State   22 (<none>): transitions to [784, 790, 387, 1795, 1809, 392, 407]
+  State   36 (<none>): transitions to [784, 790, 407]
+  State   37 (<none>): transitions to [784, 790]
+  State   66 (<none>): transitions to [387]
+  State  190 (<none>): transitions to [1305, 1719]
+  State  191 (<none>): transitions to [1719]
+  State  225 (<none>): transitions to [387]
+  State  227 (<none>): transitions to [387]
+  State  229 (<none>): transitions to [387]
+  State  262 (<none>): transitions to [514]
+  State  278 (<none>): transitions to [387, 1795, 1809, 392, 912, 407]
+  State  289 (<none>): transitions to [387, 1795, 1809, 912]
+  State  335 (<none>): transitions to [387]
+  State  338 (<none>): transitions to [387]
+  State  493 (<none>): transitions to [458, 1166, 1180]
+
+================================================================================
+  STATE CLASSIFICATION
+================================================================================
+delayed_guard_access: 1 states
+  State    1 (<none>): 5 transitions
+
+guard_blocked_no_thresholds: 12 states
+  State    3 (<none>): 3 transitions
+  State   36 (<none>): 3 transitions
+  State   37 (<none>): 2 transitions
+  State   66 (<none>): 1 transitions
+  State  190 (<none>): 2 transitions
+  State  191 (<none>): 1 transitions
+  State  225 (<none>): 1 transitions
+  State  227 (<none>): 1 transitions
+  State  229 (<none>): 1 transitions
+  State  262 (<none>): 1 transitions
+  ... (2 more)
+
+guard_blocked_with_thresholds: 18 states
+  State    2 (<none>): 4 transitions
+  State    4 (<none>): 8 transitions
+  State    5 (<none>): 10 transitions
+  State    6 (<none>): 3 transitions
+  State    7 (<none>): 3 transitions
+  State    8 (<none>): 3 transitions
+  State    9 (<none>): 3 transitions
+  State   10 (<none>): 13 transitions
+  State   11 (<none>): 12 transitions
+  State   12 (<none>): 18 transitions
+  ... (8 more)
+
+no_transitions: 484 states
+  State    0 (<none>): 0 transitions
+  State   15 (<none>): 0 transitions
+  State   16 (<none>): 0 transitions
+  State   19 (<none>): 0 transitions
+  State   20 (<none>): 0 transitions
+  State   21 (<none>): 0 transitions
+  State   23 (<none>): 0 transitions
+  State   24 (LeftArm): 0 transitions
+  State   25 (RightArm): 0 transitions
+  State   26 (<none>): 0 transitions
+  ... (474 more)
+
+
+================================================================================
+  ATTACK COMBO CHAINS
+================================================================================
+Found 0 chains (>2 states):
+
+================================================================================
+  CONDITION GRAPH ANALYSIS
+================================================================================
+Section start: 0x64515
+Section size: 619,043 bytes
+Record candidates found: 1000
+
+Most common float values in condition section:
+      0.0000: 2751 occurrences
+    -62.1810: 49 occurrences
+      0.3000: 9 occurrences
+     50.0000: 5 occurrences
+      0.0921: 4 occurrences
+      0.1000: 4 occurrences
+     15.0000: 1 occurrences
+
+Condition section structure analysis:
+  The tail section (619,043 bytes) contains the
+  transition condition graph. Each state's transitions reference conditions
+  that must be met (input keys pressed, animation progress, etc.).
+  The section contains 80-byte blocks with:
+    - Float pairs (animation progress thresholds)
+    - -1.0 sentinel values (same as transition sentinels)
+    - Integer references (likely string table indices for input keys)
+  These blocks define WHEN transitions are allowed.
+
+================================================================================
+  PATCHING FEASIBILITY ASSESSMENT
+================================================================================
+GOAL: Add guard (block) transitions to attack sub-states so players
+      can cancel attack animations by pressing guard (LB).
+
+APPROACH A: Add new transition entries to attack states
+  STATUS: VERY DIFFICULT
+  Each state's transition count is a uint8 at a fixed offset.
+  Adding a transition would require:
+    1. Incrementing the count byte
+    2. Inserting 16 bytes for the new transition record
+    3. Shifting ALL subsequent data (string tables, condition graph)
+    4. Updating all absolute offsets in the file
+  RISK: File format likely has no slack space. Insertion would break
+        offsets throughout the file.
+
+APPROACH B: Replace low-priority transitions with guard transitions
+  STATUS: POSSIBLE for 33 transitions
+  These transitions have high sequence numbers and late thresholds,
+  making them candidates for replacement:
+    State 4 (<none>): seq=6 thresh=0.50 target=273
+      -> Replace target with guard state 0
+    State 4 (<none>): seq=7 thresh=0.52 target=51
+      -> Replace target with guard state 0
+    State 5 (<none>): seq=5 thresh=0.40 target=514
+      -> Replace target with guard state 0
+    State 5 (<none>): seq=6 thresh=0.43 target=565
+      -> Replace target with guard state 0
+    State 5 (<none>): seq=7 thresh=0.50 target=470
+      -> Replace target with guard state 0
+    State 5 (<none>): seq=8 thresh=0.50 target=630
+      -> Replace target with guard state 0
+    State 5 (<none>): seq=9 thresh=0.53 target=429
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=5 thresh=0.37 target=668
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=6 thresh=0.42 target=514
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=7 thresh=0.53 target=691
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=8 thresh=0.57 target=565
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=9 thresh=0.60 target=682
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=10 thresh=0.60 target=685
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=11 thresh=0.60 target=429
+      -> Replace target with guard state 0
+    State 10 (<none>): seq=12 thresh=0.62 target=688
+      -> Replace target with guard state 0
+    State 11 (<none>): seq=5 thresh=0.83 target=1233
+      -> Replace target with guard state 0
+    State 11 (<none>): seq=6 thresh=0.83 target=429
+      -> Replace target with guard state 0
+    State 11 (<none>): seq=7 thresh=0.97 target=1266
+      -> Replace target with guard state 0
+    State 11 (<none>): seq=8 thresh=1.00 target=1151
+      -> Replace target with guard state 0
+    State 11 (<none>): seq=9 thresh=1.20 target=514
+      -> Replace target with guard state 0
+    ... (13 more)
+  RISK: Replacing transitions changes combo behavior. The replaced
+        transition's original function would be lost.
+
+APPROACH C: Modify condition graph to allow blocked transitions
+  STATUS: REQUIRES MORE RE
+  The 80-byte condition blocks in the tail section define WHEN
+  transitions are allowed. If guard transitions exist but are
+  gated by conditions (e.g., "not during attack"), modifying
+  those conditions could enable them.
+  RISK: Condition format not fully decoded. Blind patching could
+        break all transitions.
+
+APPROACH D: Runtime hook (ASI mod)
+  STATUS: MOST FEASIBLE
+  Instead of patching the .paac file:
+    1. Hook the action chart evaluation function in memory
+    2. When the player presses guard during an attack state,
+       force the state machine to transition to the guard state
+    3. This bypasses the condition graph entirely
+  ADVANTAGES:
+    - No file modification needed (works across game updates)
+    - Can be toggled on/off
+    - Doesn't break other transitions
+  REQUIREMENTS:
+    - Find the ActionChart::evaluate() function in memory
+    - Understand how the current state index is stored
+    - Hook to inject guard transitions at runtime
+
+RECOMMENDATION: Use APPROACH D (runtime hook) as the primary method.
+APPROACH B (transition replacement) is a viable fallback for specific
+attack states where a low-priority transition can be sacrificed.
+
+KEY STATISTICS FOR MODDING:
+  Total states: 515
+  States with transitions: 31
+  Guard-blocked states (with transitions): 30
+  Replaceable transitions: 33
+  Transition record size: 16 bytes
+  Transition format: [float32 threshold][float32 -1.0][uint32 target][uint32 seq]
+  Config block size: 64 bytes (between states)
+
+================================================================================
+  CROSS-VALIDATION: common_skill_upper.paac vs basic_upper.paac
+================================================================================
+common_skill_upper.paac:
+  Size: 1,029,944 bytes
+  Header node count: 570
+  Header speed: 0.1667
+  State markers found: 515
+  Difference (header - markers): 55
+basic_upper.paac:
+  Size: 330,299 bytes
+  Header node count: 274
+  Header speed: 3.0000
+  State markers found: 267
+  Difference (header - markers): 7
+
+State record structure consistency:
+  common_skill_upper.paac: first 10 inter-marker deltas = [177, 257, 273, 279, 445, 3644, 509, 509, 493, 493]
+  common_skill_upper.paac: 2 unique post-marker patterns in first 50 states
+  basic_upper.paac: first 10 inter-marker deltas = [461, 461, 461, 461, 505, 505, 273, 461, 505, 477]
+  basic_upper.paac: 1 unique post-marker patterns in first 50 states

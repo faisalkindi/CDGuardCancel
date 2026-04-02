@@ -1,0 +1,1369 @@
+
+================================================================================
+  FILE OVERVIEW
+================================================================================
+File: C:\Users\faisa\Ai\Mods Dev\CrimsonDesert-Mods\CDAnimCancel\extracted\actionchart\bin__\upperaction\1_pc\1_phm\sword_upper.paac
+Size: 1,243,769 bytes (0x12fa79)
+Header node count: 721
+Header speed: 1.3333
+Header flags: 0x00000800
+States found (via marker): 617
+  (Header says 721 -- difference of 104 may include sub-nodes in condition graph)
+Total transitions: 936
+Label strings: 45
+Animation paths: 428
+Extra string tables: 9
+
+================================================================================
+  FILE MEMORY MAP
+================================================================================
+0x00000000 - 0x00000043  Header (68 bytes)
+0x00000044 - 0x0008e96a  State records (583,974 bytes)
+0x0008e9f3 - 0x0008ecb5  Label string table (45 entries)
+0x0008ecb5 - 0x00095de6  Animation paths (428 entries)
+0x00095de6 - 0x00095ff5  Extra table 0 (7 entries)
+0x00095ff5 - 0x00096f82  Extra table 1 (86 entries)
+0x00096f82                  Extra table 2 (0 entries, empty)
+0x00096f84 - 0x000975c1  Extra table 3 (20 entries)
+0x000975c1 - 0x00097695  Extra table 4 (14 entries)
+0x00097695 - 0x00097802  Extra table 5 (16 entries)
+0x00097802 - 0x00097992  Extra table 6 (7 entries)
+0x00097992                  Extra table 7 (0 entries, empty)
+0x00097994                  Extra table 8 (0 entries, empty)
+0x00097996 - 0x0012fa79  Condition graph (622,819 bytes)
+
+================================================================================
+  LABEL STRING TABLE
+================================================================================
+Offset: 0x8e9f3
+Count: 45
+
+  [  0] len= 46 @0x8e9f5: "upperaction/1_pc/1_phm/common_upper_branchset"
+  [  1] len= 10 @0x8ea24: "key_guard"
+  [  2] len= 16 @0x8ea2f: "NeckAndRightArm"
+  [  3] len= 15 @0x8ea40: "LowerLeftArm_1"
+  [  4] len= 10 @0x8ea50: "BothHands"
+  [  5] len= 13 @0x8ea5b: "Spine2_Upper"
+  [  6] len= 16 @0x8ea69: "LeftArmNoSplice"
+  [  7] len= 15 @0x8ea7a: "NeckAndLeftArm"
+  [  8] len= 15 @0x8ea8a: "key_fistattack"
+  [  9] len= 13 @0x8ea9a: "equip_shield"
+  [ 10] len= 13 @0x8eaa8: "key_skill_12"
+  [ 11] len= 26 @0x8eab6: "CharacterMeshEffectWeapon"
+  [ 12] len= 12 @0x8ead1: "key_skill_1"
+  [ 13] len= 19 @0x8eade: "key_skill_12_start"
+  [ 14] len= 12 @0x8eaf2: "key_skill_7"
+  [ 15] len= 11 @0x8eaff: "key_crouch"
+  [ 16] len= 15 @0x8eb0b: "key_hardattack"
+  [ 17] len= 16 @0x8eb1b: "key_guard_start"
+  [ 18] len= 12 @0x8eb2c: "key_skill_2"
+  [ 19] len=  8 @0x8eb39: "key_run"
+  [ 20] len= 11 @0x8eb42: "key_cancel"
+  [ 21] len= 13 @0x8eb4e: "CharacterHit"
+  [ 22] len=  4 @0x8eb5c: "off"
+  [ 23] len=  9 @0x8eb61: "RightArm"
+  [ 24] len=  8 @0x8eb6b: "LeftArm"
+  [ 25] len=  9 @0x8eb74: "key_dash"
+  [ 26] len= 18 @0x8eb7e: "key_skill_9_start"
+  [ 27] len= 12 @0x8eb91: "key_skill_9"
+  [ 28] len= 12 @0x8eb9e: "key_skill_4"
+  [ 29] len= 13 @0x8ebab: "key_skill_17"
+  [ 30] len= 19 @0x8ebb9: "key_skill_14_start"
+  [ 31] len= 12 @0x8ebcd: "key_skill_3"
+  [ 32] len= 26 @0x8ebda: "keyguide_elementalaugment"
+  [ 33] len= 13 @0x8ebf5: "key_skill_18"
+  [ 34] len= 16 @0x8ec03: "keyguide_cancel"
+  [ 35] len=  6 @0x8ec14: "flash"
+  [ 36] len= 14 @0x8ec1b: "key_norattack"
+  [ 37] len= 12 @0x8ec2a: "key_skill_8"
+  [ 38] len= 24 @0x8ec37: "key_skill_8_combo_start"
+  [ 39] len= 22 @0x8ec50: "keyguide_flashmagnify"
+  [ 40] len= 18 @0x8ec67: "key_skill_8_combo"
+  [ 41] len=  9 @0x8ec7a: "FullBody"
+  [ 42] len= 15 @0x8ec84: "keyguide_flash"
+  [ 43] len= 15 @0x8ec94: "key_kickattack"
+  [ 44] len= 16 @0x8eca4: "keyguide_attack"
+
+Key labels: {'guard': 17, 'hardattack': 16, 'norattack': 36}
+
+================================================================================
+  ANIMATION PATHS (summary)
+================================================================================
+Count: 428
+  movement: 146
+  attack_other: 133
+  other: 46
+  attack_normal: 38
+  idle: 26
+  guard: 20
+  attack_combo: 12
+  jump: 6
+  skill: 1
+
+Attack animations:
+  [116] 1_pc/1_phm/cd_phm_swd_01_01_nor_att_rush_move_f_upper_l_ing_00.paa
+  [117] 1_pc/1_phm/cd_phm_swd_01_01_nor_att_rush_move_f_upper_r_ing_00.paa
+  [118] 1_pc/1_phm/cd_phm_sword_01_01_def_att_normal_shield_move_000.paa
+  [119] 1_pc/1_phm/cd_phm_longsword_01_04_att_move_run_f_end_swing_4_00.paa
+  [121] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_bash_coma_3_move_f_swing_9_00.paa
+  [122] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_nor_move_l_swing_00.paa
+  [123] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_nor_move_r_swing_00.paa
+  [124] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_l_swing_00.paa
+  [125] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_r_swing_00.paa
+  [126] 1_pc/1_phm/cd_phm_swd_01_01_nor_move_b_jumpavoid_att_swing_00.paa
+  [135] 1_pc/1_phm/00_mon/cd_phm_m_shspear_01_01_att_com_b_2_move_f_swing_4.paa
+  [136] 1_pc/1_phm/00_mon/cd_phm_shspear_01_01_att_nor_trust_std_01.paa
+  [145] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_01.paa
+  [146] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_02.paa
+  [147] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_03.paa
+  [148] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_04.paa
+  [149] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_05.paa
+  [150] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_06.paa
+  [151] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_07.paa
+  [152] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_08.paa
+  [153] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_09.paa
+  [160] 1_pc/1_phm/cd_phm_sword_01_01_att_skill_normal_weaponout_001_move_f_handr_swing_06.paa
+  [165] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_move_f_weaponout_swing_handr_00.paa
+  [167] 1_pc/1_phm/cd_phm_sword_01_01_att_jump_end_move_f_handr_swing_02.paa
+  [170] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_010.paa
+  [180] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_coma_1_swing_00.paa
+  [181] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_coma_1_swing_02.paa
+  [182] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_coma_1_push_00.paa
+  [183] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_f_001_move_f_handr_footl_swing_01.paa
+  [184] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_1_push_00.paa
+  [185] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_1_backspinblow_00.paa
+  [186] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_1_knockdown_00.paa
+  [187] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_011.paa
+  [188] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_coma_2_swing_00.paa
+  [189] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_coma_2_swing_01.paa
+  [190] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_f_002_move_f_handr_footl_swing_06.paa
+  [191] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_2_swing_00.paa
+  [192] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_2_swingchopping_00.paa
+  [193] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_a_3_move_f_swing_2_01.paa
+  [194] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_coma_3_kick_00.paa
+  [195] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_coma_3_kneekick_00.paa
+  [196] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_f_003_move_f_handr_footr_swing_02.paa
+  [197] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_comb_3_kick_00.paa
+  [198] 1_pc/1_phm/ecd_phm_swds_01_01_att_nor_fin_lk_comb_3_groundchopping_00.paa
+  [199] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_h_1_move_f_swing_9_00.paa
+  [200] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_h_2_move_f_swing_2_00.paa
+  [201] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_bash_comb_3_move_f_swing_2_00.paa
+  [202] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_g_1_move_f_swing_8_00.paa
+  [203] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_g_2_move_f_swing_3_00.paa
+  [204] 1_pc/1_phm/cd_phm_swd_01_01_nor_att_move_f_spinbash_swing_1_00.paa
+  [205] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_c_003_move_f_handl_footl_thrust_05.paa
+  [206] 1_pc/1_phm/cd_phm_sword_01_01_att_longrangeatt_001_move_f_handl_footl_swing_01.paa
+  [207] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_longrangeatt_smash_00.paa
+  [209] 1_pc/1_phm/cd_phm_sword_01_01_att_skill_dash_move_att_008.paa
+  [210] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_dashatt_swing_01.paa
+  [211] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_dashatt_swing_02.paa
+  [212] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_dashatt_swing_00.paa
+  [213] 1_pc/1_phm/cd_phm_axe_01_01_nor_att_coma_1_move_f_swing_00.paa
+  [214] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_fin_com_1_kick_00.paa
+  [215] 1_pc/1_phm/cd_phm_axe_01_01_nor_att_coma_2_move_f_swing_00.paa
+  [216] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_fin_com_2_kick_00.paa
+  [217] 1_pc/1_phm/cd_phm_axe_01_01_nor_att_coma_3_move_f_swing_00.paa
+  [218] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_fin_com_3_headbutt_00.paa
+  [219] 1_pc/1_phm/cd_phm_axe_01_01_nor_att_move_f_longrangeatt_00.paa
+  [220] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_fin_longrangeatt_swing_00.paa
+  [221] 1_pc/1_phm/00_mon/cd_phm_m_swd1_01_01_att_com_move_f_dashatt_00.paa
+  [222] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_fin_runatt_swing_00.paa
+  [223] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_move_f_thrust_2_handlr_00.paa
+  [224] 1_pc/1_phm/cd_phm_axe_01_01_att_nor_move_coma_1_00.paa
+  [225] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_bash_coma_1_move_f_swing_3_00.paa
+  [226] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_1_swing_00.paa
+  [227] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_1_swing_01.paa
+  [228] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_1_swing_02.paa
+  [229] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_bash_coma_2_move_f_swing_2_00.paa
+  [230] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_2_swing_00.paa
+  [231] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_2_swing_01.paa
+  [232] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_3_swing_00.paa
+  [233] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_bash_coma_4_move_f_swing_1_00.paa
+  [234] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_fin_lk_bashcoma_4_swing_00.paa
+  [235] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_f_swing_4_00.paa
+  [236] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_f_swing_6_00.paa
+  [237] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_f_turnl_swing_4_00.paa
+  [238] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_f_turnr_swing_6_00.paa
+  [239] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_l_001.paa
+  [240] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_l_002.paa
+  [241] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_r_001.paa
+  [242] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_move_r_002.paa
+  [243] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_l_swing_01.paa
+  [244] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_r_swing_01.paa
+  [245] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_l_swing_02.paa
+  [246] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_r_swing_02.paa
+  [247] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_nor_move_f_swing_00.paa
+  [248] 1_pc/1_phm/cd_phm_axeshield_01_01_nor_att_nor_move_b_swing_00.paa
+  [249] 1_pc/1_phm/cd_phm_swds_01_01_nor_move_f_avoidatt_swing_2_00.paa
+  [251] 1_pc/1_phm/cd_phm_sword_01_01_skill_move_jumpstep_bashatt_000.paa
+  [253] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_downthrust_00.paa
+  [254] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_stepon_00.paa
+  [255] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_swing_2_stt_00.paa
+  [256] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_swing_2_ing_00.paa
+  [257] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_swing_2_end_00.paa
+  [258] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_thrust_2_stt_00.paa
+  [259] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_thrust_2_ing_00.paa
+  [260] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_move_jump_end_thrust_2_end_00.paa
+  [262] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_jump_move_f_thrust_5_stt_00.paa
+  [263] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_jump_move_f_thrust_5_ing_00.paa
+  [264] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_jump_move_f_thrust_5_end_00.paa
+  [265] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_thrust_5_handlr_end_00.paa
+  [266] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_link_phm_move_turn90l_throw_4_00.paa
+  [267] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_link_phm_move_turn180l_throw_5_00.paa
+  [268] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_link_phm_move_turn90r_throw_6_00.paa
+  [272] 1_pc/1_phm/cd_phm_swd_01_01_att_wall_move_f_kick_r_00.paa
+  [273] 1_pc/1_phm/cd_phm_swd_01_01_att_wall_move_f_kick_00.paa
+  [276] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_fastatt_move_f_swing_00.paa
+  [277] 1_pc/1_phm/cd_phm_basic_00_01_att_nor_move_f_tongbae_2_handlr_00.paa
+  [278] 1_pc/1_phm/cd_phm_longsword_01_04_att_com_a_4_move_f_swing_3_00.paa
+  [279] 1_pc/1_phm/cd_phm_sword_01_01_att_nor_move_f_footr_swing_3_00.paa
+  [281] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_move_f_roll_swing_6_00.paa
+  [296] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_02.paa
+  [297] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_01.paa
+  [298] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_02.paa
+  [299] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_04.paa
+  [300] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_06.paa
+  [301] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_09.paa
+  [302] 1_pc/1_phm/cd_phm_sword_01_01_noraml_stand_swordpushdown_lv0_000_avoidatt_000.paa
+  [307] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_01.paa
+  [308] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_03.paa
+  [309] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_04.paa
+  [310] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_06.paa
+  [311] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_07.paa
+  [312] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_08.paa
+  [313] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footl_f_09.paa
+  [314] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_03.paa
+  [315] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_07.paa
+  [316] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_bounce_001_footr_f_08.paa
+  [317] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_01.paa
+  [318] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_02.paa
+  [319] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_03.paa
+  [320] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_04.paa
+  [321] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_06.paa
+  [322] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_07.paa
+  [323] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_08.paa
+  [324] 1_pc/1_phm/00_mon/cd_phm_mon_sword_01_01_att_normal_swing_fail_001_f_09.paa
+  [325] 1_pc/1_phm/cd_phm_sword_01_01_att_skill_shield_move_03_003.paa
+  [326] 1_pc/1_phm/cd_phm_sword_01_01_att_testc9_stand_shield_02.paa
+  [327] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_stand_syshield_005.paa
+  [328] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_stand_syshield_002.paa
+  [329] 1_pc/1_phm/cd_phm_sword_01_01_att_shield_move_001_l.paa
+  [330] 1_pc/1_phm/cd_phm_sword_01_01_att_shield_stand_001.paa
+  [332] 1_pc/1_phm/cd_phm_sword_01_01_def_att_normal_shield_move_001.paa
+  [334] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_stand_shield_002.paa
+  [337] 1_pc/1_phm/cd_phm_swd_01_01_att_fin_coma_1_lk_swing_01.paa
+  [338] 1_pc/1_phm/cd_phm_swd_01_01_att_fin_coma_2_lk_swing_01.paa
+  [339] 1_pc/1_phm/cd_phm_swd_01_01_att_fin_coma_3_lk_swing_01.paa
+  [349] 1_pc/1_phm/cd_phm_sword_01_01_wall_finish_movef_hangatt_000.paa
+  [350] 1_pc/1_phm/cd_phm_sword_01_01_wall_finish_movef_jumpatt_000.paa
+  [353] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_00.paa
+  [354] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_01.paa
+  [355] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_06.paa
+  [356] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_05.paa
+  [357] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_02.paa
+  [358] 1_pc/1_phm/cd_phm_swd_01_01_wall_att_lk_move_f_push_00.paa
+  [359] 1_pc/1_phm/cd_phm_swd_01_01_wall_att_lk_turn180r_throw_00.paa
+  [360] 1_pc/1_phm/cd_phm_swd_01_01_wall_att_lk_turn180l_kneekick_00.paa
+  [361] 1_pc/1_phm/cd_phm_swd_01_01_wall_att_lk_move_f_headbreak_00.paa
+  [362] 1_pc/1_phm/cd_phm_sword_01_01_att_finish_link_phm_move_downthust_00.paa
+  [363] 1_pc/1_phm/cd_phm_sword_01_01_att_finish_link_phm_move_facedownthust_00.paa
+  [364] 1_pc/1_phm/cd_phm_sword_01_01_att_finish_link_phm_move_facedownthust_01.paa
+  [365] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_std_reflex_01.paa
+  [366] 1_pc/1_phm/cd_phm_swd_01_01_nor_att_std_reflex_ing_00.paa
+  [367] 1_pc/1_phm/cd_phm_swd_01_01_nor_att_std_reflex_flip_ing_00.paa
+  [376] 1_pc/1_phm/00_mon/cd_phm_m_shspear_01_01_att_com_a_2_move_f_thrust_5.paa
+  [377] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_stand_syshield_001.paa
+  [404] 1_pc/1_phm/cd_phm_basic_00_01_att_nor_std_crowwing_confusion_stt_00.paa
+  [405] 1_pc/1_phm/cd_phm_basic_00_01_att_nor_std_crowwing_confusion_ing_00.paa
+  [406] 1_pc/1_phm/cd_phm_basic_00_01_att_nor_std_crowwing_confusion_end_00.paa
+  [412] 1_pc/1_phm/cd_phm_sword_01_01_att_finish_link_landspider_move_f_00.paa
+  [416] 1_pc/1_phm/cd_phm_longsword_01_03_att_nor_move_f_turnr_swing_6_00.paa
+  [422] 1_pc/1_phm/cd_phm_swds_01_01_att_nor_lk_move_f_roll_legcatch_00.paa
+  [423] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_g_3_move_f_swing_1_00.paa
+  [424] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_a_1_move_f_swing_1_01.paa
+  [425] 1_pc/1_phm/cd_phm_sword_01_01_att_combo_a_2_move_f_swing_6_00.paa
+  [426] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_twohand_move_fast_001.paa
+  [427] 1_pc/1_phm/cd_phm_sword_01_01_att_normal_handr_footl_swing_03_000.paa
+
+================================================================================
+  COMPLETE STATE LIST
+================================================================================
+Transition count distribution:
+  0 transitions: 467 states
+  1 transitions: 7 states
+  2 transitions: 13 states
+  6 transitions: 108 states
+  7 transitions: 3 states
+  8 transitions: 6 states
+  10 transitions: 3 states
+  11 transitions: 2 states
+  13 transitions: 2 states
+  15 transitions: 1 states
+  16 transitions: 1 states
+  17 transitions: 1 states
+  19 transitions: 1 states
+  20 transitions: 1 states
+  21 transitions: 1 states
+
+ Idx    Offset                 Label  Trans  Targets
+--------------------------------------------------------------------------------
+   0  0x000046                <none>     10  [0, 7, 14, 21, 28, 37, 51, 54...]
+   1  0x000285                <none>     10  [0, 7, 14, 21, 28, 37, 51, 54...]
+   2  0x0004c4                <none>      7  [68, 0, 7, 14, 21, 28, 37]
+   3  0x00069d                <none>      6  [0, 7, 14, 21, 28, 37]
+   4  0x000866                <none>      8  [68, 73, 0, 7, 14, 21, 28, 37]
+   5  0x000a4f                <none>      6  [0, 7, 14, 21, 28, 37]
+   6  0x000c18                <none>      6  [0, 7, 14, 21, 28, 37]
+   7  0x000de1                <none>      6  [0, 7, 14, 21, 28, 37]
+   8  0x000faa                <none>      6  [0, 7, 14, 21, 28, 37]
+   9  0x001173                <none>      6  [0, 7, 14, 21, 28, 37]
+  10  0x00133c                <none>      6  [0, 7, 14, 21, 28, 37]
+  11  0x001505                <none>      6  [0, 7, 14, 21, 28, 37]
+  12  0x0016ce                <none>      8  [78, 83, 0, 7, 14, 21, 28, 37]
+  13  0x0018b7                <none>      8  [78, 83, 0, 7, 14, 21, 28, 37]
+  14  0x001aa0                <none>      6  [0, 7, 14, 21, 28, 37]
+  15  0x001c69                <none>      6  [0, 7, 14, 21, 28, 37]
+  16  0x001e32          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  17  0x001ffb          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  18  0x0021c4                <none>      6  [0, 7, 14, 21, 28, 37]
+  19  0x00238d                <none>      6  [0, 7, 14, 21, 28, 37]
+  20  0x002556                <none>      6  [0, 7, 14, 21, 28, 37]
+  21  0x00271f                <none>      6  [0, 7, 14, 21, 28, 37]
+  22  0x0028e8                <none>      6  [0, 7, 14, 21, 28, 37]
+  23  0x002ab1                <none>      6  [0, 7, 14, 21, 28, 37]
+  24  0x002c7a                <none>      6  [0, 7, 14, 21, 28, 37]
+  25  0x002e43                <none>      6  [0, 7, 14, 21, 28, 37]
+  26  0x00300c                <none>      6  [0, 7, 14, 21, 28, 37]
+  27  0x0031d5          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  28  0x00339e          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  29  0x003567          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  30  0x003730          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  31  0x0038f9                <none>      6  [0, 7, 14, 21, 28, 37]
+  32  0x003ac2                <none>      6  [0, 7, 14, 21, 28, 37]
+  33  0x003c8b                <none>      6  [0, 7, 14, 21, 28, 37]
+  34  0x003e54                <none>      6  [0, 7, 14, 21, 28, 37]
+  35  0x00401d                <none>      6  [0, 7, 14, 21, 28, 37]
+  36  0x0041e6                <none>      6  [0, 7, 14, 21, 28, 37]
+  37  0x0043af                <none>      6  [0, 7, 14, 21, 28, 37]
+  38  0x004578                <none>      6  [0, 7, 14, 21, 28, 37]
+  39  0x004741                <none>      6  [0, 7, 14, 21, 28, 37]
+  40  0x00490a                <none>      6  [0, 7, 14, 21, 28, 37]
+  41  0x004ad3                <none>      6  [0, 7, 14, 21, 28, 37]
+  42  0x004c9c                <none>      6  [0, 7, 14, 21, 28, 37]
+  43  0x004e65                <none>      6  [0, 7, 14, 21, 28, 37]
+  44  0x00502e                <none>      6  [0, 7, 14, 21, 28, 37]
+  45  0x0051f7                <none>      6  [0, 7, 14, 21, 28, 37]
+  46  0x0053c0                <none>      6  [0, 7, 14, 21, 28, 37]
+  47  0x005589                <none>      6  [0, 7, 14, 21, 28, 37]
+  48  0x005752                <none>      6  [0, 7, 14, 21, 28, 37]
+  49  0x00591b                <none>      6  [0, 7, 14, 21, 28, 37]
+  50  0x005ae4                <none>      6  [0, 7, 14, 21, 28, 37]
+  51  0x005cad                <none>      6  [0, 7, 14, 21, 28, 37]
+  52  0x005e76                <none>      6  [0, 7, 14, 21, 28, 37]
+  53  0x00603f                <none>      6  [0, 7, 14, 21, 28, 37]
+  54  0x006208                <none>      6  [0, 7, 14, 21, 28, 37]
+  55  0x0063d1                <none>      6  [0, 7, 14, 21, 28, 37]
+  56  0x00659a                <none>      6  [0, 7, 14, 21, 28, 37]
+  57  0x006763                <none>      6  [0, 7, 14, 21, 28, 37]
+  58  0x00692c                <none>      6  [0, 7, 14, 21, 28, 37]
+  59  0x006af5                <none>      6  [0, 7, 14, 21, 28, 37]
+  60  0x006cbe                <none>      6  [0, 7, 14, 21, 28, 37]
+  61  0x006e87                <none>      6  [0, 7, 14, 21, 28, 37]
+  62  0x007050                <none>      6  [0, 7, 14, 21, 28, 37]
+  63  0x007219                <none>      6  [0, 7, 14, 21, 28, 37]
+  64  0x0073e2                <none>      6  [0, 7, 14, 21, 28, 37]
+  65  0x0075ab                <none>      6  [0, 7, 14, 21, 28, 37]
+  66  0x007774                <none>      6  [0, 7, 14, 21, 28, 37]
+  67  0x00793d                <none>      6  [0, 7, 14, 21, 28, 37]
+  68  0x007b06                <none>      6  [0, 7, 14, 21, 28, 37]
+  69  0x007ccf                <none>      6  [0, 7, 14, 21, 28, 37]
+  70  0x007e98                <none>      6  [0, 7, 14, 21, 28, 37]
+  71  0x008061                <none>      6  [0, 7, 14, 21, 28, 37]
+  72  0x00822a                <none>      6  [0, 7, 14, 21, 28, 37]
+  73  0x0083f3                <none>      6  [0, 7, 14, 21, 28, 37]
+  74  0x0085bc                <none>      6  [0, 7, 14, 21, 28, 37]
+  75  0x008785                <none>      6  [0, 7, 14, 21, 28, 37]
+  76  0x00894e                <none>      6  [0, 7, 14, 21, 28, 37]
+  77  0x008b17                <none>      6  [0, 7, 14, 21, 28, 37]
+  78  0x008ce0                <none>      6  [0, 7, 14, 21, 28, 37]
+  79  0x008ea9                <none>      6  [0, 7, 14, 21, 28, 37]
+  80  0x009072                <none>      6  [0, 7, 14, 21, 28, 37]
+  81  0x00923b                <none>      6  [0, 7, 14, 21, 28, 37]
+  82  0x009404                <none>      6  [0, 7, 14, 21, 28, 37]
+  83  0x0095cd                <none>      6  [0, 7, 14, 21, 28, 37]
+  84  0x009796                <none>      6  [0, 7, 14, 21, 28, 37]
+  85  0x00995f                <none>      6  [0, 7, 14, 21, 28, 37]
+  86  0x009b28                <none>      6  [0, 7, 14, 21, 28, 37]
+  87  0x009cf1                <none>      6  [0, 7, 14, 21, 28, 37]
+  88  0x009eba                <none>      6  [0, 7, 14, 21, 28, 37]
+  89  0x00a083                <none>      6  [0, 7, 14, 21, 28, 37]
+  90  0x00a24c                <none>      6  [0, 7, 14, 21, 28, 37]
+  91  0x00a415                <none>      6  [0, 7, 14, 21, 28, 37]
+  92  0x00a5de                <none>      6  [0, 7, 14, 21, 28, 37]
+  93  0x00a7a7                <none>      6  [0, 7, 14, 21, 28, 37]
+  94  0x00a970                <none>      6  [0, 7, 14, 21, 28, 37]
+  95  0x00ab39                <none>      6  [0, 7, 14, 21, 28, 37]
+  96  0x00ad02                <none>      6  [0, 7, 14, 21, 28, 37]
+  97  0x00aecb                <none>      6  [0, 7, 14, 21, 28, 37]
+  98  0x00b094                <none>      6  [0, 7, 14, 21, 28, 37]
+  99  0x00b25d                <none>      6  [0, 7, 14, 21, 28, 37]
+ 100  0x00b426                <none>      6  [0, 7, 14, 21, 28, 37]
+ 101  0x00b5ef                <none>      6  [0, 7, 14, 21, 28, 37]
+ 102  0x00b7b8                <none>      6  [0, 7, 14, 21, 28, 37]
+ 103  0x00b981                <none>      6  [0, 7, 14, 21, 28, 37]
+ 104  0x00bb4a                <none>      6  [0, 7, 14, 21, 28, 37]
+ 105  0x00bd13                <none>      6  [0, 7, 14, 21, 28, 37]
+ 106  0x00bedc                <none>      6  [0, 7, 14, 21, 28, 37]
+ 107  0x00c0a5                <none>      6  [0, 7, 14, 21, 28, 37]
+ 108  0x00c26e                <none>     11  [0, 7, 14, 21, 28, 37, 88, 94...]
+ 109  0x00c487                <none>     16  [0, 7, 14, 21, 28, 37, 51, 54...]
+ 110  0x00c726       LeftArmNoSplice     15  [0, 7, 14, 21, 28, 37, 51, 118...]
+ 111  0x00c991       LeftArmNoSplice     17  [0, 7, 14, 21, 28, 37, 51, 54...]
+ 112  0x00cc40        NeckAndLeftArm      8  [0, 7, 14, 21, 28, 37, 137, 144]
+ 113  0x00ce41        NeckAndLeftArm      8  [0, 7, 14, 21, 28, 37, 137, 215]
+ 114  0x00d042                <none>     10  [286, 344, 349, 397, 316, 301, 368, 330...]
+ 115  0x00d437                <none>      7  [68, 430, 88, 94, 100, 106, 112]
+ 116  0x00d564                <none>     21  [435, 349, 479, 485, 499, 517, 535, 621...]
+ 117  0x00d94b                <none>     20  [988, 349, 479, 485, 499, 517, 535, 621...]
+ 118  0x00dd34                <none>     19  [1045, 349, 479, 485, 499, 517, 535, 621...]
+ 119  0x00e0fb                <none>      0  []
+ 120  0x00e868                <none>      0  []
+ 121  0x00efd5                <none>      0  []
+ 122  0x00f742                <none>      0  []
+ 123  0x00feaf                <none>      0  []
+ 124  0x010392                <none>     11  [0, 7, 14, 21, 28, 37, 88, 94...]
+ 125  0x0105ab                <none>      2  [68, 73]
+ 126  0x0106c4                <none>      2  [68, 73]
+ 127  0x0107dd                <none>      2  [68, 73]
+ 128  0x0108f6                <none>      2  [68, 73]
+ 129  0x010a0f                <none>      2  [68, 73]
+ 130  0x010b28                <none>      2  [68, 73]
+ 131  0x010c41                <none>      8  [68, 83, 0, 7, 14, 21, 28, 37]
+ 132  0x010e4e                <none>      0  []
+ 133  0x0110b1          Spine2_Upper      1  [83]
+ 134  0x0111ae                <none>      2  [68, 83]
+ 135  0x0112df                <none>      2  [68, 83]
+ 136  0x011410                <none>      2  [68, 83]
+ 137  0x011541                <none>      2  [68, 83]
+ 138  0x011672                <none>      2  [68, 83]
+ 139  0x0117a3                <none>      2  [68, 83]
+ 140  0x0118d4                <none>     13  [68, 83, 0, 7, 14, 21, 28, 37...]
+ 141  0x012440                <none>      0  []
+ 142  0x01253d                <none>      0  []
+ 143  0x01263a                <none>      0  []
+ 144  0x012747                <none>      0  []
+ 145  0x0128c8                <none>      0  []
+ 146  0x012aa9                <none>      0  []
+ 147  0x012bb6                <none>      0  []
+ 148  0x012cc3                <none>      0  []
+ 149  0x012dd0                <none>      0  []
+ 150  0x012fbd                <none>      0  []
+ 151  0x01315a                <none>      0  []
+ 152  0x0133b9                <none>      0  []
+ 153  0x013556                <none>      0  []
+ 154  0x0136d3                <none>      0  []
+ 155  0x013830                <none>      0  []
+ 156  0x0139fd                <none>      0  []
+ 157  0x013b6a                <none>      0  []
+ 158  0x013cd7                <none>      0  []
+ 159  0x013e88                <none>      0  []
+ 160  0x014009          Spine2_Upper      0  []
+ 161  0x0141ba          Spine2_Upper      0  []
+ 162  0x01433b                <none>      0  []
+ 163  0x0144f0                <none>      0  []
+ 164  0x014675          Spine2_Upper      0  []
+ 165  0x01482a          Spine2_Upper      0  []
+ 166  0x01498f                <none>      0  []
+ 167  0x014b10                <none>      0  []
+ 168  0x014c6d                <none>      0  []
+ 169  0x014dea                <none>      0  []
+ 170  0x0150b7                <none>      0  []
+ 171  0x015278                <none>      0  []
+ 172  0x0153ed                <none>      0  []
+ 173  0x01558e                <none>      0  []
+ 174  0x01593a                <none>      0  []
+ 175  0x015b0b                <none>      0  []
+ 176  0x015c9c                <none>      0  []
+ 177  0x015de9          Spine2_Upper      0  []
+ 178  0x015f36                <none>      0  []
+ 179  0x016097                <none>      0  []
+ 180  0x0161f8                <none>      0  []
+ 181  0x016349          Spine2_Upper      0  []
+ 182  0x01672f                <none>      0  []
+ 183  0x01685c              RightArm      0  []
+ 184  0x016989              RightArm      0  []
+ 185  0x016aba              RightArm      0  []
+ 186  0x016beb                <none>      0  []
+ 187  0x016f00                <none>      0  []
+ 188  0x0170b1                <none>      0  []
+ 189  0x017292                <none>      0  []
+ 190  0x017433                <none>      6  [68, 88, 94, 100, 106, 112]
+ 191  0x017580                <none>      0  []
+ 192  0x017725                <none>      0  []
+ 193  0x0178e2                <none>      0  []
+ 194  0x017a9f                <none>      0  []
+ 195  0x017b9c                <none>      0  []
+ 196  0x017c99                <none>      0  []
+ 197  0x017d86                <none>      7  [68, 430, 88, 94, 100, 106, 112]
+ 198  0x017f07                <none>      0  []
+ 199  0x0180a8                <none>      0  []
+ 200  0x01827d        NeckAndLeftArm      0  []
+ 201  0x018434        NeckAndLeftArm      0  []
+ 202  0x0186b9        NeckAndLeftArm      0  []
+ 203  0x01893e                <none>      0  []
+ 204  0x018a53                <none>      0  []
+ 205  0x018c10                <none>      0  []
+ 206  0x018dcd                <none>      0  []
+ 207  0x018faa                <none>      0  []
+ 208  0x019187                <none>      0  []
+ 209  0x019388                <none>      1  [344]
+ 210  0x019810                <none>      0  []
+ 211  0x019b27                <none>      0  []
+ 212  0x019e76                <none>      0  []
+ 213  0x01a18d                <none>      0  []
+ 214  0x01a4cc                <none>      0  []
+ 215  0x01a7e3                <none>      0  []
+ 216  0x01add1                <none>      0  []
+ 217  0x01b0c8                <none>      0  []
+ 218  0x01b417                <none>      0  []
+ 219  0x01b70e                <none>      0  []
+ 220  0x01ba65                <none>      0  []
+ 221  0x01bd5c                <none>      0  []
+ 222  0x01c472                <none>      0  []
+ 223  0x01c7f7                <none>      0  []
+ 224  0x01caf6                <none>      0  []
+ 225  0x01ce7b                <none>      0  []
+ 226  0x01d4c9                <none>      0  []
+ 227  0x01d838                <none>      0  []
+ 228  0x01db87                <none>      0  []
+ 229  0x01def6                <none>      0  []
+ 230  0x01eea3                <none>      0  []
+ 231  0x01f4d0                <none>      0  []
+ 232  0x01f81f                <none>      0  []
+ 233  0x01fe4c                <none>      0  []
+ 234  0x020736                <none>      0  []
+ 235  0x020ca5                <none>      0  []
+ 236  0x020fe4                <none>      0  []
+ 237  0x021553                <none>      0  []
+ 238  0x021aed                <none>      0  []
+ 239  0x021e88                <none>      0  []
+ 240  0x02243e                <none>      0  []
+ 241  0x02274d                <none>      0  []
+ 242  0x022a04                <none>      0  []
+ 243  0x022fcf                <none>      0  []
+ 244  0x023380                <none>      0  []
+ 245  0x0240de                <none>      0  []
+ 246  0x024465                <none>      0  []
+ 247  0x02518f                <none>      0  []
+ 248  0x025707                <none>      0  []
+ 249  0x025db7                <none>      0  []
+ 250  0x0263c7                <none>      0  []
+ 251  0x02666c                <none>      0  []
+ 252  0x026d1e                <none>      0  []
+ 253  0x02702d                <none>      0  []
+ 254  0x027d04                <none>      0  []
+ 255  0x028243                <none>      0  []
+ 256  0x028845                <none>      0  []
+ 257  0x028afc                <none>      0  []
+ 258  0x029569                <none>      0  []
+ 259  0x029820                <none>      0  []
+ 260  0x029b8f                <none>      0  []
+ 261  0x029e6c                <none>      0  []
+ 262  0x02c1dc                <none>      0  []
+ 263  0x02c6bb                <none>      0  []
+ 264  0x02c9ca                <none>      0  []
+ 265  0x02cea9                <none>      0  []
+ 266  0x02d1b8                <none>      0  []
+ 267  0x02d697                <none>      0  []
+ 268  0x02eb45                <none>      0  []
+ 269  0x02f054                <none>      0  []
+ 270  0x02f393                <none>      0  []
+ 271  0x02f8a2                <none>      0  []
+ 272  0x030705                <none>      0  []
+ 273  0x030bfc                <none>      0  []
+ 274  0x031b6b                <none>      0  []
+ 275  0x032202                <none>      0  []
+ 276  0x0346e3                <none>      0  []
+ 277  0x034aa6                <none>      0  []
+ 278  0x034e69                <none>      0  []
+ 279  0x03524c                <none>      0  []
+ 280  0x035603                <none>      0  []
+ 281  0x035b26                <none>      0  []
+ 282  0x035fc3                <none>      0  []
+ 283  0x0367d0                <none>      0  []
+ 284  0x036fdd                <none>      0  []
+ 285  0x0377fa                <none>      0  []
+ 286  0x038754                <none>      0  []
+ 287  0x038f01                <none>      0  []
+ 288  0x03975e                <none>      0  []
+ 289  0x039f7b                <none>      0  []
+ 290  0x03a7a8                <none>      0  []
+ 291  0x03afd5                <none>      0  []
+ 292  0x03b802                <none>      0  []
+ 293  0x03c02f                <none>      0  []
+ 294  0x03c7fc                <none>      0  []
+ 295  0x03d079                <none>      0  []
+ 296  0x03d8b6                <none>      0  []
+ 297  0x03e0e3                <none>      0  []
+ 298  0x03e910                <none>      0  []
+ 299  0x03f13d                <none>      0  []
+ 300  0x03f96a                <none>      0  []
+ 301  0x040137                <none>      0  []
+ 302  0x0409b4                <none>      0  []
+ 303  0x0411f1                <none>      0  []
+ 304  0x0419fe                <none>      0  []
+ 305  0x04220b                <none>      0  []
+ 306  0x042a18                <none>      0  []
+ 307  0x043225                <none>      0  []
+ 308  0x0439d2                <none>      0  []
+ 309  0x04422f                <none>      0  []
+ 310  0x044a4c                <none>      0  []
+ 311  0x045175                <none>      0  []
+ 312  0x0458bc                <none>      0  []
+ 313  0x045f27                <none>      0  []
+ 314  0x0465b0                <none>      0  []
+ 315  0x046dbd                <none>      0  []
+ 316  0x0475ca                <none>      0  []
+ 317  0x047de7                <none>      0  []
+ 318  0x048d41                <none>      0  []
+ 319  0x0494ee                <none>      0  []
+ 320  0x049d4b                <none>      0  []
+ 321  0x04a568                <none>      0  []
+ 322  0x04ad95                <none>      0  []
+ 323  0x04b5c2                <none>      0  []
+ 324  0x04bdef                <none>      0  []
+ 325  0x04c61c                <none>      0  []
+ 326  0x04cde9                <none>      0  []
+ 327  0x04d666                <none>      0  []
+ 328  0x04dea3                <none>      0  []
+ 329  0x04e6d0                <none>      0  []
+ 330  0x04eefd                <none>      0  []
+ 331  0x04f72a                <none>      0  []
+ 332  0x04ff57                <none>      0  []
+ 333  0x050724                <none>      0  []
+ 334  0x050fa1                <none>      0  []
+ 335  0x0517de                <none>      0  []
+ 336  0x051feb                <none>      0  []
+ 337  0x0527f8                <none>      0  []
+ 338  0x053005                <none>      0  []
+ 339  0x053812                <none>      0  []
+ 340  0x053fbf                <none>      0  []
+ 341  0x05481c                <none>      0  []
+ 342  0x055039                <none>      0  []
+ 343  0x05551c                <none>      0  []
+ 344  0x055a1f                <none>      0  []
+ 345  0x055f52                <none>      0  []
+ 346  0x056239                <none>      0  []
+ 347  0x05651e                <none>      0  []
+ 348  0x056749                <none>      0  []
+ 349  0x056942                <none>      0  []
+ 350  0x056bfb                <none>      0  []
+ 351  0x056fcc                <none>      0  []
+ 352  0x0574eb                <none>      1  [430]
+ 353  0x0583f8                <none>      0  []
+ 354  0x05889d                <none>      0  []
+ 355  0x058da8                <none>      0  []
+ 356  0x058f75                <none>      0  []
+ 357  0x05917a                <none>      0  []
+ 358  0x0593ef                <none>      0  []
+ 359  0x05975c                <none>      0  []
+ 360  0x059939                <none>      0  []
+ 361  0x059aca                <none>      0  []
+ 362  0x059c5b                <none>      0  []
+ 363  0x05de5d                <none>      0  []
+ 364  0x05e2d8                <none>      0  []
+ 365  0x05e919                <none>      0  []
+ 366  0x06500c                <none>      0  []
+ 367  0x0651fd                <none>      0  []
+ 368  0x065542                <none>      0  []
+ 369  0x065683                <none>      0  []
+ 370  0x0659a8                <none>      0  []
+ 371  0x065c09                <none>      0  []
+ 372  0x065eb2                <none>      2  [344, 301]
+ 373  0x066399                <none>      0  []
+ 374  0x06655a                <none>      0  []
+ 375  0x06669f                <none>      0  []
+ 376  0x066a76                <none>      0  []
+ 377  0x066e5f                <none>      0  []
+ 378  0x067226                <none>      0  []
+ 379  0x0675ed                <none>      0  []
+ 380  0x068d70                <none>      0  []
+ 381  0x068ed5                <none>      0  []
+ 382  0x069056                <none>      0  []
+ 383  0x0691df                <none>      1  [301]
+ 384  0x069350                <none>      0  []
+ 385  0x06952d                <none>      0  []
+ 386  0x06971a                <none>      0  []
+ 387  0x06985b                <none>      0  []
+ 388  0x069abc                <none>      0  []
+ 389  0x069dcd                <none>      0  []
+ 390  0x06a00e                <none>      0  []
+ 391  0x06a0df                <none>      0  []
+ 392  0x06a1f0                <none>      0  []
+ 393  0x06a2b1                <none>      0  []
+ 394  0x06a382                <none>      0  []
+ 395  0x06a493                <none>      0  []
+ 396  0x06a554                <none>      0  []
+ 397  0x06a79d                <none>      0  []
+ 398  0x06a9e6                <none>      0  []
+ 399  0x06ac2f                <none>      0  []
+ 400  0x06ae78                <none>      0  []
+ 401  0x06b0c1                <none>      0  []
+ 402  0x06b30a                <none>      0  []
+ 403  0x06b47f                <none>      0  []
+ 404  0x06b5c0                <none>      0  []
+ 405  0x06b7d5                <none>      0  []
+ 406  0x06b8c6                <none>      0  []
+ 407  0x06b977                <none>      0  []
+ 408  0x06bab8                <none>      0  []
+ 409  0x06bd4d                <none>      0  []
+ 410  0x06bfe2                <none>      0  []
+ 411  0x06c277                <none>      0  []
+ 412  0x06c50c                <none>      0  []
+ 413  0x06c7a1                <none>      0  []
+ 414  0x06ca36                <none>      0  []
+ 415  0x06cccb                <none>      0  []
+ 416  0x06cf60                <none>      0  []
+ 417  0x06d1f5                <none>      0  []
+ 418  0x06d48a                <none>      0  []
+ 419  0x06d71f                <none>      0  []
+ 420  0x06d9b4                <none>      0  []
+ 421  0x06dc49                <none>      0  []
+ 422  0x06dede                <none>      0  []
+ 423  0x06e173                <none>      0  []
+ 424  0x06e408                <none>      0  []
+ 425  0x06e575                <none>      0  []
+ 426  0x06e6d2                <none>      0  []
+ 427  0x06e82f                <none>      0  []
+ 428  0x06e98c                <none>      0  []
+ 429  0x06eae9                <none>      0  []
+ 430  0x06ec46                <none>      0  []
+ 431  0x06eda3                <none>      0  []
+ 432  0x06ef00                <none>      0  []
+ 433  0x06f307                <none>      0  []
+ 434  0x06f704                <none>      0  []
+ 435  0x06fe8e                <none>      0  []
+ 436  0x0707fd                <none>      6  [137, 88, 94, 100, 106, 112]
+ 437  0x07098a                <none>      0  []
+ 438  0x070cc9                <none>      0  []
+ 439  0x07103c                <none>      6  [344, 88, 94, 100, 106, 112]
+ 440  0x07125d                <none>      0  []
+ 441  0x071516                <none>      0  []
+ 442  0x0717db                <none>      0  []
+ 443  0x071b38                <none>      0  []
+ 444  0x0724a3                <none>      0  []
+ 445  0x0727f8                <none>      0  []
+ 446  0x072cea                <none>      1  [430]
+ 447  0x072fcb                <none>      1  [430]
+ 448  0x0732ac                <none>      0  []
+ 449  0x0734a3                <none>      0  []
+ 450  0x07368a                <none>      0  []
+ 451  0x0738c1                <none>      0  []
+ 452  0x073aec                <none>      0  []
+ 453  0x073ca7                <none>      0  []
+ 454  0x073eb2                <none>      0  []
+ 455  0x0740e5                <none>      0  []
+ 456  0x074418                <none>      0  []
+ 457  0x0745f3                <none>      0  []
+ 458  0x0747d2                <none>      0  []
+ 459  0x0749c7                <none>      0  []
+ 460  0x074ba8                <none>      0  []
+ 461  0x074d51                <none>      0  []
+ 462  0x075104                <none>      0  []
+ 463  0x075437                <none>      0  []
+ 464  0x0757aa                <none>      0  []
+ 465  0x075b2d                <none>      0  []
+ 466  0x075ef0                <none>      0  []
+ 467  0x0762f3                <none>      0  []
+ 468  0x076726                <none>      0  []
+ 469  0x076b29                <none>      0  []
+ 470  0x076eec                <none>      0  []
+ 471  0x0771cf                <none>      0  []
+ 472  0x077472                <none>      0  []
+ 473  0x077715                <none>      0  []
+ 474  0x0779b8                <none>      0  []
+ 475  0x077bed                <none>      0  []
+ 476  0x077e12                <none>      0  []
+ 477  0x07800f                <none>      0  []
+ 478  0x07821c                <none>      0  []
+ 479  0x0783a9                <none>      0  []
+ 480  0x078586                <none>      0  []
+ 481  0x078713                <none>      0  []
+ 482  0x078ad2                <none>      0  []
+ 483  0x078f81                <none>      0  []
+ 484  0x0792e4                <none>      0  []
+ 485  0x0793f5                <none>      0  []
+ 486  0x07994c                <none>      0  []
+ 487  0x079b17                <none>      0  []
+ 488  0x079df6       NeckAndRightArm      0  []
+ 489  0x07a37d       NeckAndRightArm      0  []
+ 490  0x07a578       NeckAndRightArm      0  []
+ 491  0x07a877                <none>      0  []
+ 492  0x07aade                <none>      0  []
+ 493  0x07abcf                <none>      0  []
+ 494  0x07adf8                <none>      0  []
+ 495  0x07aed9              FullBody      0  []
+ 496  0x07b150              FullBody      0  []
+ 497  0x07b221              FullBody      0  []
+ 498  0x07b334                <none>      0  []
+ 499  0x07b4d5                <none>      0  []
+ 500  0x07b676                <none>      0  []
+ 501  0x07b817                <none>      0  []
+ 502  0x07b9b8                <none>      0  []
+ 503  0x07bb59                <none>      0  []
+ 504  0x07bcfa                <none>      0  []
+ 505  0x07be9b                <none>      0  []
+ 506  0x07c03c                <none>      0  []
+ 507  0x07c1dd                <none>      0  []
+ 508  0x07c5d8                <none>      0  []
+ 509  0x07cb0f                <none>      0  []
+ 510  0x07cffa                <none>      0  []
+ 511  0x07d521                <none>      0  []
+ 512  0x07d9fc                <none>      0  []
+ 513  0x07dbcd                <none>      0  []
+ 514  0x07dd9e                <none>      0  []
+ 515  0x07df6f                <none>      0  []
+ 516  0x07e140                <none>      0  []
+ 517  0x07e311                <none>      0  []
+ 518  0x07e4e2                <none>      0  []
+ 519  0x07e6b3                <none>      0  []
+ 520  0x07e884                <none>      0  []
+ 521  0x07ea55                <none>      0  []
+ 522  0x07ecb0                <none>      0  []
+ 523  0x07ef0b                <none>      0  []
+ 524  0x07f166                <none>      0  []
+ 525  0x07f3c1                <none>      0  []
+ 526  0x07f61c                <none>      0  []
+ 527  0x07f877                <none>      0  []
+ 528  0x07fad2                <none>      0  []
+ 529  0x07fd2d                <none>      0  []
+ 530  0x07ff88                <none>      0  []
+ 531  0x080169                <none>      0  []
+ 532  0x080356                <none>      0  []
+ 533  0x0804c3                <none>      6  [88, 94, 100, 106, 112, 349]
+ 534  0x0805e4                <none>      0  []
+ 535  0x0807b1                <none>      0  []
+ 536  0x080a1e                <none>      6  [88, 94, 100, 106, 112, 349]
+ 537  0x080b6b                <none>      6  [88, 94, 100, 106, 112, 349]
+ 538  0x080cb8                <none>      0  []
+ 539  0x080e55                <none>      0  []
+ 540  0x080ff2                <none>      0  []
+ 541  0x08119f                <none>      0  []
+ 542  0x08134c                <none>      0  []
+ 543  0x08152d                <none>      0  []
+ 544  0x08161e                <none>      0  []
+ 545  0x08176b                <none>      0  []
+ 546  0x0818d8                <none>      0  []
+ 547  0x081a25                <none>      0  []
+ 548  0x081cf8                <none>      0  []
+ 549  0x081fcb                <none>      0  []
+ 550  0x0820fc                <none>      0  []
+ 551  0x082259                <none>      0  []
+ 552  0x08241e                <none>      0  []
+ 553  0x08258f                <none>      0  []
+ 554  0x0826b4                <none>      0  []
+ 555  0x082845                <none>      0  []
+ 556  0x082986                <none>      0  []
+ 557  0x082b53                <none>      0  []
+ 558  0x082c94                <none>      0  []
+ 559  0x082ea1                <none>      0  []
+ 560  0x082ff2                <none>      0  []
+ 561  0x0831af                <none>      0  []
+ 562  0x083374                <none>      1  [68]
+ 563  0x083471                <none>      0  []
+ 564  0x08363e                <none>      0  []
+ 565  0x0838ef                <none>      0  []
+ 566  0x083c00                <none>      0  []
+ 567  0x083ef5                <none>      0  []
+ 568  0x084216                <none>      0  []
+ 569  0x084527                <none>      0  []
+ 570  0x08480c                <none>      0  []
+ 571  0x0849f1                <none>      0  []
+ 572  0x084bd2                <none>      0  []
+ 573  0x084e43                <none>      0  []
+ 574  0x085100                <none>      0  []
+ 575  0x0853cd                <none>      0  []
+ 576  0x0856ea                <none>      0  []
+ 577  0x0859bf                <none>      0  []
+ 578  0x085a70                <none>      0  []
+ 579  0x085b21                <none>      0  []
+ 580  0x085bd2                <none>      0  []
+ 581  0x085c83                <none>      0  []
+ 582  0x085d34                <none>      0  []
+ 583  0x085e05                <none>      0  []
+ 584  0x085f46                <none>      0  []
+ 585  0x0861ff                <none>      0  []
+ 586  0x086470                <none>      0  []
+ 587  0x086671                <none>      0  []
+ 588  0x086892                <none>      0  []
+ 589  0x08714e                <none>      0  []
+ 590  0x0872db                <none>      0  []
+ 591  0x0875c8                <none>      0  []
+ 592  0x087731                <none>      0  []
+ 593  0x08789a                <none>      0  []
+ 594  0x087a03                <none>      0  []
+ 595  0x087b4c                <none>      0  []
+ 596  0x087d0d                <none>      0  []
+ 597  0x087eae                <none>     13  [68, 83, 0, 7, 14, 21, 28, 37...]
+ 598  0x08914a                <none>      0  []
+ 599  0x08937f                <none>      0  []
+ 600  0x0895b4                <none>      0  []
+ 601  0x089899                <none>      0  []
+ 602  0x089b9e                <none>      0  []
+ 603  0x089eeb                <none>      0  []
+ 604  0x08a234                <none>      0  []
+ 605  0x08a4f9                <none>      0  []
+ 606  0x08a7ce                <none>      0  []
+ 607  0x08b2d4                <none>      0  []
+ 608  0x08bcca                <none>      0  []
+ 609  0x08c275                <none>      0  []
+ 610  0x08c800                <none>      0  []
+ 611  0x08d029                <none>      0  []
+ 612  0x08d812                <none>      0  []
+ 613  0x08dd69                <none>      0  []
+ 614  0x08df74                <none>      0  []
+ 615  0x08e243                <none>      0  []
+ 616  0x08e79a                <none>      0  []
+
+================================================================================
+  TRANSITION MAP
+================================================================================
+Forward transitions (state -> targets):
+  State    0 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5), 51(thresh=0.00,seq=6), 54(thresh=0.00,seq=7), 61(thresh=0.00,seq=8), 44(thresh=1.67,seq=9)
+  State    1 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5), 51(thresh=0.00,seq=6), 54(thresh=0.00,seq=7), 61(thresh=0.00,seq=8), 44(thresh=1.67,seq=9)
+  State    2 -> 68(thresh=0.00,seq=0), 0(thresh=0.00,seq=1), 7(thresh=0.00,seq=2), 14(thresh=0.00,seq=3), 21(thresh=0.00,seq=4), 28(thresh=0.00,seq=5), 37(thresh=0.00,seq=6)
+  State    3 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    4 -> 68(thresh=0.00,seq=0), 73(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State    5 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    6 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    7 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    8 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    9 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   10 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   11 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   12 -> 78(thresh=0.00,seq=0), 83(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State   13 -> 78(thresh=0.00,seq=0), 83(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State   14 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   15 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   16 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   17 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   18 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   19 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   20 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   21 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   22 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   23 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   24 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   25 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   26 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   27 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   28 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   29 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   30 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   31 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   32 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   33 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   34 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   35 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   36 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   37 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   38 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   39 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   40 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   41 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   42 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   43 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   44 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   45 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   46 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   47 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   48 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   49 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   50 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   51 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   52 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   53 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   54 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   55 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   56 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   57 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   58 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   59 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   60 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   61 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   62 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   63 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   64 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   65 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   66 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   67 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   68 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   69 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   70 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   71 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   72 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   73 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   74 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   75 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   76 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   77 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   78 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   79 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   80 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   81 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   82 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   83 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   84 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   85 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   86 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   87 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   88 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   89 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   90 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   91 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   92 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   93 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   94 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   95 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   96 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   97 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   98 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   99 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  ... (50 more states with transitions)
+
+Most targeted states (reverse map):
+  State    0 (<none>): targeted by 121 states
+  State    7 (<none>): targeted by 121 states
+  State   14 (<none>): targeted by 121 states
+  State   21 (<none>): targeted by 121 states
+  State   28 (Spine2_Upper): targeted by 121 states
+  State   37 (<none>): targeted by 121 states
+  State   68 (<none>): targeted by 21 states
+  State   83 (<none>): targeted by 12 states
+  State   88 (<none>): targeted by 12 states
+  State   94 (<none>): targeted by 12 states
+  State  100 (<none>): targeted by 12 states
+  State  106 (<none>): targeted by 12 states
+  State  112 (NeckAndLeftArm): targeted by 12 states
+  State  442 (<none>): targeted by 12 states
+  State   73 (<none>): targeted by 7 states
+  State  349 (<none>): targeted by 7 states
+  State   51 (<none>): targeted by 5 states
+  State   54 (<none>): targeted by 5 states
+  State  430 (<none>): targeted by 5 states
+  State   61 (<none>): targeted by 4 states
+  State   44 (<none>): targeted by 4 states
+  State  344 (<none>): targeted by 4 states
+  State  137 (<none>): targeted by 3 states
+  State  301 (<none>): targeted by 3 states
+  State  479 (<none>): targeted by 3 states
+  State  485 (<none>): targeted by 3 states
+  State  499 (<none>): targeted by 3 states
+  State  517 (<none>): targeted by 3 states
+  State  535 (<none>): targeted by 3 states
+  State  621 (<state 621 not in marker set>): targeted by 3 states
+
+================================================================================
+  GUARD TRANSITION ANALYSIS
+================================================================================
+Guard state: 0
+  Label: <none>
+  Own transitions: 10
+    -> state 0 (thresh=0.0000, seq=0)
+    -> state 7 (thresh=0.0000, seq=1)
+    -> state 14 (thresh=0.0000, seq=2)
+    -> state 21 (thresh=0.0000, seq=3)
+    -> state 28 (thresh=0.0000, seq=4)
+    -> state 37 (thresh=0.0000, seq=5)
+    -> state 51 (thresh=0.0000, seq=6)
+    -> state 54 (thresh=0.0000, seq=7)
+    -> state 61 (thresh=0.0000, seq=8)
+    -> state 44 (thresh=1.6667, seq=9)
+
+States that CANNOT transition to guard (state 0): 32 of 617
+States that CAN transition to guard: 118
+States with no transitions at all: 467
+
+Guard-blocked states with transitions (likely attack sub-states):
+  State  114 (<none>): transitions to [286, 344, 349, 397, 316, 301, 368, 330, 356, 359]
+  State  115 (<none>): transitions to [68, 430, 88, 94, 100, 106, 112]
+  State  116 (<none>): transitions to [435, 349, 479, 485, 499, 517, 535, 621, 707, 791, 904, 875, 442, 442, 442, 970, 442, 937, 462, 476, 492]
+  State  117 (<none>): transitions to [988, 349, 479, 485, 499, 517, 535, 621, 707, 791, 54, 875, 1012, 442, 442, 442, 442, 995, 1009, 492]
+  State  118 (<none>): transitions to [1045, 349, 479, 485, 499, 517, 535, 621, 707, 791, 904, 937, 442, 875, 442, 442, 442, 1052, 492]
+  State  125 (<none>): transitions to [68, 73]
+  State  126 (<none>): transitions to [68, 73]
+  State  127 (<none>): transitions to [68, 73]
+  State  128 (<none>): transitions to [68, 73]
+  State  129 (<none>): transitions to [68, 73]
+  State  130 (<none>): transitions to [68, 73]
+  State  133 (Spine2_Upper): transitions to [83]
+  State  134 (<none>): transitions to [68, 83]
+  State  135 (<none>): transitions to [68, 83]
+  State  136 (<none>): transitions to [68, 83]
+  State  137 (<none>): transitions to [68, 83]
+  State  138 (<none>): transitions to [68, 83]
+  State  139 (<none>): transitions to [68, 83]
+  State  190 (<none>): transitions to [68, 88, 94, 100, 106, 112]
+  State  197 (<none>): transitions to [68, 430, 88, 94, 100, 106, 112]
+  State  209 (<none>): transitions to [344]
+  State  352 (<none>): transitions to [430]
+  State  372 (<none>): transitions to [344, 301]
+  State  383 (<none>): transitions to [301]
+  State  436 (<none>): transitions to [137, 88, 94, 100, 106, 112]
+  State  439 (<none>): transitions to [344, 88, 94, 100, 106, 112]
+  State  446 (<none>): transitions to [430]
+  State  447 (<none>): transitions to [430]
+  State  533 (<none>): transitions to [88, 94, 100, 106, 112, 349]
+  State  536 (<none>): transitions to [88, 94, 100, 106, 112, 349]
+  State  537 (<none>): transitions to [88, 94, 100, 106, 112, 349]
+  State  562 (<none>): transitions to [68]
+
+================================================================================
+  STATE CLASSIFICATION
+================================================================================
+delayed_guard_access: 7 states
+  State    0 (<none>): 10 transitions
+  State    1 (<none>): 10 transitions
+  State  109 (<none>): 16 transitions
+  State  110 (LeftArmNoSplice): 15 transitions
+  State  111 (LeftArmNoSplice): 17 transitions
+  State  112 (NeckAndLeftArm): 8 transitions
+  State  113 (NeckAndLeftArm): 8 transitions
+
+guard_blocked_no_thresholds: 24 states
+  State  115 (<none>): 7 transitions
+  State  125 (<none>): 2 transitions
+  State  126 (<none>): 2 transitions
+  State  127 (<none>): 2 transitions
+  State  128 (<none>): 2 transitions
+  State  129 (<none>): 2 transitions
+  State  130 (<none>): 2 transitions
+  State  133 (Spine2_Upper): 1 transitions
+  State  134 (<none>): 2 transitions
+  State  135 (<none>): 2 transitions
+  ... (14 more)
+
+guard_blocked_with_thresholds: 8 states
+  State  114 (<none>): 10 transitions
+  State  116 (<none>): 21 transitions
+  State  117 (<none>): 20 transitions
+  State  118 (<none>): 19 transitions
+  State  372 (<none>): 2 transitions
+  State  533 (<none>): 6 transitions
+  State  536 (<none>): 6 transitions
+  State  537 (<none>): 6 transitions
+
+immediate_guard_access: 111 states
+  State    2 (<none>): 7 transitions
+  State    3 (<none>): 6 transitions
+  State    4 (<none>): 8 transitions
+  State    5 (<none>): 6 transitions
+  State    6 (<none>): 6 transitions
+  State    7 (<none>): 6 transitions
+  State    8 (<none>): 6 transitions
+  State    9 (<none>): 6 transitions
+  State   10 (<none>): 6 transitions
+  State   11 (<none>): 6 transitions
+  ... (101 more)
+
+no_transitions: 467 states
+  State  119 (<none>): 0 transitions
+  State  120 (<none>): 0 transitions
+  State  121 (<none>): 0 transitions
+  State  122 (<none>): 0 transitions
+  State  123 (<none>): 0 transitions
+  State  132 (<none>): 0 transitions
+  State  141 (<none>): 0 transitions
+  State  142 (<none>): 0 transitions
+  State  143 (<none>): 0 transitions
+  State  144 (<none>): 0 transitions
+  ... (457 more)
+
+
+================================================================================
+  ATTACK COMBO CHAINS
+================================================================================
+Found 132 chains (>2 states):
+  Chain 0: 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 1: 1 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 2: 2 -> 68 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 3: 3 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 4: 4 -> 68 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 5: 5 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 6: 6 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 7: 8 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 8: 9 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 9: 10 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 10: 11 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 11: 12 -> 78 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 12: 13 -> 78 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 13: 15 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 14: 16 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 15: 17 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 16: 18 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 17: 19 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 18: 20 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 19: 22 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 20: 23 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 21: 24 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 22: 25 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 23: 26 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 24: 27 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 25: 29 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 26: 30 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 27: 31 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 28: 32 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  Chain 29: 33 -> 0 -> 7 -> 14 -> 21 -> 28 -> 37
+  ... (102 more chains)
+
+================================================================================
+  CONDITION GRAPH ANALYSIS
+================================================================================
+Section start: 0x97996
+Section size: 622,819 bytes
+Record candidates found: 1000
+
+Most common float values in condition section:
+      0.0000: 2441 occurrences
+    -62.1810: 60 occurrences
+     -0.0001: 8 occurrences
+      0.0004: 6 occurrences
+      7.0000: 5 occurrences
+      1.0472: 2 occurrences
+     15.0000: 1 occurrences
+     11.0000: 1 occurrences
+
+Condition section structure analysis:
+  The tail section (622,819 bytes) contains the
+  transition condition graph. Each state's transitions reference conditions
+  that must be met (input keys pressed, animation progress, etc.).
+  The section contains 80-byte blocks with:
+    - Float pairs (animation progress thresholds)
+    - -1.0 sentinel values (same as transition sentinels)
+    - Integer references (likely string table indices for input keys)
+  These blocks define WHEN transitions are allowed.
+
+================================================================================
+  PATCHING FEASIBILITY ASSESSMENT
+================================================================================
+GOAL: Add guard (block) transitions to attack sub-states so players
+      can cancel attack animations by pressing guard (LB).
+
+APPROACH A: Add new transition entries to attack states
+  STATUS: VERY DIFFICULT
+  Each state's transition count is a uint8 at a fixed offset.
+  Adding a transition would require:
+    1. Incrementing the count byte
+    2. Inserting 16 bytes for the new transition record
+    3. Shifting ALL subsequent data (string tables, condition graph)
+    4. Updating all absolute offsets in the file
+  RISK: File format likely has no slack space. Insertion would break
+        offsets throughout the file.
+
+APPROACH B: Replace low-priority transitions with guard transitions
+  STATUS: POSSIBLE for 32 transitions
+  These transitions have high sequence numbers and late thresholds,
+  making them candidates for replacement:
+    State 114 (<none>): seq=5 thresh=0.40 target=301
+      -> Replace target with guard state 0
+    State 114 (<none>): seq=6 thresh=0.40 target=368
+      -> Replace target with guard state 0
+    State 114 (<none>): seq=7 thresh=0.42 target=330
+      -> Replace target with guard state 0
+    State 114 (<none>): seq=8 thresh=0.43 target=356
+      -> Replace target with guard state 0
+    State 114 (<none>): seq=9 thresh=0.43 target=359
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=11 thresh=0.30 target=875
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=12 thresh=0.33 target=442
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=13 thresh=0.37 target=442
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=14 thresh=0.40 target=442
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=15 thresh=0.40 target=970
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=16 thresh=0.43 target=442
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=17 thresh=0.50 target=937
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=18 thresh=0.53 target=462
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=19 thresh=0.57 target=476
+      -> Replace target with guard state 0
+    State 116 (<none>): seq=20 thresh=0.65 target=492
+      -> Replace target with guard state 0
+    State 117 (<none>): seq=11 thresh=0.33 target=875
+      -> Replace target with guard state 0
+    State 117 (<none>): seq=12 thresh=0.33 target=1012
+      -> Replace target with guard state 0
+    State 117 (<none>): seq=13 thresh=0.37 target=442
+      -> Replace target with guard state 0
+    State 117 (<none>): seq=14 thresh=0.40 target=442
+      -> Replace target with guard state 0
+    State 117 (<none>): seq=15 thresh=0.43 target=442
+      -> Replace target with guard state 0
+    ... (12 more)
+  RISK: Replacing transitions changes combo behavior. The replaced
+        transition's original function would be lost.
+
+APPROACH C: Modify condition graph to allow blocked transitions
+  STATUS: REQUIRES MORE RE
+  The 80-byte condition blocks in the tail section define WHEN
+  transitions are allowed. If guard transitions exist but are
+  gated by conditions (e.g., "not during attack"), modifying
+  those conditions could enable them.
+  RISK: Condition format not fully decoded. Blind patching could
+        break all transitions.
+
+APPROACH D: Runtime hook (ASI mod)
+  STATUS: MOST FEASIBLE
+  Instead of patching the .paac file:
+    1. Hook the action chart evaluation function in memory
+    2. When the player presses guard during an attack state,
+       force the state machine to transition to the guard state
+    3. This bypasses the condition graph entirely
+  ADVANTAGES:
+    - No file modification needed (works across game updates)
+    - Can be toggled on/off
+    - Doesn't break other transitions
+  REQUIREMENTS:
+    - Find the ActionChart::evaluate() function in memory
+    - Understand how the current state index is stored
+    - Hook to inject guard transitions at runtime
+
+RECOMMENDATION: Use APPROACH D (runtime hook) as the primary method.
+APPROACH B (transition replacement) is a viable fallback for specific
+attack states where a low-priority transition can be sacrificed.
+
+KEY STATISTICS FOR MODDING:
+  Total states: 617
+  States with transitions: 150
+  Guard-blocked states (with transitions): 32
+  Replaceable transitions: 32
+  Transition record size: 16 bytes
+  Transition format: [float32 threshold][float32 -1.0][uint32 target][uint32 seq]
+  Config block size: 64 bytes (between states)
+
+================================================================================
+  CROSS-VALIDATION: sword_upper.paac vs basic_upper.paac
+================================================================================
+sword_upper.paac:
+  Size: 1,243,769 bytes
+  Header node count: 721
+  Header speed: 1.3333
+  State markers found: 617
+  Difference (header - markers): 104
+basic_upper.paac:
+  Size: 330,299 bytes
+  Header node count: 274
+  Header speed: 3.0000
+  State markers found: 267
+  Difference (header - markers): 7
+
+State record structure consistency:
+  sword_upper.paac: first 10 inter-marker deltas = [575, 575, 473, 457, 489, 457, 457, 457, 457, 457]
+  sword_upper.paac: 1 unique post-marker patterns in first 50 states
+  basic_upper.paac: first 10 inter-marker deltas = [461, 461, 461, 461, 505, 505, 273, 461, 505, 477]
+  basic_upper.paac: 1 unique post-marker patterns in first 50 states

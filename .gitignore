@@ -1,0 +1,10 @@
+build/
+dist/
+*.log
+extracted/
+extracted_xml/
+mod_test/
+*.paac
+*.bin
+__pycache__/
+*.pyc

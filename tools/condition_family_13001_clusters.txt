@@ -1,0 +1,220 @@
+====================================================================================================
+CONDITION FAMILY CLUSTER ANALYSIS
+====================================================================================================
+File: C:\Users\faisa\Ai\Mods Dev\CrimsonDesert-Mods\CDAnimCancel\extracted\actionchart\bin__\upperaction\1_pc\1_phm\sword_upper.paac
+Target family: target=13001 opcode=0x2902 params=(9, 0, 15)
+Family size: 68
+Cluster gap threshold: 64
+
+Small source-id delta histogram (<=64): [(9, 13), (6, 8), (22, 7), (12, 4), (15, 3), (20, 3), (18, 3), (21, 2), (11, 2), (41, 1), (53, 1), (43, 1), (13, 1), (46, 1), (39, 1), (17, 1), (7, 1), (36, 1), (10, 1), (25, 1)]
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 1: src 149 -> 158 (2 nodes, labels={key_fistattack:1, equip_shield:1})
+  block#248 src= 149 label=equip_shield             post=(1,3034857472,184705216)
+  block#504 src= 158 label=key_fistattack           post=(1,3034857472,184705216)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 2: src 238 -> 238 (1 nodes, labels={NeckAndLeftArm:1})
+  block# 19 src= 238 label=NeckAndLeftArm           post=(256,3030663168,184574096)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 3: src 466 -> 475 (2 nodes, labels={NeckAndLeftArm:1, equip_shield:1})
+  block#386 src= 466 label=equip_shield             post=(0,3034857472,184574080)
+  block#547 src= 475 label=NeckAndLeftArm           post=(0,3034857472,184574080)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 4: src 771 -> 771 (1 nodes, labels={key_fistattack:1})
+  block#401 src= 771 label=key_fistattack           post=(0,3034859520,184574080)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 5: src 859 -> 900 (2 nodes, labels={NeckAndLeftArm:2})
+  block#176 src= 859 label=NeckAndLeftArm           post=(0,3034859520,184574080)
+  block#432 src= 900 label=NeckAndLeftArm           post=(0,3034857472,184574080)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 6: src 1160 -> 1321 (14 nodes, labels={LowerLeftArm_1:10, key_crouch:2, key_cancel:1, CharacterHit:1})
+  block#541 src=1160 label=key_crouch               post=(1,3034857472,186671232)
+  block#292 src=1175 label=LowerLeftArm_1           post=(1,3034857472,186654848)
+  block# 20 src=1184 label=LowerLeftArm_1           post=(1,3034857472,186654848)
+  block#405 src=1193 label=LowerLeftArm_1           post=(1,3034857472,186654848)
+  block#183 src=1202 label=key_cancel               post=(1,3034857476,186671232)
+  block#412 src=1222 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+  block#160 src=1231 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+  block#262 src=1240 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+  block# 79 src=1258 label=key_crouch               post=(1,3034857472,186671232)
+  block#381 src=1273 label=LowerLeftArm_1           post=(1,3034857472,186654848)
+  block#402 src=1282 label=LowerLeftArm_1           post=(1,3034857472,186654848)
+  block#539 src=1291 label=CharacterHit             post=(1,3034857476,186671232)
+  block# 28 src=1312 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+  block#136 src=1321 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+
+  Verified exact singles within cluster:
+  SINGLE exact block#541 src=1160 key_crouch->key_cancel
+  Verified exact combos within cluster:
+  COMBO exact (2) block#402 src=1282 LowerLeftArm_1->key_cancel, block#539 src=1291 CharacterHit->key_guard_start
+  COMBO exact (3) block#541 src=1160 key_crouch->key_guard_start, block#405 src=1193 LowerLeftArm_1->key_guard_start, block#412 src=1222 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#541 src=1160 key_crouch->key_cancel, block#160 src=1231 LowerLeftArm_1->key_cancel, block#539 src=1291 CharacterHit->key_guard_start
+  COMBO exact (3) block#541 src=1160 key_crouch->key_cancel, block#402 src=1282 LowerLeftArm_1->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#292 src=1175 LowerLeftArm_1->key_cancel, block#405 src=1193 LowerLeftArm_1->key_guard_start, block#381 src=1273 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#20 src=1184 LowerLeftArm_1->key_guard_start, block#183 src=1202 key_cancel->key_guard_start, block#381 src=1273 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#20 src=1184 LowerLeftArm_1->key_guard_start, block#412 src=1222 LowerLeftArm_1->key_cancel, block#136 src=1321 LowerLeftArm_1->key_guard_start
+  COMBO exact (3) block#405 src=1193 LowerLeftArm_1->key_guard_start, block#79 src=1258 key_crouch->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#405 src=1193 LowerLeftArm_1->key_cancel, block#402 src=1282 LowerLeftArm_1->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#183 src=1202 key_cancel->key_guard_start, block#412 src=1222 LowerLeftArm_1->key_cancel, block#262 src=1240 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#183 src=1202 key_cancel->key_guard_start, block#160 src=1231 LowerLeftArm_1->key_guard_start, block#262 src=1240 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#412 src=1222 LowerLeftArm_1->key_guard_start, block#160 src=1231 LowerLeftArm_1->key_guard_start, block#262 src=1240 LowerLeftArm_1->key_guard_start
+  COMBO exact (3) block#412 src=1222 LowerLeftArm_1->key_cancel, block#160 src=1231 LowerLeftArm_1->key_cancel, block#539 src=1291 CharacterHit->key_cancel
+  COMBO exact (3) block#160 src=1231 LowerLeftArm_1->key_cancel, block#79 src=1258 key_crouch->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#160 src=1231 LowerLeftArm_1->key_cancel, block#402 src=1282 LowerLeftArm_1->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#79 src=1258 key_crouch->key_cancel, block#539 src=1291 CharacterHit->key_cancel, block#28 src=1312 LowerLeftArm_1->key_cancel
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 7: src 1405 -> 1794 (19 nodes, labels={LowerLeftArm_1:4, key_fistattack:1, key_skill_12:1, key_skill_1:3, key_skill_12_start:2, key_skill_7:1, key_crouch:1, key_guard_start:1, key_skill_2:3, key_cancel:2})
+  block#519 src=1405 label=key_cancel               post=(1,3034857472,186671232)
+  block#280 src=1425 label=key_cancel               post=(1,3034857472,186671232)
+  block# 70 src=1445 label=key_crouch               post=(1,3034857472,186671232)
+  block#279 src=1460 label=key_skill_12             post=(1,3034857472,186671232)
+  block#452 src=1481 label=key_skill_7              post=(1,3034857472,186671232)
+  block#297 src=1534 label=key_skill_1              post=(1,3034857472,186671232)
+  block# 35 src=1546 label=key_skill_2              post=(1,3034857476,186671232)
+  block#285 src=1589 label=key_skill_12_start       post=(1,3034857476,184574080)
+  block#532 src=1602 label=key_skill_12_start       post=(1,3034857476,184574080)
+  block# 55 src=1648 label=key_skill_2              post=(1,3034857476,186671232)
+  block#510 src=1666 label=LowerLeftArm_1           post=(1,3034857476,186654848)
+  block#164 src=1678 label=key_skill_2              post=(1,3034857476,184574080)
+  block#327 src=1696 label=LowerLeftArm_1           post=(1,3034857476,184557696)
+  block#384 src=1735 label=key_guard_start          post=(1,3034857476,186671232)
+  block#501 src=1752 label=LowerLeftArm_1           post=(1,3034857476,184557696)
+  block#585 src=1761 label=key_skill_1              post=(1,3034857476,184574080)
+  block#566 src=1773 label=key_skill_1              post=(1,3034857476,184574080)
+  block#212 src=1785 label=LowerLeftArm_1           post=(1,3034857476,184557696)
+  block#113 src=1794 label=key_fistattack           post=(1,3034857472,186671232)
+
+  Verified exact singles within cluster:
+  SINGLE exact block#212 src=1785 LowerLeftArm_1->key_cancel
+  Verified exact combos within cluster:
+  COMBO exact (2) block#70 src=1445 key_crouch->key_cancel, block#532 src=1602 key_skill_12_start->key_cancel
+  COMBO exact (2) block#70 src=1445 key_crouch->key_cancel, block#585 src=1761 key_skill_1->key_cancel
+  COMBO exact (2) block#297 src=1534 key_skill_1->key_guard_start, block#35 src=1546 key_skill_2->key_cancel
+  COMBO exact (2) block#35 src=1546 key_skill_2->key_cancel, block#113 src=1794 key_fistattack->key_cancel
+  COMBO exact (2) block#532 src=1602 key_skill_12_start->key_cancel, block#327 src=1696 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#70 src=1445 key_crouch->key_cancel, block#297 src=1534 key_skill_1->key_guard_start
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#70 src=1445 key_crouch->key_cancel, block#532 src=1602 key_skill_12_start->key_cancel
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#452 src=1481 key_skill_7->key_guard_start, block#164 src=1678 key_skill_2->key_guard_start
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#452 src=1481 key_skill_7->key_cancel, block#585 src=1761 key_skill_1->key_guard_start
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#452 src=1481 key_skill_7->key_cancel, block#585 src=1761 key_skill_1->key_cancel
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#501 src=1752 LowerLeftArm_1->key_guard_start, block#566 src=1773 key_skill_1->key_guard_start
+  COMBO exact (3) block#519 src=1405 key_cancel->key_guard_start, block#501 src=1752 LowerLeftArm_1->key_guard_start, block#113 src=1794 key_fistattack->key_cancel
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#279 src=1460 key_skill_12->key_guard_start, block#55 src=1648 key_skill_2->key_guard_start
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#532 src=1602 key_skill_12_start->key_cancel, block#212 src=1785 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#55 src=1648 key_skill_2->key_cancel, block#566 src=1773 key_skill_1->key_guard_start
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#510 src=1666 LowerLeftArm_1->key_guard_start, block#113 src=1794 key_fistattack->key_cancel
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#164 src=1678 key_skill_2->key_cancel, block#327 src=1696 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#164 src=1678 key_skill_2->key_cancel, block#501 src=1752 LowerLeftArm_1->key_guard_start
+  COMBO exact (3) block#70 src=1445 key_crouch->key_cancel, block#585 src=1761 key_skill_1->key_cancel, block#212 src=1785 LowerLeftArm_1->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_guard_start, block#452 src=1481 key_skill_7->key_cancel, block#297 src=1534 key_skill_1->key_guard_start
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_guard_start, block#452 src=1481 key_skill_7->key_cancel, block#297 src=1534 key_skill_1->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_guard_start, block#452 src=1481 key_skill_7->key_cancel, block#55 src=1648 key_skill_2->key_guard_start
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#285 src=1589 key_skill_12_start->key_cancel, block#510 src=1666 LowerLeftArm_1->key_guard_start
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#285 src=1589 key_skill_12_start->key_cancel, block#566 src=1773 key_skill_1->key_guard_start
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#532 src=1602 key_skill_12_start->key_guard_start, block#164 src=1678 key_skill_2->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#532 src=1602 key_skill_12_start->key_cancel, block#55 src=1648 key_skill_2->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#55 src=1648 key_skill_2->key_cancel, block#585 src=1761 key_skill_1->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#327 src=1696 LowerLeftArm_1->key_cancel, block#113 src=1794 key_fistattack->key_cancel
+  COMBO exact (3) block#279 src=1460 key_skill_12->key_cancel, block#384 src=1735 key_guard_start->key_cancel, block#585 src=1761 key_skill_1->key_cancel
+  COMBO exact (3) block#452 src=1481 key_skill_7->key_guard_start, block#297 src=1534 key_skill_1->key_cancel, block#164 src=1678 key_skill_2->key_guard_start
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 8: src 3267 -> 3296 (4 nodes, labels={LowerLeftArm_1:1, NeckAndLeftArm:1, CharacterMeshEffectWeapon:2})
+  block#400 src=3267 label=CharacterMeshEffectWeapon post=(1,3034857472,186671232)
+  block#117 src=3278 label=CharacterMeshEffectWeapon post=(1,3034857472,186671232)
+  block#265 src=3289 label=NeckAndLeftArm           post=(0,3034857472,184574080)
+  block#438 src=3296 label=LowerLeftArm_1           post=(0,3030646784,186654848)
+
+  Verified exact singles within cluster:
+  SINGLE exact block#400 src=3267 CharacterMeshEffectWeapon->key_guard_start
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 9: src 3445 -> 3445 (1 nodes, labels={key_crouch:1})
+  block#272 src=3445 label=key_crouch               post=(0,3034857476,186671232)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 10: src 3532 -> 3779 (18 nodes, labels={LeftArmNoSplice:8, equip_shield:2, off:8})
+  block#410 src=3532 label=equip_shield             post=(0,3034857472,186671232)
+  block#312 src=3541 label=equip_shield             post=(0,3034857472,186671232)
+  block#335 src=3577 label=LeftArmNoSplice          post=(1,3034857476,186654912)
+  block#269 src=3583 label=LeftArmNoSplice          post=(2,3034857476,186671312)
+  block#591 src=3589 label=off                      post=(2,3034857472,186671344)
+  block#586 src=3611 label=off                      post=(2,3034857472,186671344)
+  block#478 src=3633 label=LeftArmNoSplice          post=(1,3034857476,186654912)
+  block# 52 src=3639 label=LeftArmNoSplice          post=(2,3034857476,186671312)
+  block# 29 src=3645 label=off                      post=(2,3034857472,186671344)
+  block# 40 src=3667 label=off                      post=(2,3034857472,186671344)
+  block#146 src=3689 label=LeftArmNoSplice          post=(1,3034857476,186654912)
+  block#365 src=3695 label=LeftArmNoSplice          post=(2,3034857476,186671312)
+  block#469 src=3701 label=off                      post=(2,3034857472,186671344)
+  block#440 src=3723 label=off                      post=(2,3034857472,186671344)
+  block#595 src=3745 label=LeftArmNoSplice          post=(0,3034857476,186654912)
+  block#206 src=3751 label=LeftArmNoSplice          post=(0,3034857476,186671312)
+  block#614 src=3757 label=off                      post=(0,3034857472,186671344)
+  block#424 src=3779 label=off                      post=(0,3034857472,186671344)
+
+  Verified exact singles within cluster:
+  SINGLE exact block#206 src=3751 LeftArmNoSplice->key_cancel
+  Verified exact combos within cluster:
+  COMBO exact (2) block#410 src=3532 equip_shield->key_guard_start, block#146 src=3689 LeftArmNoSplice->key_cancel
+  COMBO exact (2) block#335 src=3577 LeftArmNoSplice->key_cancel, block#440 src=3723 off->key_guard_start
+  COMBO exact (2) block#335 src=3577 LeftArmNoSplice->key_cancel, block#440 src=3723 off->key_cancel
+  COMBO exact (2) block#335 src=3577 LeftArmNoSplice->key_cancel, block#595 src=3745 LeftArmNoSplice->key_guard_start
+  COMBO exact (2) block#335 src=3577 LeftArmNoSplice->key_cancel, block#614 src=3757 off->key_guard_start
+  COMBO exact (2) block#586 src=3611 off->key_guard_start, block#469 src=3701 off->key_guard_start
+  COMBO exact (2) block#29 src=3645 off->key_cancel, block#469 src=3701 off->key_guard_start
+  COMBO exact (2) block#29 src=3645 off->key_cancel, block#595 src=3745 LeftArmNoSplice->key_cancel
+  COMBO exact (2) block#40 src=3667 off->key_cancel, block#424 src=3779 off->key_guard_start
+  COMBO exact (2) block#146 src=3689 LeftArmNoSplice->key_guard_start, block#614 src=3757 off->key_cancel
+  COMBO exact (2) block#146 src=3689 LeftArmNoSplice->key_cancel, block#206 src=3751 LeftArmNoSplice->key_guard_start
+  COMBO exact (2) block#440 src=3723 off->key_cancel, block#206 src=3751 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#410 src=3532 equip_shield->key_guard_start, block#52 src=3639 LeftArmNoSplice->key_cancel, block#365 src=3695 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#410 src=3532 equip_shield->key_cancel, block#335 src=3577 LeftArmNoSplice->key_guard_start, block#146 src=3689 LeftArmNoSplice->key_guard_start
+  COMBO exact (3) block#410 src=3532 equip_shield->key_cancel, block#146 src=3689 LeftArmNoSplice->key_guard_start, block#206 src=3751 LeftArmNoSplice->key_guard_start
+  COMBO exact (3) block#410 src=3532 equip_shield->key_cancel, block#146 src=3689 LeftArmNoSplice->key_guard_start, block#424 src=3779 off->key_cancel
+  COMBO exact (3) block#312 src=3541 equip_shield->key_guard_start, block#269 src=3583 LeftArmNoSplice->key_cancel, block#40 src=3667 off->key_guard_start
+  COMBO exact (3) block#312 src=3541 equip_shield->key_guard_start, block#29 src=3645 off->key_guard_start, block#206 src=3751 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#335 src=3577 LeftArmNoSplice->key_guard_start, block#478 src=3633 LeftArmNoSplice->key_guard_start
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#269 src=3583 LeftArmNoSplice->key_guard_start, block#478 src=3633 LeftArmNoSplice->key_guard_start
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#29 src=3645 off->key_guard_start, block#365 src=3695 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#40 src=3667 off->key_guard_start, block#206 src=3751 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#365 src=3695 LeftArmNoSplice->key_guard_start, block#440 src=3723 off->key_guard_start
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#365 src=3695 LeftArmNoSplice->key_guard_start, block#440 src=3723 off->key_cancel
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#365 src=3695 LeftArmNoSplice->key_guard_start, block#595 src=3745 LeftArmNoSplice->key_guard_start
+  COMBO exact (3) block#312 src=3541 equip_shield->key_cancel, block#365 src=3695 LeftArmNoSplice->key_guard_start, block#614 src=3757 off->key_guard_start
+  COMBO exact (3) block#335 src=3577 LeftArmNoSplice->key_guard_start, block#269 src=3583 LeftArmNoSplice->key_guard_start, block#146 src=3689 LeftArmNoSplice->key_cancel
+  COMBO exact (3) block#335 src=3577 LeftArmNoSplice->key_cancel, block#591 src=3589 off->key_guard_start, block#469 src=3701 off->key_guard_start
+  COMBO exact (3) block#335 src=3577 LeftArmNoSplice->key_cancel, block#40 src=3667 off->key_cancel, block#614 src=3757 off->key_cancel
+  COMBO exact (3) block#335 src=3577 LeftArmNoSplice->key_cancel, block#146 src=3689 LeftArmNoSplice->key_guard_start, block#469 src=3701 off->key_guard_start
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 11: src 4264 -> 4274 (2 nodes, labels={key_fistattack:1, key_skill_12:1})
+  block#200 src=4264 label=key_skill_12             post=(0,3034857472,186671232)
+  block#429 src=4274 label=key_fistattack           post=(0,3034857472,186671264)
+
+  No exact cancel/guard_start edits found inside this cluster.
+
+----------------------------------------------------------------------------------------------------
+CLUSTER 12: src 5405 -> 5430 (2 nodes, labels={key_crouch:1, off:1})
+  block#543 src=5405 label=off                      post=(0,3034857472,186671352)
+  block#620 src=5430 label=key_crouch               post=(0,3034857476,186671232)
+
+  No exact cancel/guard_start edits found inside this cluster.

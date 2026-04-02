@@ -1,0 +1,643 @@
+
+================================================================================
+  FILE OVERVIEW
+================================================================================
+File: extracted/actionchart/bin__/upperaction/1_pc/1_phm/dagger_upper.paac
+Size: 91,891 bytes (0x166f3)
+Header node count: 116
+Header speed: 1.0000
+Header flags: 0x00000000
+States found (via marker): 114
+  (Header says 116 -- difference of 2 may include sub-nodes in condition graph)
+Total transitions: 666
+Label strings: 13
+Animation paths: 126
+Extra string tables: 9
+
+================================================================================
+  FILE MEMORY MAP
+================================================================================
+0x00000000 - 0x00000043  Header (68 bytes)
+0x00000044 - 0x0000c6e8  State records (50,852 bytes)
+0x0000c6c4 - 0x0000c790  Label string table (13 entries)
+0x0000c790 - 0x0000e722  Animation paths (126 entries)
+0x0000e722 - 0x0000e805  Extra table 0 (3 entries)
+0x0000e805 - 0x0000e82f  Extra table 1 (1 entries)
+0x0000e82f                  Extra table 2 (0 entries, empty)
+0x0000e831                  Extra table 3 (0 entries, empty)
+0x0000e833 - 0x0000e842  Extra table 4 (1 entries)
+0x0000e842 - 0x0000e85c  Extra table 5 (1 entries)
+0x0000e85c                  Extra table 6 (0 entries, empty)
+0x0000e85e                  Extra table 7 (0 entries, empty)
+0x0000e860                  Extra table 8 (0 entries, empty)
+0x0000e862 - 0x000166f3  Condition graph (32,401 bytes)
+
+================================================================================
+  LABEL STRING TABLE
+================================================================================
+Offset: 0xc6c4
+Count: 13
+
+  [  0] len= 46 @0xc6c6: "upperaction/1_pc/1_phm/common_upper_branchset"
+  [  1] len= 11 @0xc6f5: "key_crouch"
+  [  2] len= 13 @0xc701: "Spine2_Upper"
+  [  3] len= 12 @0xc70f: "key_skill_4"
+  [  4] len= 13 @0xc71c: "key_skill_12"
+  [  5] len= 10 @0xc72a: "key_guard"
+  [  6] len=  9 @0xc735: "BothArms"
+  [  7] len= 16 @0xc73f: "NeckAndRightArm"
+  [  8] len=  9 @0xc750: "RightArm"
+  [  9] len= 13 @0xc75a: "righttrigger"
+  [ 10] len= 12 @0xc768: "lefttrigger"
+  [ 11] len= 15 @0xc775: "key_kickattack"
+  [ 12] len= 10 @0xc785: "key_evade"
+
+Key labels: {'guard': 5}
+
+================================================================================
+  ANIMATION PATHS (summary)
+================================================================================
+Count: 126
+  movement: 75
+  other: 19
+  attack_other: 16
+  idle: 7
+  jump: 5
+  attack_normal: 4
+
+Attack animations:
+  [ 95] 1_pc/1_phm/cd_phm_dualsword_01_01_att_nor_comb_1_move_00.paa
+  [ 96] 1_pc/1_phm/cd_phm_knife_01_01_att_normal_move_001.paa
+  [ 97] 1_pc/1_phm/cd_phm_knife_01_01_att_normal_move_002.paa
+  [ 98] 1_pc/1_phm/cd_phm_knife_01_01_att_normal_move_combo_a_001.paa
+  [ 99] 1_pc/1_phm/00_mon/cd_phm_knife_01_01_att_normal_move_combo_a_003.paa
+  [100] 1_pc/1_phm/cd_phm_2knf_01_01_def_nor_avoidatt_move_f_swing_4_00.paa
+  [110] 1_pc/1_phm/cd_phm_longsword_01_03_link_phm_counteratt_move_f_00.paa
+  [113] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_release_00.paa
+  [114] 1_pc/1_phm/cd_phm_sword_01_01_wall_finish_movef_hangatt_000.paa
+  [115] 1_pc/1_phm/cd_phm_swds_01_01_att_wallfatal_lk_move_f_00.paa
+  [116] 1_pc/1_phm/cd_phm_basic_01_01_wall_lk_phm_att_01.paa
+  [117] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_09.paa
+  [118] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_01.paa
+  [119] 1_pc/1_phm/cd_phm_swds_01_01_att_wallatt_lk_move_f_08.paa
+  [120] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_01.paa
+  [121] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_00.paa
+  [122] 1_pc/1_phm/cd_phm_basic_01_01_att_lk_phm_headlock_kneekick_02.paa
+  [123] 1_pc/1_phm/cd_phm_swd_01_01_att_nor_qte_lk_phm_stomstab_end_00.paa
+  [124] 1_pc/1_phm/cd_phm_lk_phm_basic_01_01_wall_lk_phm_att_05.paa
+  [125] 1_pc/1_phm/cd_phm_lk_phm_basic_01_01_wall_lk_phm_att_06.paa
+
+================================================================================
+  COMPLETE STATE LIST
+================================================================================
+Transition count distribution:
+  0 transitions: 1 states
+  1 transitions: 3 states
+  2 transitions: 5 states
+  3 transitions: 5 states
+  4 transitions: 2 states
+  5 transitions: 7 states
+  6 transitions: 76 states
+  7 transitions: 2 states
+  8 transitions: 5 states
+  9 transitions: 1 states
+  10 transitions: 2 states
+  11 transitions: 4 states
+  12 transitions: 1 states
+
+ Idx    Offset                 Label  Trans  Targets
+--------------------------------------------------------------------------------
+   0  0x000046                <none>      0  []
+   1  0x000133                <none>      6  [0, 7, 14, 21, 28, 37]
+   2  0x0002fc                <none>      8  [44, 49, 0, 7, 14, 21, 28, 37]
+   3  0x0004e5          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+   4  0x0006ae          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+   5  0x000877          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+   6  0x000a40          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+   7  0x000c09                <none>      6  [0, 7, 14, 21, 28, 37]
+   8  0x000dd2                <none>      6  [0, 7, 14, 21, 28, 37]
+   9  0x000f9b                <none>      8  [54, 59, 0, 7, 14, 21, 28, 37]
+  10  0x001184                <none>      8  [54, 59, 0, 7, 14, 21, 28, 37]
+  11  0x00136d                <none>      6  [0, 7, 14, 21, 28, 37]
+  12  0x001536                <none>      6  [0, 7, 14, 21, 28, 37]
+  13  0x0016ff          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  14  0x0018c8          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  15  0x001a91                <none>      6  [0, 7, 14, 21, 28, 37]
+  16  0x001c5a                <none>      6  [0, 7, 14, 21, 28, 37]
+  17  0x001e23                <none>      6  [0, 7, 14, 21, 28, 37]
+  18  0x001fec          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  19  0x0021b5          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  20  0x00237e                <none>      6  [0, 7, 14, 21, 28, 37]
+  21  0x002547                <none>      6  [0, 7, 14, 21, 28, 37]
+  22  0x002710          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  23  0x0028d9          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  24  0x002aa2          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  25  0x002c6b          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  26  0x002e34                <none>      6  [0, 7, 14, 21, 28, 37]
+  27  0x002ffd                <none>      6  [0, 7, 14, 21, 28, 37]
+  28  0x0031c6                <none>      6  [0, 7, 14, 21, 28, 37]
+  29  0x00338f          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  30  0x003558          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  31  0x003721                <none>      6  [0, 7, 14, 21, 28, 37]
+  32  0x0038ea                <none>      6  [0, 7, 14, 21, 28, 37]
+  33  0x003ab3                <none>      6  [0, 7, 14, 21, 28, 37]
+  34  0x003c7c                <none>      6  [0, 7, 14, 21, 28, 37]
+  35  0x003e45                <none>      6  [0, 7, 14, 21, 28, 37]
+  36  0x00400e                <none>      6  [0, 7, 14, 21, 28, 37]
+  37  0x0041d7          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  38  0x0043a0          Spine2_Upper      6  [0, 7, 14, 21, 28, 37]
+  39  0x004569                <none>      6  [0, 7, 14, 21, 28, 37]
+  40  0x004732                <none>      6  [0, 7, 14, 21, 28, 37]
+  41  0x0048fb                <none>      6  [0, 7, 14, 21, 28, 37]
+  42  0x004ac4                <none>      6  [0, 7, 14, 21, 28, 37]
+  43  0x004c8d                <none>      6  [0, 7, 14, 21, 28, 37]
+  44  0x004e56                <none>      6  [0, 7, 14, 21, 28, 37]
+  45  0x00501f                <none>      6  [0, 7, 14, 21, 28, 37]
+  46  0x0051e8                <none>      6  [0, 7, 14, 21, 28, 37]
+  47  0x0053b1                <none>      6  [0, 7, 14, 21, 28, 37]
+  48  0x00557a                <none>      6  [0, 7, 14, 21, 28, 37]
+  49  0x005743                <none>      6  [0, 7, 14, 21, 28, 37]
+  50  0x00590c                <none>      6  [0, 7, 14, 21, 28, 37]
+  51  0x005ad5                <none>      6  [0, 7, 14, 21, 28, 37]
+  52  0x005c9e                <none>      6  [0, 7, 14, 21, 28, 37]
+  53  0x005e67                <none>      6  [0, 7, 14, 21, 28, 37]
+  54  0x006030                <none>      6  [0, 7, 14, 21, 28, 37]
+  55  0x0061f9                <none>      6  [0, 7, 14, 21, 28, 37]
+  56  0x0063c2                <none>      6  [0, 7, 14, 21, 28, 37]
+  57  0x00658b                <none>      6  [0, 7, 14, 21, 28, 37]
+  58  0x006754                <none>      6  [0, 7, 14, 21, 28, 37]
+  59  0x00691d                <none>      6  [0, 7, 14, 21, 28, 37]
+  60  0x006ae6                <none>      6  [0, 7, 14, 21, 28, 37]
+  61  0x006caf                <none>      6  [0, 7, 14, 21, 28, 37]
+  62  0x006e78                <none>      6  [0, 7, 14, 21, 28, 37]
+  63  0x007041                <none>      6  [0, 7, 14, 21, 28, 37]
+  64  0x00720a                <none>      6  [0, 7, 14, 21, 28, 37]
+  65  0x0073d3                <none>      6  [0, 7, 14, 21, 28, 37]
+  66  0x00759c                <none>      6  [0, 7, 14, 21, 28, 37]
+  67  0x007765                <none>      6  [0, 7, 14, 21, 28, 37]
+  68  0x00792e                <none>      6  [0, 7, 14, 21, 28, 37]
+  69  0x007af7                <none>      6  [54, 64, 69, 110, 75, 81]
+  70  0x007c20              BothArms      6  [54, 64, 69, 110, 75, 81]
+  71  0x007d49                <none>      6  [54, 64, 69, 110, 75, 81]
+  72  0x007e72              BothArms      6  [54, 64, 69, 110, 75, 81]
+  73  0x007f9b                <none>      4  [149, 153, 143, 151]
+  74  0x0080b6       NeckAndRightArm      5  [186, 149, 153, 143, 151]
+  75  0x0081d5              RightArm      6  [198, 317, 143, 192, 195, 284]
+  76  0x0082f2                <none>      6  [350, 186, 365, 380, 408, 394]
+  77  0x008573                <none>      6  [350, 186, 411, 365, 425, 439]
+  78  0x008830                <none>      6  [442, 350, 464, 365, 447, 461]
+  79  0x008ab1                <none>      6  [442, 350, 497, 514, 365, 511]
+  80  0x008d22                <none>      8  [64, 442, 350, 514, 365, 380, 650, 394]
+  81  0x009551                <none>      5  [653, 685, 668, 365, 682]
+  82  0x00971a                <none>      1  [682]
+  83  0x0097f3                <none>      2  [682, 688]
+  84  0x0098dc                <none>      2  [682, 688]
+  85  0x0099c5                <none>      7  [759, 682, 688, 876, 792, 768, 785]
+  86  0x009b1e                <none>      7  [759, 682, 688, 876, 909, 768, 785]
+  87  0x009c77                <none>      2  [993, 682]
+  88  0x009d78                <none>      2  [993, 682]
+  89  0x009e6d                <none>      5  [682, 1008, 1022, 688, 1037]
+  90  0x009fea                <none>      8  [682, 1066, 1022, 688, 1037, 1080, 1080, 1080]
+  91  0x00a4c7                <none>      3  [682, 688, 1037]
+  92  0x00a5cc                <none>      4  [682, 1066, 1022, 1037]
+  93  0x00a6d5                <none>     11  [64, 1157, 1160, 1163, 1094, 1234, 1237, 1109...]
+  94  0x00a8be                <none>      2  [682, 1037]
+  95  0x00a98f                <none>      5  [682, 1037, 1080, 1080, 1080]
+  96  0x00aafc                <none>      1  [1308]
+  97  0x00ac0d                <none>      1  [1311]
+  98  0x00acfa                <none>     11  [1351, 1384, 1094, 1331, 81, 1317, 1345, 1314...]
+  99  0x00af0f                <none>     12  [1094, 1479, 1524, 1493, 1527, 1314, 1533, 1599...]
+ 100  0x00b134                <none>      6  [1094, 1634, 1628, 1094, 1631, 1642]
+ 101  0x00b295                <none>     10  [1314, 1707, 1673, 1645, 1094, 1687, 1659, 1701...]
+ 102  0x00b492                <none>     10  [1736, 1314, 1750, 1707, 1094, 1792, 1764, 1778...]
+ 103  0x00b69f                <none>      3  [1707, 1094, 1801]
+ 104  0x00b82c                <none>      9  [1314, 1707, 1673, 1645, 1094, 1687, 1659, 1804...]
+ 105  0x00ba09                <none>      3  [1707, 1094, 1807]
+ 106  0x00bb96                <none>     11  [759, 682, 1810, 1094, 1827, 81, 1824, 909...]
+ 107  0x00bd53                <none>      6  [1634, 1094, 1860, 1827, 1450, 1874]
+ 108  0x00be94                <none>      5  [1810, 1094, 1827, 81, 1877]
+ 109  0x00bfd1                <none>      5  [1094, 1860, 1827, 1450, 1880]
+ 110  0x00c10e                <none>      5  [1883, 1094, 1599, 1827, 1897]
+ 111  0x00c27b                <none>     11  [365, 1634, 1909, 1923, 1965, 1094, 81, 1937...]
+ 112  0x00c468                <none>      3  [1971, 1974, 1977]
+ 113  0x00c5a9                <none>      3  [1986, 1980, 1983]
+
+================================================================================
+  TRANSITION MAP
+================================================================================
+Forward transitions (state -> targets):
+  State    1 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    2 -> 44(thresh=0.00,seq=0), 49(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State    3 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    4 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    5 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    6 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    7 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    8 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State    9 -> 54(thresh=0.00,seq=0), 59(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State   10 -> 54(thresh=0.00,seq=0), 59(thresh=0.00,seq=1), 0(thresh=0.00,seq=2), 7(thresh=0.00,seq=3), 14(thresh=0.00,seq=4), 21(thresh=0.00,seq=5), 28(thresh=0.00,seq=6), 37(thresh=0.00,seq=7)
+  State   11 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   12 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   13 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   14 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   15 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   16 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   17 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   18 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   19 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   20 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   21 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   22 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   23 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   24 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   25 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   26 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   27 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   28 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   29 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   30 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   31 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   32 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   33 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   34 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   35 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   36 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   37 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   38 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   39 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   40 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   41 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   42 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   43 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   44 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   45 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   46 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   47 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   48 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   49 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   50 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   51 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   52 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   53 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   54 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   55 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   56 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   57 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   58 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   59 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   60 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   61 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   62 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   63 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   64 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   65 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   66 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   67 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   68 -> 0(thresh=0.00,seq=0), 7(thresh=0.00,seq=1), 14(thresh=0.00,seq=2), 21(thresh=0.00,seq=3), 28(thresh=0.00,seq=4), 37(thresh=0.00,seq=5)
+  State   69 -> 54(thresh=0.00,seq=0), 64(thresh=0.00,seq=1), 69(thresh=0.00,seq=2), 110(thresh=0.33,seq=3), 75(thresh=0.37,seq=4), 81(thresh=0.50,seq=5)
+  State   70 -> 54(thresh=0.00,seq=0), 64(thresh=0.00,seq=1), 69(thresh=0.00,seq=2), 110(thresh=0.33,seq=3), 75(thresh=0.37,seq=4), 81(thresh=0.50,seq=5)
+  State   71 -> 54(thresh=0.00,seq=0), 64(thresh=0.00,seq=1), 69(thresh=0.00,seq=2), 110(thresh=0.33,seq=3), 75(thresh=0.37,seq=4), 81(thresh=0.50,seq=5)
+  State   72 -> 54(thresh=0.00,seq=0), 64(thresh=0.00,seq=1), 69(thresh=0.00,seq=2), 110(thresh=0.33,seq=3), 75(thresh=0.37,seq=4), 81(thresh=0.50,seq=5)
+  State   73 -> 149(thresh=0.00,seq=0), 153(thresh=0.40,seq=1), 143(thresh=0.73,seq=2), 151(thresh=0.73,seq=3)
+  State   74 -> 186(thresh=0.00,seq=0), 149(thresh=0.00,seq=1), 153(thresh=0.40,seq=2), 143(thresh=0.73,seq=3), 151(thresh=0.73,seq=4)
+  State   75 -> 198(thresh=0.00,seq=0), 317(thresh=0.33,seq=1), 143(thresh=0.80,seq=2), 192(thresh=0.80,seq=3), 195(thresh=0.80,seq=4), 284(thresh=0.80,seq=5)
+  State   76 -> 350(thresh=0.00,seq=0), 186(thresh=0.17,seq=1), 365(thresh=0.82,seq=2), 380(thresh=0.82,seq=3), 408(thresh=0.82,seq=4), 394(thresh=0.87,seq=5)
+  State   77 -> 350(thresh=0.00,seq=0), 186(thresh=0.17,seq=1), 411(thresh=0.77,seq=2), 365(thresh=0.82,seq=3), 425(thresh=0.82,seq=4), 439(thresh=0.82,seq=5)
+  State   78 -> 442(thresh=0.00,seq=0), 350(thresh=0.00,seq=1), 464(thresh=0.60,seq=2), 365(thresh=0.63,seq=3), 447(thresh=0.63,seq=4), 461(thresh=0.63,seq=5)
+  State   79 -> 442(thresh=0.00,seq=0), 350(thresh=0.00,seq=1), 497(thresh=0.33,seq=2), 514(thresh=0.35,seq=3), 365(thresh=0.37,seq=4), 511(thresh=0.37,seq=5)
+  State   80 -> 64(thresh=0.00,seq=0), 442(thresh=0.00,seq=1), 350(thresh=0.90,seq=2), 514(thresh=1.12,seq=3), 365(thresh=1.17,seq=4), 380(thresh=1.28,seq=5), 650(thresh=1.28,seq=6), 394(thresh=1.33,seq=7)
+  State   81 -> 653(thresh=0.00,seq=0), 685(thresh=0.10,seq=1), 668(thresh=0.20,seq=2), 365(thresh=0.27,seq=3), 682(thresh=0.27,seq=4)
+  State   82 -> 682(thresh=0.00,seq=0)
+  State   83 -> 682(thresh=0.00,seq=0), 688(thresh=0.00,seq=1)
+  State   84 -> 682(thresh=0.00,seq=0), 688(thresh=0.00,seq=1)
+  State   85 -> 759(thresh=0.00,seq=0), 682(thresh=0.00,seq=1), 688(thresh=0.00,seq=2), 876(thresh=0.07,seq=3), 792(thresh=0.27,seq=4), 768(thresh=0.33,seq=5), 785(thresh=0.33,seq=6)
+  State   86 -> 759(thresh=0.00,seq=0), 682(thresh=0.00,seq=1), 688(thresh=0.00,seq=2), 876(thresh=0.07,seq=3), 909(thresh=0.27,seq=4), 768(thresh=0.33,seq=5), 785(thresh=0.33,seq=6)
+  State   87 -> 993(thresh=0.00,seq=0), 682(thresh=0.00,seq=1)
+  State   88 -> 993(thresh=0.00,seq=0), 682(thresh=0.00,seq=1)
+  State   89 -> 682(thresh=0.00,seq=0), 1008(thresh=0.00,seq=1), 1022(thresh=0.00,seq=2), 688(thresh=0.00,seq=3), 1037(thresh=0.17,seq=4)
+  State   90 -> 682(thresh=0.00,seq=0), 1066(thresh=0.00,seq=1), 1022(thresh=0.00,seq=2), 688(thresh=0.00,seq=3), 1037(thresh=0.50,seq=4), 1080(thresh=1.17,seq=5), 1080(thresh=1.83,seq=6), 1080(thresh=2.50,seq=7)
+  State   91 -> 682(thresh=0.00,seq=0), 688(thresh=0.00,seq=1), 1037(thresh=0.17,seq=2)
+  State   92 -> 682(thresh=0.00,seq=0), 1066(thresh=0.00,seq=1), 1022(thresh=0.00,seq=2), 1037(thresh=0.17,seq=3)
+  State   93 -> 64(thresh=0.00,seq=0), 1157(thresh=0.33,seq=1), 1160(thresh=0.77,seq=2), 1163(thresh=0.80,seq=3), 1094(thresh=1.60,seq=4), 1234(thresh=1.93,seq=5), 1237(thresh=2.00,seq=6), 1109(thresh=2.10,seq=7), 1101(thresh=2.17,seq=8), 1123(thresh=2.17,seq=9), 1140(thresh=2.20,seq=10)
+  State   94 -> 682(thresh=0.00,seq=0), 1037(thresh=0.17,seq=1)
+  State   95 -> 682(thresh=0.00,seq=0), 1037(thresh=0.50,seq=1), 1080(thresh=1.17,seq=2), 1080(thresh=1.83,seq=3), 1080(thresh=3.17,seq=4)
+  State   96 -> 1308(thresh=0.37,seq=0)
+  State   97 -> 1311(thresh=0.37,seq=0)
+  State   98 -> 1351(thresh=0.17,seq=0), 1384(thresh=0.37,seq=1), 1094(thresh=0.50,seq=2), 1331(thresh=0.50,seq=3), 81(thresh=0.67,seq=4), 1317(thresh=0.83,seq=5), 1345(thresh=0.83,seq=6), 1314(thresh=1.43,seq=7), 1417(thresh=2.60,seq=8), 1450(thresh=3.00,seq=9), 1348(thresh=3.20,seq=10)
+  State   99 -> 1094(thresh=0.27,seq=0), 1479(thresh=0.43,seq=1), 1524(thresh=0.58,seq=2), 1493(thresh=1.12,seq=3), 1527(thresh=1.15,seq=4), 1314(thresh=1.43,seq=5), 1533(thresh=1.60,seq=6), 1599(thresh=1.67,seq=7), 1566(thresh=1.87,seq=8), 1507(thresh=1.93,seq=9), 1530(thresh=2.00,seq=10), 1521(thresh=2.27,seq=11)
+  State  100 -> 1094(thresh=0.77,seq=0), 1634(thresh=0.77,seq=1), 1628(thresh=1.00,seq=2), 1094(thresh=2.40,seq=3), 1631(thresh=2.40,seq=4), 1642(thresh=2.50,seq=5)
+  ... (13 more states with transitions)
+
+Most targeted states (reverse map):
+  State    0 (<none>): targeted by 68 states
+  State    7 (<none>): targeted by 68 states
+  State   14 (Spine2_Upper): targeted by 68 states
+  State   21 (<none>): targeted by 68 states
+  State   28 (<none>): targeted by 68 states
+  State   37 (Spine2_Upper): targeted by 68 states
+  State 1094 (<state 1094 not in marker set>): targeted by 16 states
+  State  682 (<state 682 not in marker set>): targeted by 15 states
+  State   81 (<none>): targeted by 8 states
+  State  365 (<state 365 not in marker set>): targeted by 7 states
+  State  688 (<state 688 not in marker set>): targeted by 7 states
+  State   54 (<none>): targeted by 6 states
+  State   64 (<none>): targeted by 6 states
+  State 1037 (<state 1037 not in marker set>): targeted by 6 states
+  State 1080 (<state 1080 not in marker set>): targeted by 6 states
+  State  350 (<state 350 not in marker set>): targeted by 5 states
+  State 1314 (<state 1314 not in marker set>): targeted by 5 states
+  State 1707 (<state 1707 not in marker set>): targeted by 5 states
+  State 1827 (<state 1827 not in marker set>): targeted by 5 states
+  State   69 (<none>): targeted by 4 states
+  State  110 (<none>): targeted by 4 states
+  State   75 (RightArm): targeted by 4 states
+  State  143 (<state 143 not in marker set>): targeted by 3 states
+  State  186 (<state 186 not in marker set>): targeted by 3 states
+  State  442 (<state 442 not in marker set>): targeted by 3 states
+  State  759 (<state 759 not in marker set>): targeted by 3 states
+  State  768 (<state 768 not in marker set>): targeted by 3 states
+  State  785 (<state 785 not in marker set>): targeted by 3 states
+  State 1022 (<state 1022 not in marker set>): targeted by 3 states
+  State 1450 (<state 1450 not in marker set>): targeted by 3 states
+
+================================================================================
+  GUARD TRANSITION ANALYSIS
+================================================================================
+Guard state: 0
+  Label: <none>
+  Own transitions: 0
+
+States that CANNOT transition to guard (state 0): 45 of 114
+States that CAN transition to guard: 68
+States with no transitions at all: 1
+
+Guard-blocked states with transitions (likely attack sub-states):
+  State   69 (<none>): transitions to [54, 64, 69, 110, 75, 81]
+  State   70 (BothArms): transitions to [54, 64, 69, 110, 75, 81]
+  State   71 (<none>): transitions to [54, 64, 69, 110, 75, 81]
+  State   72 (BothArms): transitions to [54, 64, 69, 110, 75, 81]
+  State   73 (<none>): transitions to [149, 153, 143, 151]
+  State   74 (NeckAndRightArm): transitions to [186, 149, 153, 143, 151]
+  State   75 (RightArm): transitions to [198, 317, 143, 192, 195, 284]
+  State   76 (<none>): transitions to [350, 186, 365, 380, 408, 394]
+  State   77 (<none>): transitions to [350, 186, 411, 365, 425, 439]
+  State   78 (<none>): transitions to [442, 350, 464, 365, 447, 461]
+  State   79 (<none>): transitions to [442, 350, 497, 514, 365, 511]
+  State   80 (<none>): transitions to [64, 442, 350, 514, 365, 380, 650, 394]
+  State   81 (<none>): transitions to [653, 685, 668, 365, 682]
+  State   82 (<none>): transitions to [682]
+  State   83 (<none>): transitions to [682, 688]
+  State   84 (<none>): transitions to [682, 688]
+  State   85 (<none>): transitions to [759, 682, 688, 876, 792, 768, 785]
+  State   86 (<none>): transitions to [759, 682, 688, 876, 909, 768, 785]
+  State   87 (<none>): transitions to [993, 682]
+  State   88 (<none>): transitions to [993, 682]
+  State   89 (<none>): transitions to [682, 1008, 1022, 688, 1037]
+  State   90 (<none>): transitions to [682, 1066, 1022, 688, 1037, 1080, 1080, 1080]
+  State   91 (<none>): transitions to [682, 688, 1037]
+  State   92 (<none>): transitions to [682, 1066, 1022, 1037]
+  State   93 (<none>): transitions to [64, 1157, 1160, 1163, 1094, 1234, 1237, 1109, 1101, 1123, 1140]
+  State   94 (<none>): transitions to [682, 1037]
+  State   95 (<none>): transitions to [682, 1037, 1080, 1080, 1080]
+  State   96 (<none>): transitions to [1308]
+  State   97 (<none>): transitions to [1311]
+  State   98 (<none>): transitions to [1351, 1384, 1094, 1331, 81, 1317, 1345, 1314, 1417, 1450, 1348]
+  State   99 (<none>): transitions to [1094, 1479, 1524, 1493, 1527, 1314, 1533, 1599, 1566, 1507, 1530, 1521]
+  State  100 (<none>): transitions to [1094, 1634, 1628, 1094, 1631, 1642]
+  State  101 (<none>): transitions to [1314, 1707, 1673, 1645, 1094, 1687, 1659, 1701, 1704, 1521]
+  State  102 (<none>): transitions to [1736, 1314, 1750, 1707, 1094, 1792, 1764, 1778, 1795, 1798]
+  State  103 (<none>): transitions to [1707, 1094, 1801]
+  State  104 (<none>): transitions to [1314, 1707, 1673, 1645, 1094, 1687, 1659, 1804, 1521]
+  State  105 (<none>): transitions to [1707, 1094, 1807]
+  State  106 (<none>): transitions to [759, 682, 1810, 1094, 1827, 81, 1824, 909, 792, 768, 785]
+  State  107 (<none>): transitions to [1634, 1094, 1860, 1827, 1450, 1874]
+  State  108 (<none>): transitions to [1810, 1094, 1827, 81, 1877]
+  State  109 (<none>): transitions to [1094, 1860, 1827, 1450, 1880]
+  State  110 (<none>): transitions to [1883, 1094, 1599, 1827, 1897]
+  State  111 (<none>): transitions to [365, 1634, 1909, 1923, 1965, 1094, 81, 1937, 1968, 1951, 1900]
+  State  112 (<none>): transitions to [1971, 1974, 1977]
+  State  113 (<none>): transitions to [1986, 1980, 1983]
+
+================================================================================
+  STATE CLASSIFICATION
+================================================================================
+guard_blocked_no_thresholds: 5 states
+  State   82 (<none>): 1 transitions
+  State   83 (<none>): 2 transitions
+  State   84 (<none>): 2 transitions
+  State   87 (<none>): 2 transitions
+  State   88 (<none>): 2 transitions
+
+guard_blocked_with_thresholds: 40 states
+  State   69 (<none>): 6 transitions
+  State   70 (BothArms): 6 transitions
+  State   71 (<none>): 6 transitions
+  State   72 (BothArms): 6 transitions
+  State   73 (<none>): 4 transitions
+  State   74 (NeckAndRightArm): 5 transitions
+  State   75 (RightArm): 6 transitions
+  State   76 (<none>): 6 transitions
+  State   77 (<none>): 6 transitions
+  State   78 (<none>): 6 transitions
+  ... (30 more)
+
+immediate_guard_access: 68 states
+  State    1 (<none>): 6 transitions
+  State    2 (<none>): 8 transitions
+  State    3 (Spine2_Upper): 6 transitions
+  State    4 (Spine2_Upper): 6 transitions
+  State    5 (Spine2_Upper): 6 transitions
+  State    6 (Spine2_Upper): 6 transitions
+  State    7 (<none>): 6 transitions
+  State    8 (<none>): 6 transitions
+  State    9 (<none>): 8 transitions
+  State   10 (<none>): 8 transitions
+  ... (58 more)
+
+no_transitions: 1 states
+  State    0 (<none>): 0 transitions
+
+
+================================================================================
+  ATTACK COMBO CHAINS
+================================================================================
+Found 9 chains (>2 states):
+  Chain 0: 2 -> 44 -> 0
+  Chain 1: 9 -> 54 -> 0
+  Chain 2: 10 -> 54 -> 0
+  Chain 3: 69 -> 54 -> 0
+    Guard-blocked in chain: [69]
+  Chain 4: 70 -> 54 -> 0
+    Guard-blocked in chain: [70]
+  Chain 5: 71 -> 54 -> 0
+    Guard-blocked in chain: [71]
+  Chain 6: 72 -> 54 -> 0
+    Guard-blocked in chain: [72]
+  Chain 7: 80 -> 64 -> 0
+    Guard-blocked in chain: [80]
+  Chain 8: 93 -> 64 -> 0
+    Guard-blocked in chain: [93]
+
+================================================================================
+  CONDITION GRAPH ANALYSIS
+================================================================================
+Section start: 0xe862
+Section size: 32,401 bytes
+Record candidates found: 142
+
+Most common float values in condition section:
+      0.0000: 485 occurrences
+      8.0000: 29 occurrences
+    -62.1810: 23 occurrences
+      6.0000: 13 occurrences
+      5.0000: 6 occurrences
+     12.0000: 4 occurrences
+      0.3000: 3 occurrences
+     10.0000: 2 occurrences
+      0.1667: 2 occurrences
+      3.0000: 2 occurrences
+      1.2500: 2 occurrences
+      0.5236: 2 occurrences
+      9.0000: 1 occurrences
+     20.0000: 1 occurrences
+      2.8811: 1 occurrences
+     -0.4313: 1 occurrences
+      8.7266: 1 occurrences
+     -0.0027: 1 occurrences
+      6.2832: 1 occurrences
+      1.0000: 1 occurrences
+
+Condition section structure analysis:
+  The tail section (32,401 bytes) contains the
+  transition condition graph. Each state's transitions reference conditions
+  that must be met (input keys pressed, animation progress, etc.).
+  The section contains 80-byte blocks with:
+    - Float pairs (animation progress thresholds)
+    - -1.0 sentinel values (same as transition sentinels)
+    - Integer references (likely string table indices for input keys)
+  These blocks define WHEN transitions are allowed.
+
+================================================================================
+  PATCHING FEASIBILITY ASSESSMENT
+================================================================================
+GOAL: Add guard (block) transitions to attack sub-states so players
+      can cancel attack animations by pressing guard (LB).
+
+APPROACH A: Add new transition entries to attack states
+  STATUS: VERY DIFFICULT
+  Each state's transition count is a uint8 at a fixed offset.
+  Adding a transition would require:
+    1. Incrementing the count byte
+    2. Inserting 16 bytes for the new transition record
+    3. Shifting ALL subsequent data (string tables, condition graph)
+    4. Updating all absolute offsets in the file
+  RISK: File format likely has no slack space. Insertion would break
+        offsets throughout the file.
+
+APPROACH B: Replace low-priority transitions with guard transitions
+  STATUS: POSSIBLE for 66 transitions
+  These transitions have high sequence numbers and late thresholds,
+  making them candidates for replacement:
+    State 69 (<none>): seq=5 thresh=0.50 target=81
+      -> Replace target with guard state 0
+    State 70 (BothArms): seq=5 thresh=0.50 target=81
+      -> Replace target with guard state 0
+    State 71 (<none>): seq=5 thresh=0.50 target=81
+      -> Replace target with guard state 0
+    State 72 (BothArms): seq=5 thresh=0.50 target=81
+      -> Replace target with guard state 0
+    State 75 (RightArm): seq=5 thresh=0.80 target=284
+      -> Replace target with guard state 0
+    State 76 (<none>): seq=5 thresh=0.87 target=394
+      -> Replace target with guard state 0
+    State 77 (<none>): seq=5 thresh=0.82 target=439
+      -> Replace target with guard state 0
+    State 78 (<none>): seq=5 thresh=0.63 target=461
+      -> Replace target with guard state 0
+    State 79 (<none>): seq=5 thresh=0.37 target=511
+      -> Replace target with guard state 0
+    State 80 (<none>): seq=5 thresh=1.28 target=380
+      -> Replace target with guard state 0
+    State 80 (<none>): seq=6 thresh=1.28 target=650
+      -> Replace target with guard state 0
+    State 80 (<none>): seq=7 thresh=1.33 target=394
+      -> Replace target with guard state 0
+    State 85 (<none>): seq=5 thresh=0.33 target=768
+      -> Replace target with guard state 0
+    State 85 (<none>): seq=6 thresh=0.33 target=785
+      -> Replace target with guard state 0
+    State 86 (<none>): seq=5 thresh=0.33 target=768
+      -> Replace target with guard state 0
+    State 86 (<none>): seq=6 thresh=0.33 target=785
+      -> Replace target with guard state 0
+    State 90 (<none>): seq=5 thresh=1.17 target=1080
+      -> Replace target with guard state 0
+    State 90 (<none>): seq=6 thresh=1.83 target=1080
+      -> Replace target with guard state 0
+    State 90 (<none>): seq=7 thresh=2.50 target=1080
+      -> Replace target with guard state 0
+    State 93 (<none>): seq=5 thresh=1.93 target=1234
+      -> Replace target with guard state 0
+    ... (46 more)
+  RISK: Replacing transitions changes combo behavior. The replaced
+        transition's original function would be lost.
+
+APPROACH C: Modify condition graph to allow blocked transitions
+  STATUS: REQUIRES MORE RE
+  The 80-byte condition blocks in the tail section define WHEN
+  transitions are allowed. If guard transitions exist but are
+  gated by conditions (e.g., "not during attack"), modifying
+  those conditions could enable them.
+  RISK: Condition format not fully decoded. Blind patching could
+        break all transitions.
+
+APPROACH D: Runtime hook (ASI mod)
+  STATUS: MOST FEASIBLE
+  Instead of patching the .paac file:
+    1. Hook the action chart evaluation function in memory
+    2. When the player presses guard during an attack state,
+       force the state machine to transition to the guard state
+    3. This bypasses the condition graph entirely
+  ADVANTAGES:
+    - No file modification needed (works across game updates)
+    - Can be toggled on/off
+    - Doesn't break other transitions
+  REQUIREMENTS:
+    - Find the ActionChart::evaluate() function in memory
+    - Understand how the current state index is stored
+    - Hook to inject guard transitions at runtime
+
+RECOMMENDATION: Use APPROACH D (runtime hook) as the primary method.
+APPROACH B (transition replacement) is a viable fallback for specific
+attack states where a low-priority transition can be sacrificed.
+
+KEY STATISTICS FOR MODDING:
+  Total states: 114
+  States with transitions: 113
+  Guard-blocked states (with transitions): 45
+  Replaceable transitions: 66
+  Transition record size: 16 bytes
+  Transition format: [float32 threshold][float32 -1.0][uint32 target][uint32 seq]
+  Config block size: 64 bytes (between states)
+
+================================================================================
+  CROSS-VALIDATION: dagger_upper.paac vs basic_upper.paac
+================================================================================
+dagger_upper.paac:
+  Size: 91,891 bytes
+  Header node count: 116
+  Header speed: 1.0000
+  State markers found: 114
+  Difference (header - markers): 2
+basic_upper.paac:
+  Size: 330,299 bytes
+  Header node count: 274
+  Header speed: 3.0000
+  State markers found: 267
+  Difference (header - markers): 7
+
+State record structure consistency:
+  dagger_upper.paac: first 10 inter-marker deltas = [237, 457, 489, 457, 457, 457, 457, 457, 457, 489]
+  dagger_upper.paac: 1 unique post-marker patterns in first 50 states
+  basic_upper.paac: first 10 inter-marker deltas = [461, 461, 461, 461, 505, 505, 273, 461, 505, 477]
+  basic_upper.paac: 1 unique post-marker patterns in first 50 states

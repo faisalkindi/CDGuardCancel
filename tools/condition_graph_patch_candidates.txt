@@ -1,0 +1,489 @@
+====================================================================================================
+CONDITION GRAPH PATCH CANDIDATE RANKING
+====================================================================================================
+File: C:\Users\faisa\Ai\Mods Dev\CrimsonDesert-Mods\CDAnimCancel\extracted\actionchart\bin__\upperaction\1_pc\1_phm\sword_upper.paac
+Uniform blocks: 623
+Original LZ4 size: 224084 bytes (target 224084)
+
+SIG target=    0 opcode=0x2902 params=(4, 0, 15) labels={key_guard:11, NeckAndRightArm:23, LowerLeftArm_1:6, BothHands:7, Spine2_Upper:2, LeftArmNoSplice:4, NeckAndLeftArm:34, key_fistattack:7, equip_shield:6, key_skill_12:9, key_skill_1:10, key_skill_12_start:6, key_skill_7:2, key_crouch:1, key_skill_9_start:1, keyguide_elementalaugment:1, key_skill_8_combo_start:1}
+  swap block#  0 file+0x097AF0 NeckAndRightArm -> key_guard src= 3961 delta=+6
+  swap block# 12 file+0x098720 LowerLeftArm_1 -> key_guard src= 3380 delta=+14
+  swap block# 25 file+0x099454 BothHands -> key_guard src= 4946 delta=-6
+  swap block# 38 file+0x09A188 key_skill_7 -> key_guard src=  497 delta=+16
+  swap block# 39 file+0x09A28C NeckAndLeftArm -> key_guard src= 4100 delta=+9
+  swap block# 43 file+0x09A69C key_skill_7 -> key_guard src= 1146 delta=+4
+  swap block# 45 file+0x09A8A4 key_skill_1 -> key_guard src= 4802 delta=-3
+  swap block# 51 file+0x09AEBC NeckAndLeftArm -> key_guard src= 4114 delta=+4
+  swap block# 58 file+0x09B5D8 key_skill_12 -> key_guard src= 4872 delta=-2
+  swap block# 61 file+0x09B8E4 NeckAndRightArm -> key_guard src= 3953 delta=+13
+  swap block# 62 file+0x09B9E8 key_crouch -> key_guard src= 5274 delta=+20
+  swap block# 63 file+0x09BAEC NeckAndRightArm -> key_guard src= 3943 delta=+26
+  swap block# 64 file+0x09BBF0 NeckAndRightArm -> key_guard src= 2036 delta=+5
+  swap block# 67 file+0x09BEFC NeckAndLeftArm -> key_guard src= 4065 delta=+4
+  swap block# 82 file+0x09CE38 key_skill_12 -> key_guard src= 3257 delta=-3
+  swap block# 84 file+0x09D040 LeftArmNoSplice -> key_guard src= 1642 delta=+4
+  swap block# 86 file+0x09D248 NeckAndLeftArm -> key_guard src= 4014 delta=+30
+  swap block# 93 file+0x09D964 NeckAndLeftArm -> key_guard src= 4072 delta=+30
+  swap block# 97 file+0x09DD74 NeckAndLeftArm -> key_guard src= 4107 delta=-2
+  swap block#102 file+0x09E288 NeckAndLeftArm -> key_guard src= 4093 delta=+29
+  swap block#103 file+0x09E38C NeckAndRightArm -> key_guard src=   98 delta=+15
+  swap block#106 file+0x09E698 NeckAndLeftArm -> key_guard src= 5002 delta=-7
+  swap block#110 file+0x09EAA8 NeckAndLeftArm -> key_guard src= 4035 delta=+68
+  swap block#120 file+0x09F4D0 NeckAndLeftArm -> key_guard src= 4957 delta=+4
+  swap block#126 file+0x09FAE8 NeckAndLeftArm -> key_guard src= 4965 delta=+3
+  swap block#131 file+0x09FFFC key_fistattack -> key_guard src=  937 delta=+2
+  swap block#133 file+0x0A0204 NeckAndLeftArm -> key_guard src= 4125 delta=+8
+  swap block#141 file+0x0A0A24 NeckAndRightArm -> key_guard src= 1033 delta=+7
+  swap block#142 file+0x0A0B28 NeckAndLeftArm -> key_guard src= 4000 delta=+13
+  swap block#143 file+0x0A0C2C NeckAndLeftArm -> key_guard src= 4079 delta=+39
+  swap block#154 file+0x0A1758 key_skill_1 -> key_guard src= 4754 delta=-2
+  swap block#155 file+0x0A185C key_skill_1 -> key_guard src= 4766 delta=+6
+  swap block#158 file+0x0A1B68 key_fistattack -> key_guard src=  990 delta=+2
+  swap block#166 file+0x0A2388 equip_shield -> key_guard src= 4657 delta=-8
+  swap block#170 file+0x0A2798 NeckAndRightArm -> key_guard src= 3984 delta=+22
+  swap block#171 file+0x0A289C NeckAndLeftArm -> key_guard src= 1330 delta=+0
+  swap block#182 file+0x0A33C8 NeckAndLeftArm -> key_guard src= 4537 delta=-4
+  swap block#184 file+0x0A35D0 key_skill_9_start -> key_guard src= 4728 delta=+10
+  swap block#185 file+0x0A36D4 key_skill_1 -> key_guard src=  511 delta=-2
+  swap block#186 file+0x0A37D8 BothHands -> key_guard src= 4147 delta=+10
+  swap block#188 file+0x0A39E0 key_skill_1 -> key_guard src= 4850 delta=+6
+  swap block#193 file+0x0A3EF4 NeckAndRightArm -> key_guard src= 3211 delta=+29
+  swap block#208 file+0x0A4E30 key_fistattack -> key_guard src= 4930 delta=-3
+  swap block#210 file+0x0A5038 NeckAndLeftArm -> key_guard src= 3973 delta=-13
+  swap block#215 file+0x0A554C BothHands -> key_guard src= 4132 delta=+10
+  swap block#222 file+0x0A5C68 LowerLeftArm_1 -> key_guard src= 5139 delta=+4
+  swap block#233 file+0x0A6794 NeckAndLeftArm -> key_guard src= 4508 delta=-1
+  swap block#244 file+0x0A72C0 NeckAndRightArm -> key_guard src= 3955 delta=+10
+  swap block#254 file+0x0A7CE8 equip_shield -> key_guard src= 1811 delta=-1
+  swap block#255 file+0x0A7DEC key_skill_12_start -> key_guard src=  484 delta=+21
+  swap block#263 file+0x0A860C key_skill_12 -> key_guard src=  824 delta=-9
+  swap block#267 file+0x0A8A1C NeckAndRightArm -> key_guard src= 3959 delta=+8
+  swap block#278 file+0x0A9548 NeckAndRightArm -> key_guard src= 4315 delta=-4
+  swap block#289 file+0x0AA074 key_skill_12_start -> key_guard src=  549 delta=+2
+  swap block#291 file+0x0AA27C LeftArmNoSplice -> key_guard src=  961 delta=-1
+  swap block#294 file+0x0AA588 BothHands -> key_guard src= 4121 delta=+0
+  swap block#295 file+0x0AA68C NeckAndLeftArm -> key_guard src= 4515 delta=+1
+  swap block#326 file+0x0AC608 NeckAndRightArm -> key_guard src= 3947 delta=+5
+  swap block#336 file+0x0AD030 NeckAndLeftArm -> key_guard src= 1139 delta=+30
+  swap block#337 file+0x0AD134 NeckAndRightArm -> key_guard src= 3957 delta=+15
+  swap block#340 file+0x0AD440 NeckAndLeftArm -> key_guard src= 4136 delta=+49
+  swap block#341 file+0x0AD544 key_skill_12 -> key_guard src= 4912 delta=+40
+  swap block#342 file+0x0AD648 key_skill_12_start -> key_guard src=  523 delta=+49
+  swap block#343 file+0x0AD74C equip_shield -> key_guard src= 4042 delta=-19
+  swap block#346 file+0x0ADA58 BothHands -> key_guard src= 2777 delta=-4
+  swap block#362 file+0x0AEA98 key_skill_12 -> key_guard src= 4892 delta=+40
+  swap block#363 file+0x0AEB9C Spine2_Upper -> key_guard src= 5028 delta=+31
+  swap block#366 file+0x0AEEA8 key_skill_12_start -> key_guard src=  779 delta=+25
+  swap block#367 file+0x0AEFAC NeckAndLeftArm -> key_guard src= 4058 delta=+42
+  swap block#373 file+0x0AF5C4 key_skill_1 -> key_guard src= 4814 delta=+40
+  swap block#382 file+0x0AFEE8 LowerLeftArm_1 -> key_guard src= 1675 delta=+42
+  swap block#390 file+0x0B0708 key_skill_12 -> key_guard src= 2323 delta=-14
+  swap block#392 file+0x0B0910 key_fistattack -> key_guard src= 4938 delta=+8
+  swap block#396 file+0x0B0D20 NeckAndLeftArm -> key_guard src= 4979 delta=+4
+  swap block#413 file+0x0B1E64 NeckAndRightArm -> key_guard src= 2075 delta=+14
+  swap block#417 file+0x0B2274 NeckAndLeftArm -> key_guard src= 3986 delta=+35
+  swap block#422 file+0x0B2788 key_skill_12 -> key_guard src= 4882 delta=+2
+  swap block#427 file+0x0B2C9C LowerLeftArm_1 -> key_guard src= 3377 delta=+21
+  swap block#448 file+0x0B41F0 key_skill_12_start -> key_guard src=  536 delta=+36
+  swap block#449 file+0x0B42F4 NeckAndRightArm -> key_guard src= 3980 delta=+1
+  swap block#453 file+0x0B4704 key_skill_12_start -> key_guard src=  792 delta=+22
+  swap block#454 file+0x0B4808 BothHands -> key_guard src= 4143 delta=+32
+  swap block#458 file+0x0B4C18 key_skill_1 -> key_guard src= 4838 delta=+44
+  swap block#461 file+0x0B4F24 NeckAndLeftArm -> key_guard src= 1956 delta=+23
+  swap block#476 file+0x0B5E60 LeftArmNoSplice -> key_guard src= 3845 delta=+1
+  swap block#484 file+0x0B6680 key_skill_1 -> key_guard src= 4790 delta=+12
+  swap block#485 file+0x0B6784 NeckAndLeftArm -> key_guard src= 4028 delta=+7
+  swap block#487 file+0x0B698C key_skill_8_combo_start -> key_guard src= 2285 delta=-10
+  swap block#492 file+0x0B6EA0 key_skill_1 -> key_guard src= 4826 delta=+11
+  swap block#494 file+0x0B70A8 NeckAndLeftArm -> key_guard src= 4007 delta=+3
+  swap block#503 file+0x0B79CC NeckAndRightArm -> key_guard src= 3963 delta=-2
+  swap block#512 file+0x0B82F0 key_skill_12 -> key_guard src= 4862 delta=+1
+  swap block#520 file+0x0B8B10 LeftArmNoSplice -> key_guard src=  955 delta=+15
+  swap block#522 file+0x0B8D18 NeckAndRightArm -> key_guard src= 3951 delta=+11
+  swap block#536 file+0x0B9B50 NeckAndLeftArm -> key_guard src= 4950 delta=+8
+  swap block#542 file+0x0BA168 key_fistattack -> key_guard src= 4552 delta=+1
+  swap block#546 file+0x0BA578 NeckAndRightArm -> key_guard src= 4313 delta=-1
+  swap block#548 file+0x0BA780 key_skill_1 -> key_guard src= 4778 delta=-7
+  swap block#551 file+0x0BAA8C equip_shield -> key_guard src= 1249 delta=+5
+  swap block#553 file+0x0BAC94 NeckAndLeftArm -> key_guard src= 3965 delta=+15
+  swap block#554 file+0x0BAD98 equip_shield -> key_guard src= 4675 delta=+5
+  swap block#557 file+0x0BB0A4 NeckAndLeftArm -> key_guard src= 4021 delta=+3
+  swap block#560 file+0x0BB3B0 NeckAndLeftArm -> key_guard src= 3993 delta=+3
+  swap block#561 file+0x0BB4B4 equip_shield -> key_guard src= 4666 delta=+4
+  swap block#563 file+0x0BB6BC LowerLeftArm_1 -> key_guard src= 1071 delta=+1
+  swap block#568 file+0x0BBBD0 NeckAndRightArm -> key_guard src= 3945 delta=+5
+  swap block#573 file+0x0BC0E4 NeckAndRightArm -> key_guard src= 3982 delta=-3
+  swap block#578 file+0x0BC5F8 NeckAndRightArm -> key_guard src= 3949 delta=+3
+  swap block#580 file+0x0BC800 key_skill_12 -> key_guard src= 4902 delta=+6
+  swap block#589 file+0x0BD124 BothHands -> key_guard src= 3934 delta=-4
+  swap block#594 file+0x0BD638 key_fistattack -> key_guard src= 1581 delta=+14
+  swap block#599 file+0x0BDB4C Spine2_Upper -> key_guard src= 3938 delta=-9
+  swap block#602 file+0x0BDE58 NeckAndLeftArm -> key_guard src= 1132 delta=+3
+  swap block#607 file+0x0BE36C NeckAndRightArm -> key_guard src= 3932 delta=+14
+  swap block#609 file+0x0BE574 LowerLeftArm_1 -> key_guard src= 1705 delta=+30
+  swap block#611 file+0x0BE77C NeckAndLeftArm -> key_guard src= 4086 delta=+7
+  swap block#613 file+0x0BE984 NeckAndLeftArm -> key_guard src= 4051 delta=+7
+  swap block#615 file+0x0BEB8C key_fistattack -> key_guard src= 4922 delta=-2
+  swap block#617 file+0x0BED94 NeckAndRightArm -> key_guard src= 4213 delta=+25
+
+SIG target=    0 opcode=0x2902 params=(9, 0, 1) labels={key_guard:14, LowerLeftArm_1:7, key_skill_1:2, key_skill_2:6}
+  swap block#  1 file+0x097BF4 key_skill_1 -> key_guard src= 3187 delta=-2
+  swap block#101 file+0x09E184 key_skill_2 -> key_guard src= 2559 delta=+21
+  swap block#211 file+0x0A513C key_skill_2 -> key_guard src= 2450 delta=+13
+  swap block#213 file+0x0A5344 LowerLeftArm_1 -> key_guard src= 2018 delta=-6
+  swap block#252 file+0x0A7AE0 key_skill_2 -> key_guard src= 3102 delta=-5
+  swap block#268 file+0x0A8B20 LowerLeftArm_1 -> key_guard src= 1929 delta=+3
+  swap block#468 file+0x0B5640 key_skill_1 -> key_guard src= 2753 delta=-5
+  swap block#470 file+0x0B5848 LowerLeftArm_1 -> key_guard src= 2027 delta=-1
+  swap block#482 file+0x0B6478 key_skill_2 -> key_guard src= 2668 delta=+21
+  swap block#495 file+0x0B71AC key_skill_2 -> key_guard src= 2884 delta=+29
+  swap block#499 file+0x0B75BC LowerLeftArm_1 -> key_guard src= 1938 delta=+27
+  swap block#527 file+0x0B922C LowerLeftArm_1 -> key_guard src= 2066 delta=-19
+  swap block#534 file+0x0B9948 key_skill_2 -> key_guard src= 2993 delta=+21
+  swap block#552 file+0x0BAB90 LowerLeftArm_1 -> key_guard src= 1947 delta=+18
+  swap block#596 file+0x0BD840 LowerLeftArm_1 -> key_guard src= 2087 delta=-2
+
+SIG target=    0 opcode=0x2902 params=(3, 0, 15) labels={key_guard:9, NeckAndRightArm:4, LowerLeftArm_1:9, BothHands:3, Spine2_Upper:6, LeftArmNoSplice:17, NeckAndLeftArm:15, key_fistattack:23, key_crouch:1}
+  swap block#  2 file+0x097CF8 key_crouch -> key_guard src= 5181 delta=+44
+  swap block# 13 file+0x098824 BothHands -> key_guard src= 5067 delta=+11
+  swap block# 18 file+0x098D38 LeftArmNoSplice -> key_guard src= 5155 delta=+24
+  swap block# 24 file+0x099350 BothHands -> key_guard src= 5048 delta=-6
+  swap block# 31 file+0x099A6C NeckAndLeftArm -> key_guard src= 4331 delta=+9
+  swap block# 41 file+0x09A494 LeftArmNoSplice -> key_guard src= 1324 delta=+19
+  swap block# 59 file+0x09B6DC key_fistattack -> key_guard src= 4354 delta=-1
+  swap block# 71 file+0x09C30C key_fistattack -> key_guard src= 4428 delta=+1
+  swap block# 73 file+0x09C514 LowerLeftArm_1 -> key_guard src= 5086 delta=-25
+  swap block# 76 file+0x09C820 LeftArmNoSplice -> key_guard src= 5061 delta=-7
+  swap block# 91 file+0x09D75C LeftArmNoSplice -> key_guard src= 1950 delta=+21
+  swap block# 95 file+0x09DB6C LowerLeftArm_1 -> key_guard src= 3923 delta=+3
+  swap block# 98 file+0x09DE78 NeckAndLeftArm -> key_guard src= 5016 delta=+17
+  swap block#115 file+0x09EFBC key_fistattack -> key_guard src= 4233 delta=-3
+  swap block#122 file+0x09F6D8 NeckAndLeftArm -> key_guard src= 5388 delta=+8
+  swap block#125 file+0x09F9E4 NeckAndLeftArm -> key_guard src= 4317 delta=+7
+  swap block#137 file+0x0A0614 key_fistattack -> key_guard src= 4378 delta=+5
+  swap block#157 file+0x0A1A64 key_fistattack -> key_guard src= 4444 delta=+1
+  swap block#161 file+0x0A1E74 LeftArmNoSplice -> key_guard src= 1187 delta=+24
+  swap block#169 file+0x0A2694 key_fistattack -> key_guard src= 4468 delta=+4
+  swap block#178 file+0x0A2FB8 LeftArmNoSplice -> key_guard src= 5149 delta=-2
+  swap block#202 file+0x0A4818 Spine2_Upper -> key_guard src= 4300 delta=+6
+  swap block#203 file+0x0A491C LeftArmNoSplice -> key_guard src= 1627 delta=+14
+  swap block#204 file+0x0A4A20 NeckAndLeftArm -> key_guard src= 5395 delta=-5
+  swap block#205 file+0x0A4B24 key_fistattack -> key_guard src= 4452 delta=+6
+  swap block#207 file+0x0A4D2C LeftArmNoSplice -> key_guard src= 1941 delta=+31
+  swap block#224 file+0x0A5E70 LeftArmNoSplice -> key_guard src= 1367 delta=+50
+  swap block#237 file+0x0A6BA4 Spine2_Upper -> key_guard src= 3926 delta=+6
+  swap block#240 file+0x0A6EB0 LowerLeftArm_1 -> key_guard src= 5039 delta=-1
+  swap block#241 file+0x0A6FB4 key_fistattack -> key_guard src= 4500 delta=+9
+  swap block#249 file+0x0A77D4 LeftArmNoSplice -> key_guard src= 1243 delta=+1
+  swap block#266 file+0x0A8918 NeckAndLeftArm -> key_guard src= 4398 delta=+4
+  swap block#271 file+0x0A8E2C NeckAndLeftArm -> key_guard src= 4578 delta=+1
+  swap block#275 file+0x0A923C key_fistattack -> key_guard src= 4460 delta=+5
+  swap block#284 file+0x0A9B60 key_fistattack -> key_guard src= 4370 delta=-1
+  swap block#286 file+0x0A9D68 NeckAndLeftArm -> key_guard src= 5079 delta=+33
+  swap block#296 file+0x0AA790 Spine2_Upper -> key_guard src= 5023 delta=+3
+  swap block#298 file+0x0AA998 key_fistattack -> key_guard src= 4476 delta=+7
+  swap block#303 file+0x0AAEAC key_fistattack -> key_guard src= 4492 delta=+7
+  swap block#308 file+0x0AB3C0 LowerLeftArm_1 -> key_guard src= 3398 delta=+1
+  swap block#313 file+0x0AB8D4 LeftArmNoSplice -> key_guard src= 1196 delta=+9
+  swap block#314 file+0x0AB9D8 LowerLeftArm_1 -> key_guard src= 5033 delta=+57
+  swap block#319 file+0x0ABEEC NeckAndLeftArm -> key_guard src= 4986 delta=+6
+  swap block#339 file+0x0AD33C NeckAndLeftArm -> key_guard src= 5142 delta=-2
+  swap block#347 file+0x0ADB5C BothHands -> key_guard src= 5057 delta=-2
+  swap block#350 file+0x0ADE68 key_fistattack -> key_guard src= 4190 delta=+1
+  swap block#352 file+0x0AE070 NeckAndLeftArm -> key_guard src= 4421 delta=+46
+  swap block#371 file+0x0AF3BC key_fistattack -> key_guard src= 4405 delta=+74
+  swap block#380 file+0x0AFCE0 key_fistattack -> key_guard src= 4362 delta=+51
+  swap block#383 file+0x0AFFEC NeckAndLeftArm -> key_guard src= 5009 delta=+3
+  swap block#389 file+0x0B0604 LowerLeftArm_1 -> key_guard src= 5045 delta=+39
+  swap block#411 file+0x0B1C5C key_fistattack -> key_guard src= 4413 delta=+22
+  swap block#416 file+0x0B2170 key_fistattack -> key_guard src= 4386 delta=+35
+  swap block#419 file+0x0B247C NeckAndRightArm -> key_guard src= 4396 delta=+36
+  swap block#423 file+0x0B288C NeckAndLeftArm -> key_guard src= 5161 delta=+0
+  swap block#437 file+0x0B36C4 LeftArmNoSplice -> key_guard src= 1618 delta=+36
+  swap block#439 file+0x0B38CC NeckAndRightArm -> key_guard src= 4394 delta=+35
+  swap block#450 file+0x0B43F8 NeckAndLeftArm -> key_guard src= 4324 delta=+33
+  swap block#467 file+0x0B553C key_fistattack -> key_guard src= 4484 delta=+6
+  swap block#481 file+0x0B6374 LeftArmNoSplice -> key_guard src= 1234 delta=+6
+  swap block#486 file+0x0B6888 LowerLeftArm_1 -> key_guard src= 5089 delta=-17
+  swap block#491 file+0x0B6D9C key_fistattack -> key_guard src= 4338 delta=+2
+  swap block#505 file+0x0B7BD4 key_fistattack -> key_guard src= 4436 delta=-9
+  swap block#508 file+0x0B7EE0 LowerLeftArm_1 -> key_guard src= 5036 delta=-22
+  swap block#511 file+0x0B81EC NeckAndLeftArm -> key_guard src= 1574 delta=-15
+  swap block#528 file+0x0B9330 Spine2_Upper -> key_guard src= 5097 delta=+6
+  swap block#540 file+0x0B9F60 LeftArmNoSplice -> key_guard src= 1285 delta=+8
+  swap block#558 file+0x0BB1A8 LeftArmNoSplice -> key_guard src= 2030 delta=+7
+  swap block#564 file+0x0BB7C0 NeckAndRightArm -> key_guard src= 5077 delta=-3
+  swap block#565 file+0x0BB8C4 Spine2_Upper -> key_guard src= 5102 delta=+6
+  swap block#576 file+0x0BC3F0 key_fistattack -> key_guard src= 4346 delta=+5
+  swap block#582 file+0x0BCA08 NeckAndRightArm -> key_guard src= 5137 delta=+3
+  swap block#584 file+0x0BCC10 key_fistattack -> key_guard src= 5107 delta=+12
+  swap block#597 file+0x0BD944 LeftArmNoSplice -> key_guard src= 5071 delta=-1
+  swap block#600 file+0x0BDC50 key_fistattack -> key_guard src= 5115 delta=+2
+  swap block#604 file+0x0BE060 Spine2_Upper -> key_guard src= 5052 delta=+6
+  swap block#605 file+0x0BE164 LowerLeftArm_1 -> key_guard src= 5042 delta=+3
+  swap block#610 file+0x0BE678 LeftArmNoSplice -> key_guard src= 1399 delta=+7
+
+SIG target=10280 opcode=0x2902 params=(9, 0, 15) labels={key_guard:2}
+
+SIG target=13001 opcode=0x2902 params=(9, 0, 15) labels={LowerLeftArm_1:15, LeftArmNoSplice:8, NeckAndLeftArm:5, key_fistattack:4, equip_shield:4, key_skill_12:2, CharacterMeshEffectWeapon:2, key_skill_1:3, key_skill_12_start:2, key_skill_7:1, key_crouch:5, key_guard_start:1, key_skill_2:3, key_cancel:3, CharacterHit:1, off:9}
+  swap block# 19 file+0x098E3C NeckAndLeftArm -> key_guard_start src=  238 delta=+62
+  swap block# 20 file+0x098F40 LowerLeftArm_1 -> key_guard_start src= 1184 delta=+17
+  swap block# 28 file+0x099760 LowerLeftArm_1 -> key_guard_start src= 1312 delta=+38
+  swap block# 29 file+0x099864 off -> key_guard_start src= 3645 delta=+50
+  swap block# 35 file+0x099E7C key_skill_2 -> key_guard_start src= 1546 delta=+46
+  swap block# 40 file+0x09A390 off -> key_guard_start src= 3667 delta=+52
+  swap block# 52 file+0x09AFC0 LeftArmNoSplice -> key_guard_start src= 3639 delta=+34
+  swap block# 55 file+0x09B2CC key_skill_2 -> key_guard_start src= 1648 delta=+41
+  swap block# 70 file+0x09C208 key_crouch -> key_guard_start src= 1445 delta=+39
+  swap block# 79 file+0x09CB2C key_crouch -> key_guard_start src= 1258 delta=+41
+  swap block#113 file+0x09EDB4 key_fistattack -> key_guard_start src= 1794 delta=+54
+  swap block#117 file+0x09F1C4 CharacterMeshEffectWeapon -> key_guard_start src= 3278 delta=+33
+  swap block#136 file+0x0A0510 LowerLeftArm_1 -> key_guard_start src= 1321 delta=-24
+  swap block#146 file+0x0A0F38 LeftArmNoSplice -> key_guard_start src= 3689 delta=-3
+  swap block#160 file+0x0A1D70 LowerLeftArm_1 -> key_guard_start src= 1231 delta=+17
+  swap block#164 file+0x0A2180 key_skill_2 -> key_guard_start src= 1678 delta=+11
+  swap block#176 file+0x0A2DB0 NeckAndLeftArm -> key_guard_start src=  859 delta=+7
+  swap block#183 file+0x0A34CC key_cancel -> key_guard_start src= 1202 delta=-30
+  swap block#200 file+0x0A4610 key_skill_12 -> key_guard_start src= 4264 delta=+23
+  swap block#206 file+0x0A4C28 LeftArmNoSplice -> key_guard_start src= 3751 delta=+23
+  swap block#212 file+0x0A5240 LowerLeftArm_1 -> key_guard_start src= 1785 delta=+47
+  swap block#248 file+0x0A76D0 equip_shield -> key_guard_start src=  149 delta=-21
+  swap block#262 file+0x0A8508 LowerLeftArm_1 -> key_guard_start src= 1240 delta=+37
+  swap block#265 file+0x0A8814 NeckAndLeftArm -> key_guard_start src= 3289 delta=+23
+  swap block#269 file+0x0A8C24 LeftArmNoSplice -> key_guard_start src= 3583 delta=+29
+  swap block#272 file+0x0A8F30 key_crouch -> key_guard_start src= 3445 delta=+34
+  swap block#279 file+0x0A964C key_skill_12 -> key_guard_start src= 1460 delta=+27
+  swap block#280 file+0x0A9750 key_cancel -> key_guard_start src= 1425 delta=+44
+  swap block#285 file+0x0A9C64 key_skill_12_start -> key_guard_start src= 1589 delta=+55
+  swap block#292 file+0x0AA380 LowerLeftArm_1 -> key_guard_start src= 1175 delta=+37
+  swap block#297 file+0x0AA894 key_skill_1 -> key_guard_start src= 1534 delta=+21
+  swap block#312 file+0x0AB7D0 equip_shield -> key_guard_start src= 3541 delta=+31
+  swap block#327 file+0x0AC70C LowerLeftArm_1 -> key_guard_start src= 1696 delta=+43
+  swap block#335 file+0x0ACF2C LeftArmNoSplice -> key_guard_start src= 3577 delta=+28
+  swap block#365 file+0x0AEDA4 LeftArmNoSplice -> key_guard_start src= 3695 delta=+40
+  swap block#381 file+0x0AFDE4 LowerLeftArm_1 -> key_guard_start src= 1273 delta=+35
+  swap block#386 file+0x0B02F8 equip_shield -> key_guard_start src=  466 delta=+36
+  swap block#400 file+0x0B1130 CharacterMeshEffectWeapon -> key_guard_start src= 3267 delta=+0
+  swap block#401 file+0x0B1234 key_fistattack -> key_guard_start src=  771 delta=+18
+  swap block#402 file+0x0B1338 LowerLeftArm_1 -> key_guard_start src= 1282 delta=+17
+  swap block#405 file+0x0B1644 LowerLeftArm_1 -> key_guard_start src= 1193 delta=+2
+  swap block#410 file+0x0B1B58 equip_shield -> key_guard_start src= 3532 delta=+31
+  swap block#412 file+0x0B1D60 LowerLeftArm_1 -> key_guard_start src= 1222 delta=-9
+  swap block#424 file+0x0B2990 off -> key_guard_start src= 3779 delta=+2
+  swap block#429 file+0x0B2EA4 key_fistattack -> key_guard_start src= 4274 delta=+10
+  swap block#432 file+0x0B31B0 NeckAndLeftArm -> key_guard_start src=  900 delta=+6
+  swap block#438 file+0x0B37C8 LowerLeftArm_1 -> key_guard_start src= 3296 delta=-8
+  swap block#440 file+0x0B39D0 off -> key_guard_start src= 3723 delta=+1
+  swap block#452 file+0x0B4600 key_skill_7 -> key_guard_start src= 1481 delta=-7
+  swap block#469 file+0x0B5744 off -> key_guard_start src= 3701 delta=+4
+  swap block#478 file+0x0B6068 LeftArmNoSplice -> key_guard_start src= 3633 delta=+9
+  swap block#501 file+0x0B77C4 LowerLeftArm_1 -> key_guard_start src= 1752 delta=-4
+  swap block#504 file+0x0B7AD0 key_fistattack -> key_guard_start src=  158 delta=+5
+  swap block#510 file+0x0B80E8 LowerLeftArm_1 -> key_guard_start src= 1666 delta=-1
+  swap block#519 file+0x0B8A0C key_cancel -> key_guard_start src= 1405 delta=-3
+  swap block#532 file+0x0B9740 key_skill_12_start -> key_guard_start src= 1602 delta=+11
+  swap block#539 file+0x0B9E5C CharacterHit -> key_guard_start src= 1291 delta=-2
+  swap block#541 file+0x0BA064 key_crouch -> key_guard_start src= 1160 delta=+6
+  swap block#543 file+0x0BA26C off -> key_guard_start src= 5405 delta=-5
+  swap block#547 file+0x0BA67C NeckAndLeftArm -> key_guard_start src=  475 delta=+5
+  swap block#566 file+0x0BB9C8 key_skill_1 -> key_guard_start src= 1773 delta=+7
+  swap block#585 file+0x0BCD14 key_skill_1 -> key_guard_start src= 1761 delta=+1
+  swap block#586 file+0x0BCE18 off -> key_guard_start src= 3611 delta=+12
+  swap block#591 file+0x0BD32C off -> key_guard_start src= 3589 delta=+12
+  swap block#595 file+0x0BD73C LeftArmNoSplice -> key_guard_start src= 3745 delta=+1
+  swap block#614 file+0x0BEA88 off -> key_guard_start src= 3757 delta=+1
+  swap block#620 file+0x0BF0A0 key_crouch -> key_guard_start src= 5430 delta=+3
+  swap block# 19 file+0x098E3C NeckAndLeftArm -> key_cancel src=  238 delta=+16
+  swap block# 20 file+0x098F40 LowerLeftArm_1 -> key_cancel src= 1184 delta=-52
+  swap block# 28 file+0x099760 LowerLeftArm_1 -> key_cancel src= 1312 delta=-8
+  swap block# 29 file+0x099864 off -> key_cancel src= 3645 delta=-4
+  swap block# 35 file+0x099E7C key_skill_2 -> key_cancel src= 1546 delta=-16
+  swap block# 40 file+0x09A390 off -> key_cancel src= 3667 delta=-2
+  swap block# 52 file+0x09AFC0 LeftArmNoSplice -> key_cancel src= 3639 delta=-20
+  swap block# 55 file+0x09B2CC key_skill_2 -> key_cancel src= 1648 delta=-5
+  swap block# 70 file+0x09C208 key_crouch -> key_cancel src= 1445 delta=-10
+  swap block# 79 file+0x09CB2C key_crouch -> key_cancel src= 1258 delta=-8
+  swap block#113 file+0x09EDB4 key_fistattack -> key_cancel src= 1794 delta=+10
+  swap block#117 file+0x09F1C4 CharacterMeshEffectWeapon -> key_cancel src= 3278 delta=-31
+  swap block#136 file+0x0A0510 LowerLeftArm_1 -> key_cancel src= 1321 delta=-54
+  swap block#146 file+0x0A0F38 LeftArmNoSplice -> key_cancel src= 3689 delta=-31
+  swap block#160 file+0x0A1D70 LowerLeftArm_1 -> key_cancel src= 1231 delta=+8
+  swap block#164 file+0x0A2180 key_skill_2 -> key_cancel src= 1678 delta=-6
+  swap block#176 file+0x0A2DB0 NeckAndLeftArm -> key_cancel src=  859 delta=-12
+  swap block#200 file+0x0A4610 key_skill_12 -> key_cancel src= 4264 delta=-17
+  swap block#206 file+0x0A4C28 LeftArmNoSplice -> key_cancel src= 3751 delta=+0
+  swap block#212 file+0x0A5240 LowerLeftArm_1 -> key_cancel src= 1785 delta=+0
+  swap block#248 file+0x0A76D0 equip_shield -> key_cancel src=  149 delta=-13
+  swap block#262 file+0x0A8508 LowerLeftArm_1 -> key_cancel src= 1240 delta=+3
+  swap block#265 file+0x0A8814 NeckAndLeftArm -> key_cancel src= 3289 delta=-4
+  swap block#269 file+0x0A8C24 LeftArmNoSplice -> key_cancel src= 3583 delta=+7
+  swap block#272 file+0x0A8F30 key_crouch -> key_cancel src= 3445 delta=+15
+  swap block#279 file+0x0A964C key_skill_12 -> key_cancel src= 1460 delta=-5
+  swap block#285 file+0x0A9C64 key_skill_12_start -> key_cancel src= 1589 delta=+8
+  swap block#292 file+0x0AA380 LowerLeftArm_1 -> key_cancel src= 1175 delta=+18
+  swap block#297 file+0x0AA894 key_skill_1 -> key_cancel src= 1534 delta=-13
+  swap block#312 file+0x0AB7D0 equip_shield -> key_cancel src= 3541 delta=-41
+  swap block#327 file+0x0AC70C LowerLeftArm_1 -> key_cancel src= 1696 delta=-3
+  swap block#335 file+0x0ACF2C LeftArmNoSplice -> key_cancel src= 3577 delta=-1
+  swap block#365 file+0x0AEDA4 LeftArmNoSplice -> key_cancel src= 3695 delta=+7
+  swap block#381 file+0x0AFDE4 LowerLeftArm_1 -> key_cancel src= 1273 delta=+18
+  swap block#384 file+0x0B00F0 key_guard_start -> key_cancel src= 1735 delta=+4
+  swap block#386 file+0x0B02F8 equip_shield -> key_cancel src=  466 delta=+30
+  swap block#400 file+0x0B1130 CharacterMeshEffectWeapon -> key_cancel src= 3267 delta=-12
+  swap block#401 file+0x0B1234 key_fistattack -> key_cancel src=  771 delta=+15
+  swap block#402 file+0x0B1338 LowerLeftArm_1 -> key_cancel src= 1282 delta=+5
+  swap block#405 file+0x0B1644 LowerLeftArm_1 -> key_cancel src= 1193 delta=+1
+  swap block#410 file+0x0B1B58 equip_shield -> key_cancel src= 3532 delta=+28
+  swap block#412 file+0x0B1D60 LowerLeftArm_1 -> key_cancel src= 1222 delta=-10
+  swap block#424 file+0x0B2990 off -> key_cancel src= 3779 delta=-4
+  swap block#429 file+0x0B2EA4 key_fistattack -> key_cancel src= 4274 delta=+5
+  swap block#432 file+0x0B31B0 NeckAndLeftArm -> key_cancel src=  900 delta=-11
+  swap block#438 file+0x0B37C8 LowerLeftArm_1 -> key_cancel src= 3296 delta=-1
+  swap block#440 file+0x0B39D0 off -> key_cancel src= 3723 delta=+1
+  swap block#452 file+0x0B4600 key_skill_7 -> key_cancel src= 1481 delta=-15
+  swap block#469 file+0x0B5744 off -> key_cancel src= 3701 delta=-16
+  swap block#478 file+0x0B6068 LeftArmNoSplice -> key_cancel src= 3633 delta=+8
+  swap block#501 file+0x0B77C4 LowerLeftArm_1 -> key_cancel src= 1752 delta=-8
+  swap block#504 file+0x0B7AD0 key_fistattack -> key_cancel src=  158 delta=-4
+  swap block#510 file+0x0B80E8 LowerLeftArm_1 -> key_cancel src= 1666 delta=+1
+  swap block#532 file+0x0B9740 key_skill_12_start -> key_cancel src= 1602 delta=+10
+  swap block#539 file+0x0B9E5C CharacterHit -> key_cancel src= 1291 delta=+2
+  swap block#541 file+0x0BA064 key_crouch -> key_cancel src= 1160 delta=+0
+  swap block#543 file+0x0BA26C off -> key_cancel src= 5405 delta=-5
+  swap block#547 file+0x0BA67C NeckAndLeftArm -> key_cancel src=  475 delta=+5
+  swap block#566 file+0x0BB9C8 key_skill_1 -> key_cancel src= 1773 delta=+2
+  swap block#585 file+0x0BCD14 key_skill_1 -> key_cancel src= 1761 delta=+10
+  swap block#586 file+0x0BCE18 off -> key_cancel src= 3611 delta=+12
+  swap block#591 file+0x0BD32C off -> key_cancel src= 3589 delta=+15
+  swap block#595 file+0x0BD73C LeftArmNoSplice -> key_cancel src= 3745 delta=+4
+  swap block#614 file+0x0BEA88 off -> key_cancel src= 3757 delta=+3
+  swap block#620 file+0x0BF0A0 key_crouch -> key_cancel src= 5430 delta=+2
+
+SIG target=    0 opcode=0x2902 params=(1, 0, 15) labels={NeckAndRightArm:1, LowerLeftArm_1:2, BothHands:1, NeckAndLeftArm:4, equip_shield:4, key_skill_12:1, key_cancel:2, CharacterHit:2}
+  swap block# 27 file+0x09965C equip_shield -> key_cancel src= 4719 delta=-19
+  swap block# 42 file+0x09A598 equip_shield -> key_cancel src= 4701 delta=-10
+  swap block# 90 file+0x09D658 NeckAndLeftArm -> key_cancel src= 4151 delta=-17
+  swap block#128 file+0x09FCF0 key_skill_12 -> key_cancel src= 5371 delta=-18
+  swap block#145 file+0x0A0E34 BothHands -> key_cancel src= 3299 delta=-15
+  swap block#175 file+0x0A2CAC equip_shield -> key_cancel src= 4692 delta=-10
+  swap block#218 file+0x0A5858 CharacterHit -> key_cancel src= 5289 delta=+9
+  swap block#348 file+0x0ADC60 NeckAndLeftArm -> key_cancel src= 3828 delta=-6
+  swap block#354 file+0x0AE278 equip_shield -> key_cancel src= 4710 delta=-24
+  swap block#374 file+0x0AF6C8 LowerLeftArm_1 -> key_cancel src= 3842 delta=-3
+  swap block#399 file+0x0B102C NeckAndLeftArm -> key_cancel src= 5381 delta=-3
+  swap block#526 file+0x0B9128 NeckAndLeftArm -> key_cancel src=  126 delta=-2
+  swap block#529 file+0x0B9434 LowerLeftArm_1 -> key_cancel src= 3314 delta=+1
+  swap block#531 file+0x0B963C NeckAndRightArm -> key_cancel src= 4215 delta=+1
+  swap block#588 file+0x0BD020 CharacterHit -> key_cancel src= 5310 delta=-4
+
+SIG target=10276 opcode=0x2902 params=(0, 0, 0) labels={key_guard:2}
+
+SIG target=    0 opcode=0x2903 params=(2, 0, 15) labels={key_guard_start:1}
+
+====================================================================================================
+TOP INDIVIDUAL SIZE-MATCH CANDIDATES
+====================================================================================================
+block#171 src= 1330 NeckAndLeftArm -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224084 delta=+0
+block#206 src= 3751 LeftArmNoSplice -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224084 delta=+0
+block#212 src= 1785 LowerLeftArm_1 -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224084 delta=+0
+block#294 src= 4121 BothHands -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224084 delta=+0
+block#400 src= 3267 CharacterMeshEffectWeapon -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224084 delta=+0
+block#423 src= 5161 NeckAndLeftArm -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224084 delta=+0
+block#541 src= 1160 key_crouch -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224084 delta=+0
+block# 59 src= 4354 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224083 delta=-1
+block# 71 src= 4428 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#157 src= 4444 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#233 src= 4508 NeckAndLeftArm -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224083 delta=-1
+block#240 src= 5039 LowerLeftArm_1 -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224083 delta=-1
+block#249 src= 1243 LeftArmNoSplice -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#254 src= 1811 equip_shield -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224083 delta=-1
+block#271 src= 4578 NeckAndLeftArm -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#284 src= 4370 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224083 delta=-1
+block#291 src=  961 LeftArmNoSplice -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224083 delta=-1
+block#295 src= 4515 NeckAndLeftArm -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#308 src= 3398 LowerLeftArm_1 -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#335 src= 3577 LeftArmNoSplice -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224083 delta=-1
+block#350 src= 4190 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224085 delta=+1
+block#405 src= 1193 LowerLeftArm_1 -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#438 src= 3296 LowerLeftArm_1 -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224083 delta=-1
+block#440 src= 3723 off -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#440 src= 3723 off -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#449 src= 3980 NeckAndRightArm -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#470 src= 2027 LowerLeftArm_1 -> key_guard target=    0 opcode=0x2902 params=(9, 0, 1) new_comp=224083 delta=-1
+block#476 src= 3845 LeftArmNoSplice -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#510 src= 1666 LowerLeftArm_1 -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224083 delta=-1
+block#510 src= 1666 LowerLeftArm_1 -> key_cancel target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#512 src= 4862 key_skill_12 -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#529 src= 3314 LowerLeftArm_1 -> key_cancel target=    0 opcode=0x2902 params=(1, 0, 15) new_comp=224085 delta=+1
+block#531 src= 4215 NeckAndRightArm -> key_cancel target=    0 opcode=0x2902 params=(1, 0, 15) new_comp=224085 delta=+1
+block#542 src= 4552 key_fistattack -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#546 src= 4313 NeckAndRightArm -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224083 delta=-1
+block#563 src= 1071 LowerLeftArm_1 -> key_guard target=    0 opcode=0x2902 params=(4, 0, 15) new_comp=224085 delta=+1
+block#585 src= 1761 key_skill_1 -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#595 src= 3745 LeftArmNoSplice -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+block#597 src= 5071 LeftArmNoSplice -> key_guard target=    0 opcode=0x2902 params=(3, 0, 15) new_comp=224083 delta=-1
+block#614 src= 3757 off -> key_guard_start target=13001 opcode=0x2902 params=(9, 0, 15) new_comp=224085 delta=+1
+
+Exact size-preserving single swaps: 7
+  EXACT block#171 NeckAndLeftArm -> key_guard target=    0 params=(4, 0, 15)
+  EXACT block#206 LeftArmNoSplice -> key_cancel target=13001 params=(9, 0, 15)
+  EXACT block#212 LowerLeftArm_1 -> key_cancel target=13001 params=(9, 0, 15)
+  EXACT block#294 BothHands -> key_guard target=    0 params=(4, 0, 15)
+  EXACT block#400 CharacterMeshEffectWeapon -> key_guard_start target=13001 params=(9, 0, 15)
+  EXACT block#423 NeckAndLeftArm -> key_guard target=    0 params=(3, 0, 15)
+  EXACT block#541 key_crouch -> key_cancel target=13001 params=(9, 0, 15)
+
+====================================================================================================
+ACTUAL PAIR COMBINATIONS VERIFIED BY RECOMPRESSION
+====================================================================================================
+Exact verified pair hits: 19
+  PAIR A block#171 NeckAndLeftArm->key_guard | B block#212 LowerLeftArm_1->key_cancel
+  PAIR A block#171 NeckAndLeftArm->key_guard | B block#294 BothHands->key_guard
+  PAIR A block#171 NeckAndLeftArm->key_guard | B block#400 CharacterMeshEffectWeapon->key_guard_start
+  PAIR A block#171 NeckAndLeftArm->key_guard | B block#423 NeckAndLeftArm->key_guard
+  PAIR A block#171 NeckAndLeftArm->key_guard | B block#541 key_crouch->key_cancel
+  PAIR A block#206 LeftArmNoSplice->key_cancel | B block#294 BothHands->key_guard
+  PAIR A block#206 LeftArmNoSplice->key_cancel | B block#400 CharacterMeshEffectWeapon->key_guard_start
+  PAIR A block#206 LeftArmNoSplice->key_cancel | B block#423 NeckAndLeftArm->key_guard
+  PAIR A block#206 LeftArmNoSplice->key_cancel | B block#541 key_crouch->key_cancel
+  PAIR A block#212 LowerLeftArm_1->key_cancel | B block#294 BothHands->key_guard
+  PAIR A block#212 LowerLeftArm_1->key_cancel | B block#400 CharacterMeshEffectWeapon->key_guard_start
+  PAIR A block#212 LowerLeftArm_1->key_cancel | B block#423 NeckAndLeftArm->key_guard
+  PAIR A block#212 LowerLeftArm_1->key_cancel | B block#541 key_crouch->key_cancel
+  PAIR A block#294 BothHands->key_guard | B block#400 CharacterMeshEffectWeapon->key_guard_start
+  PAIR A block#294 BothHands->key_guard | B block#423 NeckAndLeftArm->key_guard
+  PAIR A block#294 BothHands->key_guard | B block#541 key_crouch->key_cancel
+  PAIR A block#400 CharacterMeshEffectWeapon->key_guard_start | B block#423 NeckAndLeftArm->key_guard
+  PAIR A block#400 CharacterMeshEffectWeapon->key_guard_start | B block#541 key_crouch->key_cancel
+  PAIR A block#423 NeckAndLeftArm->key_guard | B block#541 key_crouch->key_cancel
+
+====================================================================================================
+ACTUAL TRIPLE COMBINATIONS VERIFIED BY RECOMPRESSION
+====================================================================================================
+Exact verified triple hits: 26
+  TRIPLE blocks #171, #212, #294 => NeckAndLeftArm->key_guard, LowerLeftArm_1->key_cancel, BothHands->key_guard
+  TRIPLE blocks #171, #212, #400 => NeckAndLeftArm->key_guard, LowerLeftArm_1->key_cancel, CharacterMeshEffectWeapon->key_guard_start
+  TRIPLE blocks #171, #212, #423 => NeckAndLeftArm->key_guard, LowerLeftArm_1->key_cancel, NeckAndLeftArm->key_guard
+  TRIPLE blocks #171, #212, #541 => NeckAndLeftArm->key_guard, LowerLeftArm_1->key_cancel, key_crouch->key_cancel
+  TRIPLE blocks #171, #294, #400 => NeckAndLeftArm->key_guard, BothHands->key_guard, CharacterMeshEffectWeapon->key_guard_start
+  TRIPLE blocks #171, #294, #423 => NeckAndLeftArm->key_guard, BothHands->key_guard, NeckAndLeftArm->key_guard
+  TRIPLE blocks #171, #294, #541 => NeckAndLeftArm->key_guard, BothHands->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #171, #400, #423 => NeckAndLeftArm->key_guard, CharacterMeshEffectWeapon->key_guard_start, NeckAndLeftArm->key_guard
+  TRIPLE blocks #171, #400, #541 => NeckAndLeftArm->key_guard, CharacterMeshEffectWeapon->key_guard_start, key_crouch->key_cancel
+  TRIPLE blocks #171, #423, #541 => NeckAndLeftArm->key_guard, NeckAndLeftArm->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #206, #294, #400 => LeftArmNoSplice->key_cancel, BothHands->key_guard, CharacterMeshEffectWeapon->key_guard_start
+  TRIPLE blocks #206, #294, #423 => LeftArmNoSplice->key_cancel, BothHands->key_guard, NeckAndLeftArm->key_guard
+  TRIPLE blocks #206, #294, #541 => LeftArmNoSplice->key_cancel, BothHands->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #206, #400, #423 => LeftArmNoSplice->key_cancel, CharacterMeshEffectWeapon->key_guard_start, NeckAndLeftArm->key_guard
+  TRIPLE blocks #206, #400, #541 => LeftArmNoSplice->key_cancel, CharacterMeshEffectWeapon->key_guard_start, key_crouch->key_cancel
+  TRIPLE blocks #206, #423, #541 => LeftArmNoSplice->key_cancel, NeckAndLeftArm->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #212, #294, #400 => LowerLeftArm_1->key_cancel, BothHands->key_guard, CharacterMeshEffectWeapon->key_guard_start
+  TRIPLE blocks #212, #294, #423 => LowerLeftArm_1->key_cancel, BothHands->key_guard, NeckAndLeftArm->key_guard
+  TRIPLE blocks #212, #294, #541 => LowerLeftArm_1->key_cancel, BothHands->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #212, #400, #423 => LowerLeftArm_1->key_cancel, CharacterMeshEffectWeapon->key_guard_start, NeckAndLeftArm->key_guard
+  TRIPLE blocks #212, #400, #541 => LowerLeftArm_1->key_cancel, CharacterMeshEffectWeapon->key_guard_start, key_crouch->key_cancel
+  TRIPLE blocks #212, #423, #541 => LowerLeftArm_1->key_cancel, NeckAndLeftArm->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #294, #400, #423 => BothHands->key_guard, CharacterMeshEffectWeapon->key_guard_start, NeckAndLeftArm->key_guard
+  TRIPLE blocks #294, #400, #541 => BothHands->key_guard, CharacterMeshEffectWeapon->key_guard_start, key_crouch->key_cancel
+  TRIPLE blocks #294, #423, #541 => BothHands->key_guard, NeckAndLeftArm->key_guard, key_crouch->key_cancel
+  TRIPLE blocks #400, #423, #541 => CharacterMeshEffectWeapon->key_guard_start, NeckAndLeftArm->key_guard, key_crouch->key_cancel
