@@ -1,8 +1,10 @@
 /*
- * CDGuardCancel v16.3 — Guard Cancel During Attacks
+ * CDGuardCancel v1.1 — Guard Cancel During Attacks
  *
- * Combat detection approach:
- * - Track if ANY evaluator has activeFlag=1 recently → "in combat"
+ * Dual-signal combat detection:
+ * - Requires BOTH: recent RB/RT press AND an evaluator with activeFlag=1
+ * - This prevents non-combat RB uses (fire lighting, flash, shops) from
+ *   triggering the mod
  * - Idle + LB: don't force → natural clean guard
  * - Combat + LB: force all slot 0 / candCount 3 → guard cancel works
  */
@@ -29,7 +31,8 @@ static void Log(const char* fmt, ...) {
 
 static SafetyHookInline g_EvalHook{};
 static volatile uint8_t g_LBHeld = 0;
-static volatile DWORD g_LastAttackTick = 0;  // last time RB or RT was pressed
+static volatile DWORD g_LastAttackTick = 0;   // last time RB or RT was pressed
+static volatile DWORD g_LastActiveTick = 0;   // last time an evaluator had activeFlag=1
 static volatile uint32_t g_ForceCount = 0;
 static volatile uint32_t g_CallCount = 0;
 static volatile DWORD g_CombatTimeoutMs = 2000;
@@ -112,8 +115,19 @@ static uint64_t __fastcall HookedEval(int64_t param_1, float param_2, uint64_t p
         activeFlag = *(uint8_t*)(param_1 + 0x6A);
     } __except(EXCEPTION_EXECUTE_HANDLER) {}
 
-    // Only force when player recently attacked (RB/RT pressed)
-    bool isAttacking = (GetTickCount() - g_LastAttackTick) < g_CombatTimeoutMs;
+    // Track evaluators with active transitions (combat state)
+    if (activeFlag != 0) {
+        g_LastActiveTick = GetTickCount();
+    }
+
+    // Dual-signal combat detection:
+    // 1. Player recently pressed RB/RT (attack buttons)
+    // 2. At least one evaluator has activeFlag=1 (transition is playing)
+    // Both must be true — prevents non-combat RB (fire, flash, shops) from triggering
+    DWORD now = GetTickCount();
+    bool recentAttack = (now - g_LastAttackTick) < g_CombatTimeoutMs;
+    bool hasActiveEval = (now - g_LastActiveTick) < 500;  // active eval seen in last 500ms
+    bool isAttacking = recentAttack && hasActiveEval;
 
     if (retVal == 0 && g_LBHeld && g_Enabled && isAttacking &&
         candidateIdx == 0 && candCount == 3) {
@@ -159,7 +173,7 @@ static DWORD WINAPI MainThread(LPVOID) {
     if (sl) strcpy(sl + 1, "CDGuardCancel.log");
     g_Log = fopen(logPath, "w");
 
-    Log("CDGuardCancel v1.0 — Guard Cancel (Attack Button Detect)");
+    Log("CDGuardCancel v1.1 — Guard Cancel (Dual-Signal Combat Detect)");
     LoadINI();
     Log("Config: Enabled=%d CombatTimeout=%ums LogEnabled=%d", g_Enabled, g_CombatTimeoutMs, g_LogEnabled);
     Log("Waiting 15s...");
