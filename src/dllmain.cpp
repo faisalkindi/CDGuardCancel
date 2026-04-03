@@ -1,12 +1,11 @@
 /*
- * CDGuardCancel v1.1 — Guard Cancel During Attacks
+ * CDGuardCancel v1.2 — Guard Cancel During Attacks
  *
- * Dual-signal combat detection:
- * - Requires BOTH: recent RB/RT press AND an evaluator with activeFlag=1
- * - This prevents non-combat RB uses (fire lighting, flash, shops) from
- *   triggering the mod
- * - Idle + LB: don't force → natural clean guard
- * - Combat + LB: force all slot 0 / candCount 3 → guard cancel works
+ * Supports both controller (XInput) and keyboard/mouse (GetAsyncKeyState).
+ * Triple-signal combat detection:
+ * - Recent attack button press (RB/RT or Left/Right Click)
+ * - Evaluator with activeFlag=1 (animation playing)
+ * - Attack button released before guard pressed
  */
 
 #define WIN32_LEAN_AND_MEAN
@@ -30,32 +29,51 @@ static void Log(const char* fmt, ...) {
 }
 
 static SafetyHookInline g_EvalHook{};
-static volatile uint8_t g_LBHeld = 0;
-static volatile uint8_t g_AttackHeld = 0;     // RB or RT currently held
-static volatile DWORD g_LastAttackTick = 0;   // last time RB or RT was pressed
-static volatile DWORD g_LastActiveTick = 0;   // last time an evaluator had activeFlag=1
+static volatile uint8_t g_GuardHeld = 0;       // guard button (LB or keyboard)
+static volatile uint8_t g_AttackHeld = 0;       // attack button currently held
+static volatile DWORD g_LastAttackTick = 0;     // last time attack was pressed
+static volatile DWORD g_LastActiveTick = 0;     // last time evaluator had activeFlag=1
 static volatile uint32_t g_ForceCount = 0;
 static volatile uint32_t g_CallCount = 0;
-static volatile DWORD g_CombatTimeoutMs = 2000;
+static volatile DWORD g_CombatTimeoutMs = 350;
+
+// Keyboard/mouse virtual key codes (configurable in INI)
+static int g_KBGuardKey = VK_CONTROL;           // 0x11 — Ctrl
+static int g_KBLightAttackKey = VK_LBUTTON;     // 0x01 — Left Click
+static int g_KBHeavyAttackKey = VK_RBUTTON;     // 0x02 — Right Click
 
 static bool g_Enabled = true;
-static bool g_LogEnabled = true;
+static bool g_LogEnabled = false;
 
 static DWORD WINAPI PollThread(LPVOID) {
     XINPUT_STATE state;
     while (true) {
         Sleep(2);
+
+        bool guardHeld = false;
+        bool attackHeld = false;
+
+        // Controller (XInput)
         if (XInputGetState(0, &state) == ERROR_SUCCESS) {
-            g_LBHeld = (state.Gamepad.wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER) ? 1 : 0;
-            // Track attack buttons: RB (light attack) and RT (heavy attack)
-            bool rbHeld = (state.Gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) != 0;
-            bool rtHeld = state.Gamepad.bRightTrigger > 128;
-            g_AttackHeld = (rbHeld || rtHeld) ? 1 : 0;
-            if (rbHeld || rtHeld) {
-                g_LastAttackTick = GetTickCount();
-            }
-        } else {
-            g_LBHeld = 0;
+            if (state.Gamepad.wButtons & XINPUT_GAMEPAD_LEFT_SHOULDER)
+                guardHeld = true;
+            if ((state.Gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) ||
+                state.Gamepad.bRightTrigger > 128)
+                attackHeld = true;
+        }
+
+        // Keyboard/Mouse (GetAsyncKeyState)
+        if (GetAsyncKeyState(g_KBGuardKey) & 0x8000)
+            guardHeld = true;
+        if ((GetAsyncKeyState(g_KBLightAttackKey) & 0x8000) ||
+            (GetAsyncKeyState(g_KBHeavyAttackKey) & 0x8000))
+            attackHeld = true;
+
+        // Update shared state
+        g_GuardHeld = guardHeld ? 1 : 0;
+        g_AttackHeld = attackHeld ? 1 : 0;
+        if (attackHeld) {
+            g_LastAttackTick = GetTickCount();
         }
     }
 }
@@ -117,24 +135,17 @@ static uint64_t __fastcall HookedEval(int64_t param_1, float param_2, uint64_t p
         activeFlag = *(uint8_t*)(param_1 + 0x6A);
     } __except(EXCEPTION_EXECUTE_HANDLER) {}
 
-    // Track evaluators with active transitions (combat state)
     if (activeFlag != 0) {
         g_LastActiveTick = GetTickCount();
     }
 
-    // Dual-signal combat detection:
-    // 1. Player recently pressed RB/RT (attack buttons)
-    // 2. At least one evaluator has activeFlag=1 (transition is playing)
-    // Both must be true — prevents non-combat RB (fire, flash, shops) from triggering
     DWORD now = GetTickCount();
     bool recentAttack = (now - g_LastAttackTick) < g_CombatTimeoutMs;
     bool hasActiveEval = (now - g_LastActiveTick) < 500;
-    bool attackNotHeld = (g_AttackHeld == 0);  // RB/RT not currently pressed
-    // All three must be true: recently attacked, combat eval active, attack button released
-    // This prevents flash (LB+RB simultaneous) and non-combat RB from triggering
+    bool attackNotHeld = (g_AttackHeld == 0);
     bool isAttacking = recentAttack && hasActiveEval && attackNotHeld;
 
-    if (retVal == 0 && g_LBHeld && g_Enabled && isAttacking &&
+    if (retVal == 0 && g_GuardHeld && g_Enabled && isAttacking &&
         candidateIdx == 0 && candCount == 3) {
         g_ForceCount++;
         if (g_LogEnabled && (g_ForceCount % 500 == 1)) {
@@ -155,18 +166,36 @@ static void TrimValue(char* s) {
         s[--len] = '\0';
 }
 
+static int ParseVKCode(const char* str) {
+    if (str[0] == '0' && (str[1] == 'x' || str[1] == 'X'))
+        return (int)strtol(str, NULL, 16);
+    return atoi(str);
+}
+
 static void LoadINI() {
     char iniPath[MAX_PATH];
     GetModuleFileNameA(NULL, iniPath, MAX_PATH);
     char* sl = strrchr(iniPath, '\\');
     if (sl) strcpy(sl + 1, "CDGuardCancel.ini");
     char buf[64];
+
     GetPrivateProfileStringA("General", "Enabled", "1", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_Enabled = (atoi(buf) != 0);
+
     GetPrivateProfileStringA("General", "CombatTimeoutMs", "350", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_CombatTimeoutMs = (DWORD)atoi(buf);
-    if (g_CombatTimeoutMs < 500) g_CombatTimeoutMs = 500;
+    if (g_CombatTimeoutMs < 100) g_CombatTimeoutMs = 100;
     if (g_CombatTimeoutMs > 10000) g_CombatTimeoutMs = 10000;
+
+    GetPrivateProfileStringA("Keyboard", "GuardKey", "0x11", buf, sizeof(buf), iniPath);
+    TrimValue(buf); g_KBGuardKey = ParseVKCode(buf);
+
+    GetPrivateProfileStringA("Keyboard", "LightAttackKey", "0x01", buf, sizeof(buf), iniPath);
+    TrimValue(buf); g_KBLightAttackKey = ParseVKCode(buf);
+
+    GetPrivateProfileStringA("Keyboard", "HeavyAttackKey", "0x02", buf, sizeof(buf), iniPath);
+    TrimValue(buf); g_KBHeavyAttackKey = ParseVKCode(buf);
+
     GetPrivateProfileStringA("Debug", "LogEnabled", "0", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_LogEnabled = (atoi(buf) != 0);
 }
@@ -178,9 +207,10 @@ static DWORD WINAPI MainThread(LPVOID) {
     if (sl) strcpy(sl + 1, "CDGuardCancel.log");
     g_Log = fopen(logPath, "w");
 
-    Log("CDGuardCancel v1.1.1 — Guard Cancel (Triple-Signal Combat Detect)");
+    Log("CDGuardCancel v1.2 — Guard Cancel (Controller + Keyboard/Mouse)");
     LoadINI();
-    Log("Config: Enabled=%d CombatTimeout=%ums LogEnabled=%d", g_Enabled, g_CombatTimeoutMs, g_LogEnabled);
+    Log("Config: Enabled=%d Timeout=%ums Guard=0x%02X LightAtk=0x%02X HeavyAtk=0x%02X Log=%d",
+        g_Enabled, g_CombatTimeoutMs, g_KBGuardKey, g_KBLightAttackKey, g_KBHeavyAttackKey, g_LogEnabled);
     Log("Waiting 15s...");
     Sleep(15000);
 
@@ -206,21 +236,19 @@ static DWORD WINAPI MainThread(LPVOID) {
     );
     if (!g_EvalHook) { Log("ERROR: hook failed"); while(true) Sleep(10000); return 1; }
 
-    Log("Hook installed! No setup needed.");
-    Log("Idle LB = clean guard (no forcing)");
-    Log("After RB/RT + LB = forced guard cancel (2s window)");
+    Log("Hook installed!");
+    Log("Controller: attack (RB/RT) -> release -> LB = guard cancel");
+    Log("Keyboard:   attack (LClick/RClick) -> release -> Ctrl = guard cancel");
 
     uint32_t lastForce = 0, lastCalls = 0;
     while (true) {
         Sleep(3000);
-        // Hot-reload INI every 3 seconds
         LoadINI();
         uint32_t calls = g_CallCount, forces = g_ForceCount;
-        bool atk = (GetTickCount() - g_LastAttackTick) < g_CombatTimeoutMs;
         if (g_LogEnabled && (calls > lastCalls || forces > lastForce)) {
-            Log("calls=%u(+%u) forces=%u(+%u) timeout=%ums attacking=%d LB=%d",
+            Log("calls=%u(+%u) forces=%u(+%u) timeout=%ums guard=%d atk=%d",
                 calls, calls-lastCalls, forces, forces-lastForce,
-                g_CombatTimeoutMs, atk ? 1 : 0, g_LBHeld);
+                g_CombatTimeoutMs, g_GuardHeld, g_AttackHeld);
         }
         lastCalls = calls; lastForce = forces;
     }
