@@ -31,6 +31,7 @@ static void Log(const char* fmt, ...) {
 
 static SafetyHookInline g_EvalHook{};
 static volatile uint8_t g_LBHeld = 0;
+static volatile uint8_t g_AttackHeld = 0;     // RB or RT currently held
 static volatile DWORD g_LastAttackTick = 0;   // last time RB or RT was pressed
 static volatile DWORD g_LastActiveTick = 0;   // last time an evaluator had activeFlag=1
 static volatile uint32_t g_ForceCount = 0;
@@ -49,6 +50,7 @@ static DWORD WINAPI PollThread(LPVOID) {
             // Track attack buttons: RB (light attack) and RT (heavy attack)
             bool rbHeld = (state.Gamepad.wButtons & XINPUT_GAMEPAD_RIGHT_SHOULDER) != 0;
             bool rtHeld = state.Gamepad.bRightTrigger > 128;
+            g_AttackHeld = (rbHeld || rtHeld) ? 1 : 0;
             if (rbHeld || rtHeld) {
                 g_LastAttackTick = GetTickCount();
             }
@@ -126,8 +128,11 @@ static uint64_t __fastcall HookedEval(int64_t param_1, float param_2, uint64_t p
     // Both must be true — prevents non-combat RB (fire, flash, shops) from triggering
     DWORD now = GetTickCount();
     bool recentAttack = (now - g_LastAttackTick) < g_CombatTimeoutMs;
-    bool hasActiveEval = (now - g_LastActiveTick) < 500;  // active eval seen in last 500ms
-    bool isAttacking = recentAttack && hasActiveEval;
+    bool hasActiveEval = (now - g_LastActiveTick) < 500;
+    bool attackNotHeld = (g_AttackHeld == 0);  // RB/RT not currently pressed
+    // All three must be true: recently attacked, combat eval active, attack button released
+    // This prevents flash (LB+RB simultaneous) and non-combat RB from triggering
+    bool isAttacking = recentAttack && hasActiveEval && attackNotHeld;
 
     if (retVal == 0 && g_LBHeld && g_Enabled && isAttacking &&
         candidateIdx == 0 && candCount == 3) {
@@ -158,7 +163,7 @@ static void LoadINI() {
     char buf[64];
     GetPrivateProfileStringA("General", "Enabled", "1", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_Enabled = (atoi(buf) != 0);
-    GetPrivateProfileStringA("General", "CombatTimeoutMs", "2000", buf, sizeof(buf), iniPath);
+    GetPrivateProfileStringA("General", "CombatTimeoutMs", "350", buf, sizeof(buf), iniPath);
     TrimValue(buf); g_CombatTimeoutMs = (DWORD)atoi(buf);
     if (g_CombatTimeoutMs < 500) g_CombatTimeoutMs = 500;
     if (g_CombatTimeoutMs > 10000) g_CombatTimeoutMs = 10000;
@@ -173,7 +178,7 @@ static DWORD WINAPI MainThread(LPVOID) {
     if (sl) strcpy(sl + 1, "CDGuardCancel.log");
     g_Log = fopen(logPath, "w");
 
-    Log("CDGuardCancel v1.1 — Guard Cancel (Dual-Signal Combat Detect)");
+    Log("CDGuardCancel v1.1.1 — Guard Cancel (Triple-Signal Combat Detect)");
     LoadINI();
     Log("Config: Enabled=%d CombatTimeout=%ums LogEnabled=%d", g_Enabled, g_CombatTimeoutMs, g_LogEnabled);
     Log("Waiting 15s...");
@@ -208,12 +213,14 @@ static DWORD WINAPI MainThread(LPVOID) {
     uint32_t lastForce = 0, lastCalls = 0;
     while (true) {
         Sleep(3000);
+        // Hot-reload INI every 3 seconds
+        LoadINI();
         uint32_t calls = g_CallCount, forces = g_ForceCount;
         bool atk = (GetTickCount() - g_LastAttackTick) < g_CombatTimeoutMs;
         if (g_LogEnabled && (calls > lastCalls || forces > lastForce)) {
-            Log("calls=%u(+%u) forces=%u(+%u) attacking=%d LB=%d",
+            Log("calls=%u(+%u) forces=%u(+%u) timeout=%ums attacking=%d LB=%d",
                 calls, calls-lastCalls, forces, forces-lastForce,
-                atk ? 1 : 0, g_LBHeld);
+                g_CombatTimeoutMs, atk ? 1 : 0, g_LBHeld);
         }
         lastCalls = calls; lastForce = forces;
     }
